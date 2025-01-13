@@ -31,9 +31,7 @@ export function TypographyLink({ name, link = "" }) {
 }
 
 export function TypographyTitle({ name }) {
-  return (
-    <p className="font-semibold text-default my-3 text-lg">{name}</p>
-  );
+  return <p className="font-semibold text-default my-3 text-lg">{name}</p>;
 }
 
 export function StyleStack({ name, link = "" }) {
@@ -50,9 +48,7 @@ export function StyleStack({ name, link = "" }) {
       >
         <TextSnippetIcon />
 
-        <p className="text-grey ml-3 cursor-pointer">
-          {name}
-        </p>
+        <p className="text-grey ml-3 cursor-pointer">{name}</p>
       </Stack>
     </Link>
   );
@@ -112,9 +108,18 @@ export default function Footer() {
 
           <Grid xs={12} md={4} className="p-3">
             <TypographyTitle name={t("accountmanage")} />
-            <TypographyLink name={t("openaccount")} link={"https://my.superforexs.com/auth/jwt/sign-up/"} />
-            <TypographyLink name={t("clientcabinet")} link={"https://my.superforexs.com/auth/jwt/sign-in/"} />
-            <TypographyLink name={t("depositwithdrawal")} link={"/deposit-and-withdrawal"} />
+            <TypographyLink
+              name={t("openaccount")}
+              link={"https://my.superforexs.com/auth/jwt/sign-up/"}
+            />
+            <TypographyLink
+              name={t("clientcabinet")}
+              link={"https://my.superforexs.com/auth/jwt/sign-in/"}
+            />
+            <TypographyLink
+              name={t("depositwithdrawal")}
+              link={"/deposit-and-withdrawal"}
+            />
           </Grid>
 
           <Grid xs={4} className="p-3 lg:block hidden ">
@@ -122,7 +127,10 @@ export default function Footer() {
             <TypographyLink name={t("welcomeplus")} link={"/trade-and-earn"} />
             <TypographyLink name={t("75energy")} link={"/free-swap"} />
             <TypographyLink name={t("hotbonus")} link={"/hot-bonus"} />
-            <TypographyLink name={t("easydepositbonus")} link={"/easy-deposit-bonus"} />
+            <TypographyLink
+              name={t("easydepositbonus")}
+              link={"/easy-deposit-bonus"}
+            />
           </Grid>
 
           <Grid xs={4} className="p-3  lg:block hidden">
@@ -165,20 +173,57 @@ export default function Footer() {
           <Grid xs={12} md={4} className="p-3">
             <TypographyTitle name={t("ouraward")} />
             <ImgStack
-              img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/ibm-2021.svg?updatedAt=1735633180379"}
+              img={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/ibm-2021.svg?updatedAt=1735633180379"
+              }
               name={t("bestecnbroker")}
             />
             <ImgStack
-              img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2020.svg?updatedAt=1735633180477"}
+              img={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2020.svg?updatedAt=1735633180477"
+              }
               name={t("bestnewecn")}
             />
             <ImgStack
-              img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/show-fx-2017.svg?updatedAt=1735633180286"}
+              img={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/show-fx-2017.svg?updatedAt=1735633180286"
+              }
               name={t("bestaffiliate")}
             />
             {/*</div>*/}
           </Grid>
         </Grid>
+      </Container>
+
+      <Divider />
+
+      <Container className="relative">
+        <div className="text-grey text-justify py-7">
+          Trading Leveraged Products such as Forex and Derivatives may not be
+          suitable for all investors as they carry a high degree of risk to your
+          capital. Please ensure that you fully understand the risks involved,
+          taking into account your investments and level of experience, before
+          trading, and if necessary, seek independent advice. Trading Forex,
+          CFDs, and any financial derivative instruments on margin carries a
+          high level of risk and may not be suitable for all investors, as you
+          could sustain losses. The Company under no circumstances shall be
+          liable to any persons or entity for any loss or damage in the whole or
+          part caused by, resulting from, or relating to any transactions
+          related to CFDs. Botanica Glow (Pty) Ltd. assumes no liability for
+          errors, inaccuracies, or omissions, does not warrant the accuracy,
+          completeness of information, text, graphics, links, or other items
+          within these materials. Botanica Glow (Pty) Ltd. does not offer and
+          does not provide services to residents and citizens of certain
+          jurisdictions, including Australia, Canada, Japan, Thailand, the
+          United States of America and countries sanctioned by the EU.
+        </div>
+        <div className="text-grey text-justify pb-7">
+          Superforexglobal.com is owned and operated by Superfin Corp. a company
+          with registration number 1671 CTD 2024, with registered address at
+          P.O. Box 1510, Beachmont Kingstown, St. Vincent and the Grenadines,
+          and operation address at Landmark Park 7 Tower, P7-37-09 , 208 Nguyen
+          Huu Canh Street, Binh Thanh City, Ho Chi Minh City, Vietnam.
+        </div>
       </Container>
 
       <Divider />

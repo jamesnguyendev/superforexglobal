@@ -78,7 +78,6 @@ import PatternGraphix from "../../public/patternGraphix.svg";
 import MenuMobile from "../components/MenuMobile";
 import ButtonCustomize from "../components/buttonCustomize";
 import english from "../../public/Image/flags/uk.webp";
-import thailand from "../../public/Image/flags/thailand.webp";
 import china from "../../public/Image/flags/china.webp";
 import india from "../../public/Image/flags/india.webp";
 import indonesia from "../../public/Image/flags/indonesia.webp";
@@ -110,9 +109,7 @@ export function StyleStack({
         onMouseLeave={() => setHover(false)}
       >
         <Image src={img} alt={img} />
-        <p className="text-default ml-3 font-medium cursor-pointer">
-          {name}
-        </p>
+        <p className="text-default ml-3 font-medium cursor-pointer">{name}</p>
         {tagColor && tagName && (
           <TypographyTag name={tagName} color={tagColor} />
         )}
@@ -122,9 +119,7 @@ export function StyleStack({
         />
       </div>
       {secondName && (
-        <p className="text-grey opacity-[.6] cursor-pointer">
-          {secondName}
-        </p>
+        <p className="text-grey opacity-[.6] cursor-pointer">{secondName}</p>
       )}
     </Link>
   );
@@ -182,9 +177,6 @@ export default function Header() {
       case "en":
         setFlag(english);
         break;
-      case "th":
-        setFlag(thailand);
-        break;
       case "hans":
         setFlag(china);
         break;
@@ -226,9 +218,6 @@ export default function Header() {
     switch (locate) {
       case "en":
         setFlag(english);
-        break;
-      case "th":
-        setFlag(thailand);
         break;
       case "hans":
         setFlag(china);
@@ -308,20 +297,6 @@ export default function Header() {
                 >
                   <Image src={english} alt="" />
                   <Typography>ENGLISH</Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handlerLang("th")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={thailand} alt="" />
-                  <Typography>ไทย</Typography>
                 </MenuItem>
               </Stack>
               <Stack direction={"column"}>

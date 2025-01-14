@@ -10,7 +10,7 @@ const Banner = ({
   subTitleBanner,
   buttonName,
   textBannerColor,
-  link,
+  link = "/",
   blank,
   light,
 }) => {
@@ -29,10 +29,12 @@ const Banner = ({
       />
       {/* Laptop */}
       {light ? (
-        <div className="absolute top-[37%] text-white pl-[1rem] font-semibold gap-y-2  md:block hidden max-w-[32rem]">
+        <div
+          className={`absolute top-[37%] text-white pl-[1rem] font-semibold gap-y-2  md:block hidden max-w-[32rem]`}
+        >
           <>
             <h1
-              className={`text-[1.76rem] leading-[3rem] max-w-[400px] px-16  transform -skew-x-[20deg] bg-gradient-to-r from-yellow-300/5 via-yellow-500 to-yellow-300/5 ${
+              className={`text-[1.76rem] leading-[3rem] max-w-[400px] px-16  transform -skew-x-[20deg] bg-gradient-to-r from-yellow-300/5 via-primary to-yellow-300/5 ${
                 textBannerColor ? "text-default" : ""
               } `}
             >
@@ -47,18 +49,15 @@ const Banner = ({
             </h2>
           </>
           <div className={"pt-6 px-16"}>
-            <Link
-              href={
-                link ? link : "https://my.superforexs.com/auth/jwt/sign-in/"
-              }
-              target={blank ? "_blank" : "_self"}
-            >
+            <Link href={link} target={blank ? "_blank" : "_self"}>
               {buttonName && <Button name={buttonName} background={true} />}
             </Link>
           </div>
         </div>
       ) : (
-        <div className="absolute top-[37%] text-white font-semibold gap-y-2 pl-[6.2rem] md:block hidden max-w-[32rem]">
+        <div
+          className={`absolute top-[37%] text-white font-semibold gap-y-2 pl-[6.2rem] md:block hidden max-w-[32rem] `}
+        >
           <>
             <h1
               className={`text-[2.5rem] leading-[3rem] max-w-[400px] ${
@@ -76,12 +75,7 @@ const Banner = ({
             </h2>
           </>
           <div className={"pt-6"}>
-            <Link
-              href={
-                link ? link : "https://my.superforexs.com/auth/jwt/sign-in/"
-              }
-              target={blank ? "_blank" : "_self"}
-            >
+            <Link href={link} target={blank ? "_blank" : "_self"}>
               {buttonName && <Button name={buttonName} background={true} />}
             </Link>
           </div>

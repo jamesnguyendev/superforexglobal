@@ -34,7 +34,11 @@ const ButtonCustomize = ({ name, background, type }) => {
           transform: hover ? "translateX(0)" : "translateX(-2px)",
         }}
       >
-        {hover ? <ArrowForwardIcon fontSize="small" /> : <ChevronRightIcon fontSize="small" />}
+        {hover ? (
+          <ArrowForwardIcon fontSize="small" />
+        ) : (
+          <ChevronRightIcon fontSize="small" />
+        )}
       </span>
     </button>
   );

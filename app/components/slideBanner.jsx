@@ -35,6 +35,7 @@ const SlideImage = ({ slides, nav }) => {
             subTitleBanner={s.subTitleBanner}
             buttonName={s.buttonName}
             textBannerColor={s.textBannerColor}
+            link={s.link}
           />
         ))}
       </div>

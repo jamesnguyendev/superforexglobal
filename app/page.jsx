@@ -2,7 +2,15 @@
 import React, { useState, useEffect } from "react";
 
 import styled from "styled-components";
-import { Container, Stack, Typography, Card, Modal, Box } from "@mui/material";
+import {
+  Container,
+  Stack,
+  Typography,
+  Card,
+  Modal,
+  Box,
+  Divider,
+} from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
 import Image from "next/image";
@@ -151,28 +159,29 @@ const AutoImageSlider = () => {
       subTitleBanner: t("tradingwithspreads"),
       buttonName: t("moreinformation"),
       textBannerColor: true,
-      link: "",
+      link: "https://my.superforexs.com/auth/jwt/sign-up",
     },
     {
       imgDesktop:
-        "https://ik.imagekit.io/kn40ppx9b/Superforex/9be7972a9b11264f7sadf00.jpg?updatedAt=1734936524209",
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/0785b1c691332d6d7422.jpg?updatedAt=1736824575921",
       imgMobile:
-        "https://ik.imagekit.io/kn40ppx9b/Superforex/63675181c0ba7de424abfe.jpg?updatedAt=1734938646685",
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/9a0d63e14d15f14ba804.jpg?updatedAt=1736824707631",
       titleBanner: t("30bonus"),
       subTitleBanner: t("applyonlocal"),
       buttonName: t("learnmore"),
       textBannerColor: false,
-      link: "",
+      link: "https://my.superforexs.com/auth/jwt/sign-up",
     },
     {
       imgDesktop:
-        "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105704338.png?updatedAt=1735272457656",
-      imgMobile: BannerMobile3,
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/7fd1fb1bdbee67b03eff.jpg?updatedAt=1736821505597",
+      imgMobile:
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/d7eb3010bde701b958f6.jpg?updatedAt=1736830105397",
       titleBanner: t("cryptomania"),
       subTitleBanner: t("increaseyourprofits"),
       buttonName: t("joincontest"),
-      textBannerColor: true,
-      link: "",
+      textBannerColor: false,
+      link: "/trade-and-earn",
     },
     {
       imgDesktop:
@@ -182,7 +191,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("ourmostpopular"),
       buttonName: t("Takealook"),
       dot: true,
-      link: "",
+      link: "https://my.superforexs.com/auth/jwt/sign-up",
     },
     {
       imgDesktop:
@@ -192,7 +201,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("thehottestoffer"),
       buttonName: t("getbonus"),
       dot: true,
-      link: "",
+      link: "https://my.superforexs.com/auth/jwt/sign-up",
     },
     {
       imgDesktop:
@@ -203,7 +212,7 @@ const AutoImageSlider = () => {
       textBannerColor: true,
       buttonName: t("moreinformation"),
       dot: true,
-      link: "",
+      link: "https://my.superforexs.com/auth/jwt/sign-up",
     },
     {
       imgDesktop:
@@ -213,7 +222,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("forexhasbecome"),
       buttonName: t("moreinformation"),
       dot: true,
-      link: "",
+      link: "https://my.superforexs.com/auth/jwt/sign-up",
     },
   ];
 
@@ -622,6 +631,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </Container>
+
       <Container maxWidth="lg" className="my-28">
         <Stack className="text-center mb-10">
           <p className="font-bold text-4xl">{t("bychoosingsuperForex")}</p>
@@ -811,7 +821,7 @@ export default function Home() {
         </p>
         <PaymentSlider />
       </Container>
-      <Container maxWidth="lg" className="my-28">
+      <Container maxWidth="lg" className="my-14">
         <p className="font-bold text-center text-5xl">{t("tryityourself")}</p>
         <p className="text-center my-10">{t("thebestwaytodecide")}</p>
         <Stack direction="row" spacing={5} justifyContent="center">
@@ -848,6 +858,35 @@ export default function Home() {
           />
         </Box>
       </Modal>
+
+      <Container className="relative">
+        <div className="text-grey text-justify pb-7">
+          Trading Leveraged Products such as Forex and Derivatives may not be
+          suitable for all investors as they carry a high degree of risk to your
+          capital. Please ensure that you fully understand the risks involved,
+          taking into account your investments and level of experience, before
+          trading, and if necessary, seek independent advice. Trading Forex,
+          CFDs, and any financial derivative instruments on margin carries a
+          high level of risk and may not be suitable for all investors, as you
+          could sustain losses. The Company under no circumstances shall be
+          liable to any persons or entity for any loss or damage in the whole or
+          part caused by, resulting from, or relating to any transactions
+          related to CFDs. Botanica Glow (Pty) Ltd. assumes no liability for
+          errors, inaccuracies, or omissions, does not warrant the accuracy,
+          completeness of information, text, graphics, links, or other items
+          within these materials. Botanica Glow (Pty) Ltd. does not offer and
+          does not provide services to residents and citizens of certain
+          jurisdictions, including Australia, Canada, Japan, Thailand, the
+          United States of America and countries sanctioned by the EU.
+        </div>
+        <div className="text-grey text-justify pb-16">
+          Superforexglobal.com is owned and operated by Superfin Corp. a company
+          with registration number 1671 CTD 2024, with registered address at
+          P.O. Box 1510, Beachmont Kingstown, St. Vincent and the Grenadines,
+          and operation address at Landmark Park 7 Tower, P7-37-09 , 208 Nguyen
+          Huu Canh Street, Binh Thanh City, Ho Chi Minh City, Vietnam.
+        </div>
+      </Container>
       <Footer />
     </main>
   );

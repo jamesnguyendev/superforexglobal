@@ -110,18 +110,19 @@ const Page = () => {
     <>
       <Banner
         imgDesktop={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/1ef4cd142415994bc004.jpg?updatedAt=1734585638860"
+          "https://ik.imagekit.io/kn40ppx9b/Superforex/7fd1fb1bdbee67b03eff.jpg?updatedAt=1736821505597"
         }
         imgMobile={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/image.png?updatedAt=1734587034539"
+          "https://ik.imagekit.io/kn40ppx9b/Superforex/d7eb3010bde701b958f6.jpg?updatedAt=1736830105397"
         }
-        light
+        lights
         titleBanner={t("WelcomeBonus")}
         subTitleBanner={t("GetMoreOnEachDeposit")}
         buttonName={t("ClaimBonus")}
       />
+
       <section className={"pt-24 mb-14 px-10 text-default"}>
-        <div className="grid lg:grid-cols-3 gap-x-3 gap-y-28 md:grid-cols-2 grid-cols-1 ">
+        <div className="grid lg:grid-cols-3 gap-x-3 gap-y-28 md:grid-cols-2 grid-cols-1">
           {item.map(
             (i, index) =>
               index !== item.length - 1 && (

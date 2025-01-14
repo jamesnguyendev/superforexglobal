@@ -84,9 +84,17 @@ import indonesia from "../../public/Image/flags/indonesia.webp";
 import malaysia from "../../public/Image/flags/malaysia.webp";
 import vietnam from "../../public/Image/flags/vietnam.webp";
 import korea from "../../public/Image/flags/south-korea.webp";
-import MetaTrader4 from "../../public/metaTrader4.svg";
+import bangladesh from "../../public/Image/flags/bangladesh.png";
 import { setUserLocale } from "../../services/locale";
 import { useTranslations } from "next-intl";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function StyleStack({
   img,
@@ -255,7 +263,7 @@ export default function Header() {
             className="cursor-pointer"
           />
         </Link>
-        <div className="hidden md:flex gap-3">
+        <div className="hidden md:flex gap-3 justify-center items-center">
           <Link href={"https://my.superforexs.com"} target="_blank">
             <ButtonCustomize name={t("signin")} />
           </Link>
@@ -265,148 +273,76 @@ export default function Header() {
           >
             <ButtonCustomize name={t("openaccount")} background={true} />
           </Link>
-          <Stack mt={0.5}>
-            <button id="basic-button" onClick={handleClick}>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="focus:outline-none">
               <Image src={flag} alt="" className="rounded-lg" />
-            </button>
-            <Menu
-              id="basic-menu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "right",
-              }}
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-            >
-              <Stack direction={"column"}>
-                <MenuItem
-                  onClick={() => handlerLang("en")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={english} alt="" />
-                  <Typography>ENGLISH</Typography>
-                </MenuItem>
-              </Stack>
-              <Stack direction={"column"}>
-                <MenuItem
-                  onClick={() => handlerLang("hans")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={china} alt="" />
-                  <Typography>简体中文</Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handlerLang("hant")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={china} alt="" />
-                  <Typography>繁体中文</Typography>
-                </MenuItem>
-              </Stack>
-              <Stack direction={"column"}>
-                <MenuItem
-                  onClick={() => handlerLang("hi")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={india} alt="" />
-                  <Typography>INDIA</Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handlerLang("id")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={indonesia} alt="" />
-                  <Typography>INDONESIA</Typography>
-                </MenuItem>
-              </Stack>
-              <Stack direction={"column"}>
-                <MenuItem
-                  onClick={() => handlerLang("ms")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={malaysia} alt="" />
-                  <Typography>MALAYSIA</Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handlerLang("vi")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={vietnam} alt="" />
-                  <Typography>VIETNAM</Typography>
-                </MenuItem>
-              </Stack>
-              <Stack direction={"column"}>
-                <MenuItem
-                  onClick={() => handlerLang("ko")}
-                  sx={{
-                    display: "flex",
-                    gap: 1.5,
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                  disableRipple
-                >
-                  <Image src={korea} alt="" />
-                  <Typography>KOREA</Typography>
-                </MenuItem>
-              </Stack>
-            </Menu>
-          </Stack>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="grid grid-cols-2 capitalize">
+              <DropdownMenuItem
+                onClick={() => handlerLang("en")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={english} alt="" />
+                <h3>English</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("hans")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={china} alt="" />
+                <h3>简体中文</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("hant")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={china} alt="" />
+                <h3>繁体中文</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("hi")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={india} alt="" />
+                <h3>india</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("ms")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={malaysia} alt="" />
+                <h3>malaysia</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("ko")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={korea} alt="" />
+                <h3>korea</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("id")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={indonesia} alt="" />
+                <h3>indonesia</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("vi")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={vietnam} alt="" />
+                <h3>việt nam</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("bn")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={bangladesh} alt="" />
+                <h3>bangladesh</h3>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
         <MenuMobile />
       </Stack>

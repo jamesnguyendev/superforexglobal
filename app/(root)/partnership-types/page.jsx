@@ -48,11 +48,11 @@ const Page = () => {
     <div>
       <BannerSvg title={t("partnershipTypes")} subTitle={t("chooseYourWay")} />
       <BrokerHero
-        icon={"ib.svg"}
+        icon={"/ib.svg"}
         title={t("introducingBroker")}
         content={t("ibContent")}
         subContent={t("ibSubContent")}
-        link={"https://my.superforex.com/login-partner"}
+        link={"https://my.superforex.com/login"}
         img={"/Image/ib.webp"}
         buttonName={t("openIBAccount")}
       />
@@ -61,16 +61,16 @@ const Page = () => {
         icon={"/sub-ib.svg"}
         title={t("subIntroducingBroker")}
         content={t("subIBContent")}
-        link={"https://my.superforex.com/login-partner"}
+        link={"https://my.superforex.com/login"}
         img={"/Image/sub-ib.webp"}
         reverse={true}
       />
       <BenefitCart data={BrokerHeroCard2} />
       <BrokerHero
-        icon={"mlp.svg"}
+        icon={"/mlp.svg"}
         title={t("multiLevelPartnership")}
         content={t("mlpContent")}
-        link={"https://my.superforex.com/register-mlp"}
+        link={"https://my.superforex.com/register"}
         img={"/Image/mlp.webp"}
         buttonName={t("mlpAccount")}
       />

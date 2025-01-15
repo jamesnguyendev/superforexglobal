@@ -137,10 +137,14 @@ const Page = () => {
                   <thead>
                     <tr className="my-1 text-default/65 ">
                       <th>
-                        <h6 className="font-semibold text-[14px] ">{t("place")}</h6>
+                        <h6 className="font-semibold text-[14px] ">
+                          {t("place")}
+                        </h6>
                       </th>
                       <th>
-                        <h6 className="font-semibold text-[14px]">{t("country")}</h6>
+                        <h6 className="font-semibold text-[14px]">
+                          {t("country")}
+                        </h6>
                       </th>
                       <th>
                         <h6 className="font-semibold text-[14px]">
@@ -256,9 +260,7 @@ const Page = () => {
             </div>
 
             <TabPanel value={value} index={0}>
-              <span className="text-[18px] pt-16">
-                {t("navigateCabinet")}
-              </span>
+              <span className="text-[18px] pt-16">{t("navigateCabinet")}</span>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <span className="text-[18px]">
@@ -269,9 +271,7 @@ const Page = () => {
               </span>
             </TabPanel>
             <TabPanel value={value} index={2}>
-              <span className="text-lg">
-                {t("contestDuration")}
-              </span>
+              <span className="text-lg">{t("contestDuration")}</span>
             </TabPanel>
           </div>
         </Container>
@@ -297,12 +297,8 @@ const Page = () => {
               <h1 className=" font-semibold text-[45px] leading-[3rem] mb-3  max-lg:text-center">
                 {t("forexAffiliate")}
               </h1>
-              <p className="text-center py-5">
-                {t("affiliateWork")}
-              </p>
-              <p className="text-center">
-                {t("partnershipTypes")}
-              </p>
+              <p className="text-center py-5">{t("affiliateWork")}</p>
+              <p className="text-center">{t("partnershipTypes")}</p>
             </div>
           </div>
         </Container>
@@ -311,9 +307,7 @@ const Page = () => {
       <div className="mb-20 mt-60">
         <Container>
           <h2 className="text-default text-4xl text-center">
-            <span className="">
-              {t("bestAffiliateProgram")}
-            </span>
+            <span className="">{t("bestAffiliateProgram")}</span>
           </h2>
           <div className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -339,12 +333,8 @@ const Page = () => {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 text-default">
             <div className="max-lg:text-center lg:place-content-center">
-              <h3 className="text-3xl font-normal">
-                {t("notSure")}
-              </h3>
-              <p className="py-7 text-[18px]">
-                {t("easyEarn")}
-              </p>
+              <h3 className="text-3xl font-normal">{t("notSure")}</h3>
+              <p className="py-7 text-[18px]">{t("easyEarn")}</p>
               <Button background={true} name={t("becomePartner")} />
             </div>
             <div className="flex flex-col max-lg:mt-24 gap-12">

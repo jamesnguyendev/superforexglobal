@@ -85,14 +85,17 @@ import malaysia from "../../public/Image/flags/malaysia.webp";
 import vietnam from "../../public/Image/flags/vietnam.webp";
 import korea from "../../public/Image/flags/south-korea.webp";
 import bangladesh from "../../public/Image/flags/bangladesh.png";
+import brazil from "../../public/Image/flags/brazil.png";
+import cs from "../../public/Image/flags/czech.png";
+import it from "../../public/Image/flags/italy.png";
+import es from "../../public/Image/flags/spain.png";
+import fr from "../../public/Image/flags/france.png";
 import { setUserLocale } from "../../services/locale";
 import { useTranslations } from "next-intl";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -170,9 +173,7 @@ function getCookie(name) {
 export default function Header() {
   const [isPending, startTransition] = useTransition();
   const [flag, setFlag] = useState(english);
-  const [anchorEl, setAnchorEl] = React.useState(null);
   const t = useTranslations("Header");
-  const open = Boolean(anchorEl);
   const [localeCookie, setLocaleCookie] = useState(null);
 
   useEffect(() => {
@@ -206,17 +207,27 @@ export default function Header() {
       case "ko":
         setFlag(korea);
         break;
+      case "bn":
+        setFlag(bangladesh);
+        break;
+      case "pt-BR":
+        setFlag(brazil);
+        break;
+      case "cs":
+        setFlag(cs);
+        break;
+      case "it":
+        setFlag(it);
+        break;
+      case "es":
+        setFlag(es);
+        break;
+      case "fr":
+        setFlag(fr);
+        break;
       default:
     }
   }, [localeCookie]);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   const handlerLang = (value) => {
     const locate = value;
@@ -248,9 +259,26 @@ export default function Header() {
       case "ko":
         setFlag(korea);
         break;
+      case "bn":
+        setFlag(bangladesh);
+        break;
+      case "pt-BR":
+        setFlag(brazil);
+        break;
+      case "cs":
+        setFlag(cs);
+        break;
+      case "it":
+        setFlag(it);
+        break;
+      case "es":
+        setFlag(es);
+        break;
+      case "fr":
+        setFlag(fr);
+        break;
       default:
     }
-    setAnchorEl(null);
   };
 
   return (
@@ -340,6 +368,41 @@ export default function Header() {
               >
                 <Image src={bangladesh} alt="" />
                 <h3>bangladesh</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("pt-BR")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={brazil} alt="" />
+                <h3>Brazil</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("cs")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={cs} alt="" />
+                <h3>Czech</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("it")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={it} alt="" />
+                <h3>Italy</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("es")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={es} alt="" />
+                <h3>Spain</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("fr")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={fr} alt="" />
+                <h3>French</h3>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

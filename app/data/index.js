@@ -262,20 +262,20 @@ export const affiliatePrograms = [
 
 export const businessPartnerCarts = [
   {
-    icon: "have-experience.svg",
+    icon: "/have-experience.svg",
     title: "Have experience in the Forex sphere",
     content:
       "Share your knowledge, trading tips, and benefits on financial trading - people will follow your lead.",
   },
   {
-    icon: "traders.svg",
+    icon: "/traders.svg",
     title:
       "Know other people who may be interested in trading and how to get their attention",
     content:
       "Whether you have a website or a lot of followers on your social media - this is where you can find your clients. The more people you attract, and the more active they are, the greater your forex affiliate earnings will be.",
   },
   {
-    icon: "learn.svg",
+    icon: "/learn.svg",
     title:
       "Are willing to learn about our company and advertise us to your associates",
     content:
@@ -404,25 +404,25 @@ export const frequentlyAskedQuestionsNd = [
 
 export const dataAdvantages = [
   {
-    icon: "transparent.svg",
+    icon: "/transparent.svg",
     title: "Transparent Conditions",
     content:
       "Traders can withdraw the profit earned from trading with the bonus.",
   },
   {
-    icon: "doublePosit.svg",
+    icon: "/doublePosit.svg",
     title: "Double Deposit",
     content:
       "Clients can get the unique opportunity to double their deposits in the amount from $100 to $1000.",
   },
   {
-    icon: "instrunsment.svg",
+    icon: "/instrunsment.svg",
     title: "All Instruments",
     content:
       "Traders can use any trading instruments, including shares, futures, and cryptocurrencies along with this bonus.",
   },
   {
-    icon: "bagMoney.svg",
+    icon: "/bagMoney.svg",
     title: "Competitive Commission",
     content:
       "We offer our partners the most competitive commission on the market - up to 75% on the spread.",

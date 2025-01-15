@@ -11,11 +11,13 @@ export const locales = [
   "pt-BR",
   "cs",
   "it",
+  "es",
+  "fr",
+  "de",
   "ro",
   "tr",
   "pl",
-  "es",
-  "fr",
   "ur",
+  "ar",
 ];
 export const defaultLocale = "en";

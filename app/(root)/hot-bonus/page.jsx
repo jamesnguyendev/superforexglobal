@@ -11,6 +11,7 @@ import shield from "../../../public/shield.svg";
 import coin from "../../../public/coin.svg";
 import TheBrokerOfChoice from "../../components/theBrokerOfChoice";
 import AccountForm from "../../components/accountForm";
+import BannerMobile5 from "../../../public/Image/hot-bonus-mobile.webp";
 
 import { useTranslations } from "next-intl";
 
@@ -51,11 +52,9 @@ const Page = () => {
     <div>
       <Banner
         imgDesktop={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/e64067a858b5e5ebbca4.jpg?updatedAt=1734689737565"
+          "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105605300.png?updatedAt=1735272457272"
         }
-        imgMobile={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/d491bc31592ce472bd3d.jpg?updatedAt=1734690731890"
-        }
+        imgMobile={BannerMobile5}
         buttonName={t("bannerBtn")}
         titleBanner={t("bannerTitle")}
         subTitleBanner={t("bannerSubTitle")}

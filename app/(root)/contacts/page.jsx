@@ -113,7 +113,9 @@ export default function Contacts() {
         <IconText icon={PhoneIcon} text={"+84 2888896968"} />
         <Grid container spacing={5}>
           <Grid item size={{ sm: 12, md: 7 }}>
-            <Typography variant="h4">{t("customerSupportDepartment")}</Typography>
+            <Typography variant="h4">
+              {t("customerSupportDepartment")}
+            </Typography>
             <IconText icon={MailIcon} text={"support@superforexglobal.com"} />
           </Grid>
           <Grid item size={{ sm: 12, md: 5 }}>
@@ -136,9 +138,11 @@ export default function Contacts() {
             className="flex flex-col gap-4 bg-white shadow-2xl rounded-lg p-16 font-bold mt-10"
             onSubmit={handleForm}
           >
-            <h1 className="md:text-5xl text-3xl text-center mb-4">{t("sendUsAMessage")}</h1>
-            <div className="md:flex justify-between gap-4">
-              <div className="flex flex-col gap-1">
+            <h1 className="md:text-5xl text-3xl text-center mb-4">
+              {t("sendUsAMessage")}
+            </h1>
+            <div className="md:flex gap-3">
+              <div className="flex flex-col gap-1 flex-1">
                 <label htmlFor="name" className="text-xl">
                   {t("name")}
                 </label>
@@ -152,7 +156,7 @@ export default function Contacts() {
                   disabled={status}
                 />
               </div>
-              <div className="flex flex-col gap-1 max-sm:mt-4">
+              <div className="flex flex-col flex-1 gap-1 max-sm:mt-4">
                 <label htmlFor="name" className="text-xl">
                   Email
                 </label>

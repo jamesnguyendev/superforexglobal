@@ -90,6 +90,12 @@ import cs from "../../public/Image/flags/czech.png";
 import it from "../../public/Image/flags/italy.png";
 import es from "../../public/Image/flags/spain.png";
 import fr from "../../public/Image/flags/france.png";
+import de from "../../public/Image/flags/germany.png";
+import ro from "../../public/Image/flags/romania.png";
+import tr from "../../public/Image/flags/turkey.png";
+import pl from "../../public/Image/flags/poland.png";
+import ur from "../../public/Image/flags/pakistan.webp";
+
 import { setUserLocale } from "../../services/locale";
 import { useTranslations } from "next-intl";
 import {
@@ -225,6 +231,21 @@ export default function Header() {
       case "fr":
         setFlag(fr);
         break;
+      case "de":
+        setFlag(de);
+        break;
+      case "ro":
+        setFlag(ro);
+        break;
+      case "tr":
+        setFlag(tr);
+        break;
+      case "pl":
+        setFlag(pl);
+        break;
+      case "ur":
+        setFlag(ur);
+        break;
       default:
     }
   }, [localeCookie]);
@@ -276,6 +297,21 @@ export default function Header() {
         break;
       case "fr":
         setFlag(fr);
+        break;
+      case "de":
+        setFlag(de);
+        break;
+      case "ro":
+        setFlag(ro);
+        break;
+      case "tr":
+        setFlag(tr);
+        break;
+      case "pl":
+        setFlag(pl);
+        break;
+      case "ur":
+        setFlag(ur);
         break;
       default:
     }
@@ -332,77 +368,112 @@ export default function Header() {
                 className="text-default font-normal text-lg "
               >
                 <Image src={india} alt="" />
-                <h3>india</h3>
+                <h3>हिंदी</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("ms")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={malaysia} alt="" />
-                <h3>malaysia</h3>
+                <h3>Bahasa Melayu</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("ko")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={korea} alt="" />
-                <h3>korea</h3>
+                <h3>한국어</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("id")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={indonesia} alt="" />
-                <h3>indonesia</h3>
+                <h3>Bahasa Indonesia</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("vi")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={vietnam} alt="" />
-                <h3>việt nam</h3>
+                <h3>tiếng việt</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("bn")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={bangladesh} alt="" />
-                <h3>bangladesh</h3>
+                <h3>বাংলা</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("pt-BR")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={brazil} alt="" />
-                <h3>Brazil</h3>
+                <h3>português</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("cs")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={cs} alt="" />
-                <h3>Czech</h3>
+                <h3>Česky</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("it")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={it} alt="" />
-                <h3>Italy</h3>
+                <h3>Italiano</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("es")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={es} alt="" />
-                <h3>Spain</h3>
+                <h3>Español</h3>
               </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => handlerLang("fr")}
                 className="text-default font-normal text-lg "
               >
                 <Image src={fr} alt="" />
-                <h3>French</h3>
+                <h3>Français</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("de")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={de} alt="" />
+                <h3>Deutsch</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("ro")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={ro} alt="" />
+                <h3>Română</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("tr")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={tr} alt="" />
+                <h3>Türkçe</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("pl")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={pl} alt="" />
+                <h3>Polski</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("ur")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={ur} alt="" />
+                <h3 className="lowercase">اردو</h3>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

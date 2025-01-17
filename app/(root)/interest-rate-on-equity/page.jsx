@@ -137,9 +137,7 @@ export default function InterestRateOnEquity() {
       >
         <p className="text-4xl font-semi-bold">{t("aboutThisService")}</p>
         <br />
-        <p>
-          {t("aboutThisServiceDescription")}
-        </p>
+        <p>{t("aboutThisServiceDescription")}</p>
         <br />
 
         <p className="text-4xl font-semi-bold">{t("advantagesOfTheService")}</p>
@@ -167,9 +165,7 @@ export default function InterestRateOnEquity() {
 
         <p className="text-4xl font-semi-bold">{t("conditions")}</p>
         <br />
-        <p>
-          {t("conditionsDescription")}
-        </p>
+        <p>{t("conditionsDescription")}</p>
         <br />
         <p className="text-4xl font-semi-bold">{t("formula")}</p>
         <br />
@@ -186,10 +182,7 @@ export default function InterestRateOnEquity() {
       <Container maxWidth="lg" className="my-28 text-default relative">
         <p>{t("openAccountPrompt")}</p>
         <br />
-        <a
-          href={"https://my.superforexs.com/auth/jwt/sign-up/"}
-          target="_blank"
-        >
+        <a href={"https://my.superforexs.com/register"} target="_blank">
           <Button name={t("openAccount")} background={true} />
         </a>
       </Container>

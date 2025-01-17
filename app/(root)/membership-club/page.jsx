@@ -178,8 +178,12 @@ export default function MembershipClub() {
   return (
     <>
       <Banner
-        imgDesktop={"https://ik.imagekit.io/3idyffxxb/New%20Folder/hero%20(4).jpg?updatedAt=1735646191737"}
-        imgMobile={"https://ik.imagekit.io/3idyffxxb/New%20Folder/hero-mobile%20(4).jpg?updatedAt=1735646191363"}
+        imgDesktop={
+          "https://ik.imagekit.io/3idyffxxb/New%20Folder/hero%20(4).jpg?updatedAt=1735646191737"
+        }
+        imgMobile={
+          "https://ik.imagekit.io/3idyffxxb/New%20Folder/hero-mobile%20(4).jpg?updatedAt=1735646191363"
+        }
         titleBanner={t("membershipClub")}
         subTitleBanner={t("joinAndGetYourPrivilegesToday")}
         buttonName={t("register")}
@@ -196,13 +200,9 @@ export default function MembershipClub() {
       >
         <p className="text-4xl font-semi-bold">{t("aboutMembershipClub")}</p>
         <br />
-        <p>
-          {t("aboutMembershipClubDescription1")}
-        </p>
+        <p>{t("aboutMembershipClubDescription1")}</p>
         <br />
-        <p>
-          {t("aboutMembershipClubDescription2")}
-        </p>
+        <p>{t("aboutMembershipClubDescription2")}</p>
         <br />
       </Container>
 
@@ -212,7 +212,9 @@ export default function MembershipClub() {
           className="relative text-default"
           style={{ zIndex: 2 }}
         >
-          <p className="text-4xl font-semi-bold">{t("benefitsOfParticipation")}</p>
+          <p className="text-4xl font-semi-bold">
+            {t("benefitsOfParticipation")}
+          </p>
 
           <Grid container spacing={4} className="text-default" marginY={5}>
             <StyledWhiteCard
@@ -307,7 +309,7 @@ export default function MembershipClub() {
         <p className="text-4xl font-semi-bold">$5000.00</p>
         <br />
         <Link
-          href={"https://my.superforexs.com/auth/jwt/sign-in/"}
+          href={"https://my.superforexs.com/login"}
           target="_blank"
           className="self-center"
         >
@@ -321,9 +323,7 @@ export default function MembershipClub() {
           className="pb-28 relative"
           style={{ zIndex: 2 }}
         >
-          <p className="text-center text-default">
-            {t("openAccountPrompt")}
-          </p>
+          <p className="text-center text-default">{t("openAccountPrompt")}</p>
           <br />
           <AccountForm
             data={["Standard"]}

@@ -94,7 +94,9 @@ export default function GoldTrading() {
   return (
     <>
       <Banner
-        imgDesktop={"https://ik.imagekit.io/3idyffxxb/New%20Folder/hero.jpg?updatedAt=1735645523123"}
+        imgDesktop={
+          "https://ik.imagekit.io/3idyffxxb/New%20Folder/hero.jpg?updatedAt=1735645523123"
+        }
         imgMobile={
           "https://ik.imagekit.io/3idyffxxb/New%20Folder/hero-mobile.jpg?updatedAt=1735645523009"
         }
@@ -124,10 +126,7 @@ export default function GoldTrading() {
         <br />
         <p>{t("note")}</p>
         <br />
-        <Link
-          href={"https://my.superforexs.com/auth/jwt/sign-in/"}
-          target="_blank"
-        >
+        <Link href={"https://my.superforexs.com/register"} target="_blank">
           <Button name={t("visitCabinet")} background={true} />
         </Link>
       </Container>

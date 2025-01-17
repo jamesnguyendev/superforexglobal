@@ -61,10 +61,7 @@ const ContestsGrid4 = ({
         </div>
         <br />
         <div className="flex gap-5 p-5">
-          <Link
-            href={"https://my.superforexs.com/auth/jwt/sign-in/"}
-            target="_blank"
-          >
+          <Link href={"https://my.superforexs.com/register"} target="_blank">
             <Button name={t("takePart")} background />
           </Link>
 
@@ -152,17 +149,11 @@ export default function Contests() {
       >
         <p className="text-4xl font-semi-bold">{t("aboutOurContests")}</p>
         <br />
-        <p>
-          {t("aboutContestsDescription1")}
-        </p>
+        <p>{t("aboutContestsDescription1")}</p>
         <br />
-        <p>
-          {t("aboutContestsDescription2")}
-        </p>
+        <p>{t("aboutContestsDescription2")}</p>
         <br />
-        <p>
-          {t("aboutContestsDescription3")}
-        </p>
+        <p>{t("aboutContestsDescription3")}</p>
         <br />
         <Grid
           container

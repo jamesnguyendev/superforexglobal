@@ -146,7 +146,7 @@ export default function GoldRush() {
         titleBanner={t("goldRush")}
         subTitleBanner={t("demoCompetition")}
         buttonName={t("joinContest")}
-        link={"https://my.superforexs.com/auth/jwt/sign-in/"}
+        link={"https://my.superforexs.com/login"}
         blank
       />
 
@@ -179,13 +179,9 @@ export default function GoldRush() {
           {t("aboutContest")}
         </Typography>
         <br />
-        <Typography>
-          {t("aboutContestDescription1")}
-        </Typography>
+        <Typography>{t("aboutContestDescription1")}</Typography>
         <br />
-        <Typography>
-          {t("aboutContestDescription2")}
-        </Typography>
+        <Typography>{t("aboutContestDescription2")}</Typography>
 
         <br />
 
@@ -222,26 +218,19 @@ export default function GoldRush() {
           {t("choosingAWinner")}
         </Typography>
         <br />
-        <Typography>
-          {t("choosingAWinnerDescription")}
-        </Typography>
+        <Typography>{t("choosingAWinnerDescription")}</Typography>
         <br />
 
         <Typography variant="h4" className="font-semi-bold">
           {t("howToStart")}
         </Typography>
         <br />
-        <Typography>
-          {t("howToStartDescription")}
-        </Typography>
+        <Typography>{t("howToStartDescription")}</Typography>
 
         <br />
 
         <div className="flex">
-          <Link
-            href={"https://my.superforexs.com/auth/jwt/sign-in/"}
-            target="_blank"
-          >
+          <Link href={"https://my.superforexs.com/login"} target="_blank">
             <Button background={true} name={t("beginAdventure")} />
           </Link>
         </div>
@@ -254,15 +243,11 @@ export default function GoldRush() {
           style={{ zIndex: 2 }}
         >
           <div className="rounded-lg shadow-lg border-2 border-[#e0e3eb] bg-white p-5 mb-20">
-            <p>
-              {t("noted")}
-            </p>
+            <p>{t("noted")}</p>
             <br />
             <p>{t("prizeBasedOnNoDepositBonus")}</p>
             <br />
-            <p>
-              {t("winUpToTwoTimes")}
-            </p>
+            <p>{t("winUpToTwoTimes")}</p>
           </div>
           <AccountForm
             data={["Standard"]}

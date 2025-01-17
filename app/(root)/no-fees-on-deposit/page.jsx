@@ -115,7 +115,9 @@ export default function NoFeesOnDeposit() {
   return (
     <>
       <Banner
-        imgDesktop={"https://ik.imagekit.io/3idyffxxb/New%20Folder/hero%20(1).jpg?updatedAt=1735645611641"}
+        imgDesktop={
+          "https://ik.imagekit.io/3idyffxxb/New%20Folder/hero%20(1).jpg?updatedAt=1735645611641"
+        }
         imgMobile={
           "https://ik.imagekit.io/3idyffxxb/New%20Folder/hero-mobile%20(1).jpg?updatedAt=1735645611601"
         }
@@ -174,10 +176,7 @@ export default function NoFeesOnDeposit() {
           </Grid>
           <br />
           <br />
-          <Link
-            href={"https://my.superforexs.com/auth/jwt/sign-in/"}
-            target="_blank"
-          >
+          <Link href={"https://my.superforexs.com/login"} target="_blank">
             <Button name={t("makeADeposit")} background={true} />
           </Link>
           <br />

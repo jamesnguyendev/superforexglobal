@@ -95,6 +95,7 @@ import ro from "../../public/Image/flags/romania.png";
 import tr from "../../public/Image/flags/turkey.png";
 import pl from "../../public/Image/flags/poland.png";
 import ur from "../../public/Image/flags/pakistan.webp";
+import uae from "../../public/Image/flags/uae.png";
 
 import { setUserLocale } from "../../services/locale";
 import { useTranslations } from "next-intl";
@@ -246,6 +247,9 @@ export default function Header() {
       case "ur":
         setFlag(ur);
         break;
+      case "uae":
+        setFlag(uae);
+        break;
       default:
     }
   }, [localeCookie]);
@@ -312,6 +316,9 @@ export default function Header() {
         break;
       case "ur":
         setFlag(ur);
+        break;
+      case "uae":
+        setFlag(uae);
         break;
       default:
     }
@@ -474,6 +481,13 @@ export default function Header() {
               >
                 <Image src={ur} alt="" />
                 <h3 className="lowercase">اردو</h3>
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handlerLang("uae")}
+                className="text-default font-normal text-lg "
+              >
+                <Image src={uae} alt="" />
+                <h3 className="lowercase">رَبِيَّة</h3>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

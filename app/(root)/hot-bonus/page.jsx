@@ -61,7 +61,7 @@ const Page = () => {
         link={"#register"}
       />
       <Container className="mt-20">
-        <p className="m-0 mx-auto mb-20 max-w-3xl text-xl font-normal text-default">
+        <p className="m-0 mx-auto mb-20 000max-w-3xl text-xl font-normal text-default">
           {t("intro")}
         </p>
       </Container>

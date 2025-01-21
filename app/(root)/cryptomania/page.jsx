@@ -29,7 +29,7 @@ export default function CryptoMania() {
         titleBanner={"CryptoMania"}
         subTitleBanner={t("subTitle")}
         buttonName={t("joinBtn")}
-        link={"https://my.superforexs.com/register"}
+        link={"https://my.superforexs.com/login"}
         blank
         textBannerColor
       />
@@ -42,7 +42,9 @@ export default function CryptoMania() {
         <p className="font-bold text-5xl">{t("about")}</p>
         <br />
         <br />
-        <p>{t("aboutDesc")}</p>
+        <p>
+          {t("aboutDesc")}
+        </p>
         <br />
         <br />
 
@@ -52,7 +54,9 @@ export default function CryptoMania() {
         </div>
         <br />
         <br />
-        <p className="font-bold">{t("superRoundEnd")}</p>
+        <p className="font-bold">
+          {t("superRoundEnd")}
+        </p>
       </Container>
 
       <Container
@@ -75,7 +79,9 @@ export default function CryptoMania() {
         </div>
         <br />
         <br />
-        <p>{t("prizeDesc")}</p>
+        <p>
+          {t("prizeDesc")}
+        </p>
         <br />
         <br />
       </Container>
@@ -88,12 +94,16 @@ export default function CryptoMania() {
         <p className="font-bold text-5xl">{t("howToStart")}</p>
         <br />
         <br />
-        <p>{t("howToStartDesc")}</p>
+        <p>
+          {t("howToStartDesc")}
+        </p>
         <br />
         <br />
         <div className="pl-3 border-l-2 border-[#f59e0b]">
           <p className="text-[#f59e0b] text-lg font-bold">{t("note")}</p>
-          <p className="text-sm">{t("noteDesc")}</p>
+          <p className="text-sm">
+            {t("noteDesc")}
+          </p>
         </div>
       </Container>
 

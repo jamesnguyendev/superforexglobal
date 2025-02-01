@@ -88,7 +88,7 @@ export default function DemoAccount() {
               justifyContent: "center",
             }}
           >
-            <Link href={"https://my.superforexs.com"}>
+            <Link href={"https://my.superforex.global"}>
               <Button name={"Open Account"} background />
             </Link>
           </Grid>
@@ -260,9 +260,7 @@ export default function DemoAccount() {
             />
           </Grid>
           <Grid item size={{ sm: 12, md: 6 }}>
-            <p className="font-bold text-5xl">
-              How to open a demo account?
-            </p>
+            <p className="font-bold text-5xl">How to open a demo account?</p>
             <br />
             <Typography>
               Trade with real-time prices, no risk and see how to make money on

@@ -126,7 +126,7 @@ export default function GoldTrading() {
         <br />
         <p>{t("note")}</p>
         <br />
-        <Link href={"https://my.superforexs.com/register"} target="_blank">
+        <Link href={"https://my.superforex.global/register"} target="_blank">
           <Button name={t("visitCabinet")} background={true} />
         </Link>
       </Container>

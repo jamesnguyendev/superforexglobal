@@ -99,7 +99,7 @@ const Banner = ({
           </h2>
           <div className="pt-6">
             <Link
-              href={link ? link : "https://my.superforexs.com/register"}
+              href={link ? link : "https://my.superforex.global/register"}
               target={blank ? "_blank" : "_self"}
             >
               <Button name={buttonName} background={true} />
@@ -125,7 +125,7 @@ const Banner = ({
           </h2>
           <div className="pt-6">
             <Link
-              href={link ? link : "https://my.superforexs.com/register"}
+              href={link ? link : "https://my.superforex.global/register"}
               target={blank ? "_blank" : "_self"}
               style={{ display: "flex", justifyContent: "center" }}
             >
@@ -149,7 +149,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("stableprofit"),
       buttonName: t("openaccount"),
       dot: true,
-      link: "https://my.superforexs.com/register",
+      link: "https://my.superforex.global/register",
     },
     {
       imgDesktop:
@@ -159,7 +159,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("tradingwithspreads"),
       buttonName: t("moreinformation"),
       textBannerColor: true,
-      link: "https://my.superforexs.com/register",
+      link: "https://my.superforex.global/register",
     },
     {
       imgDesktop:
@@ -170,7 +170,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("applyonlocal"),
       buttonName: t("learnmore"),
       textBannerColor: false,
-      link: "https://my.superforexs.com/register",
+      link: "https://my.superforex.global/register",
     },
     {
       imgDesktop:
@@ -191,7 +191,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("ourmostpopular"),
       buttonName: t("Takealook"),
       dot: true,
-      link: "https://my.superforexs.com/register",
+      link: "https://my.superforex.global/register",
     },
     {
       imgDesktop:
@@ -201,7 +201,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("thehottestoffer"),
       buttonName: t("getbonus"),
       dot: true,
-      link: "https://my.superforexs.com/register",
+      link: "https://my.superforex.global/register",
     },
     {
       imgDesktop:
@@ -212,7 +212,7 @@ const AutoImageSlider = () => {
       textBannerColor: true,
       buttonName: t("moreinformation"),
       dot: true,
-      link: "https://my.superforexs.com/register",
+      link: "https://my.superforex.global/register",
     },
     {
       imgDesktop:
@@ -222,7 +222,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("forexhasbecome"),
       buttonName: t("moreinformation"),
       dot: true,
-      link: "https://my.superforexs.com/register",
+      link: "https://my.superforex.global/register",
     },
   ];
 

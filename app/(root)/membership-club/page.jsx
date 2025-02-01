@@ -309,7 +309,7 @@ export default function MembershipClub() {
         <p className="text-4xl font-semi-bold">$5000.00</p>
         <br />
         <Link
-          href={"https://my.superforexs.com/login"}
+          href={"https://my.superforex.global/login"}
           target="_blank"
           className="self-center"
         >

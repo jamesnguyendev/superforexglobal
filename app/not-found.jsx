@@ -32,10 +32,10 @@ export default function NotFound() {
               </div>
               <div className="pt-12">{t("alsoyoucan")}</div>
               <div className="flex gap-6">
-                <Link href={"https://my.superforexs.com"} target="_blank">
+                <Link href={"https://my.superforex.global"} target="_blank">
                   <ButtonCustomize name={t("openaccount")} background={true} />
                 </Link>
-                <Link href={"https://my.superforexs.com"} target="_blank">
+                <Link href={"https://my.superforex.global"} target="_blank">
                   <ButtonCustomize
                     name={t("clientscabinets")}
                     background={true}

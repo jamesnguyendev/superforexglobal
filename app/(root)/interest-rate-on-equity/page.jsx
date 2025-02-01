@@ -182,7 +182,7 @@ export default function InterestRateOnEquity() {
       <Container maxWidth="lg" className="my-28 text-default relative">
         <p>{t("openAccountPrompt")}</p>
         <br />
-        <a href={"https://my.superforexs.com/register"} target="_blank">
+        <a href={"https://my.superforex.global/register"} target="_blank">
           <Button name={t("openAccount")} background={true} />
         </a>
       </Container>

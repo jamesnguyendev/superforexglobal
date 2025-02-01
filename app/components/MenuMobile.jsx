@@ -1263,7 +1263,7 @@ const MenuMobile = () => {
               </div>
             </div>
             <div className="bg-default/10 mt-32 mx-1 mb-2 rounded flex justify-center items-center py-5 ">
-              <Link href={"https://my.superforexs.com"}>
+              <Link href={"https://my.superforex.global"}>
                 <ButtonCustomize background={true} name={t("signin")} />
               </Link>
             </div>

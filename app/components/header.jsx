@@ -335,13 +335,10 @@ export default function Header() {
           />
         </Link>
         <div className="hidden md:flex gap-3 justify-center items-center">
-          <Link href={"https://my.superforexs.com"} target="_blank">
+          <Link href={"https://my.superforex.global"} target="_blank">
             <ButtonCustomize name={t("signin")} />
           </Link>
-          <Link
-            href={"https://my.superforexs.com/auth/jwt/sign-up"}
-            target="_blank"
-          >
+          <Link href={"https://my.superforex.global/register"} target="_blank">
             <ButtonCustomize name={t("openaccount")} background={true} />
           </Link>
           <DropdownMenu>

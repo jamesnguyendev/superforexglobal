@@ -106,7 +106,7 @@ const Banner = ({
 
         <div className={"pt-6 flex justify-center"}>
           <Link
-            href={link ? link : "https://my.superforexs.com/login"}
+            href={link ? link : "https://my.superforex.global/login"}
             target={blank ? "_blank" : "_self"}
           >
             {buttonName && <Button name={buttonName} background={true} />}

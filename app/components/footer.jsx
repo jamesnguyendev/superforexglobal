@@ -110,11 +110,11 @@ export default function Footer() {
             <TypographyTitle name={t("accountmanage")} />
             <TypographyLink
               name={t("openaccount")}
-              link={"https://my.superforexs.com/register"}
+              link={"https://my.superforex.global/register"}
             />
             <TypographyLink
               name={t("clientcabinet")}
-              link={"https://my.superforexs.com/login"}
+              link={"https://my.superforex.global/login"}
             />
             <TypographyLink
               name={t("depositwithdrawal")}

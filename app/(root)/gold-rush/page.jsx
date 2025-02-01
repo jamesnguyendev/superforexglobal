@@ -146,7 +146,7 @@ export default function GoldRush() {
         titleBanner={t("goldRush")}
         subTitleBanner={t("demoCompetition")}
         buttonName={t("joinContest")}
-        link={"https://my.superforexs.com/login"}
+        link={"https://my.superforex.global/login"}
         blank
       />
 
@@ -230,7 +230,7 @@ export default function GoldRush() {
         <br />
 
         <div className="flex">
-          <Link href={"https://my.superforexs.com/login"} target="_blank">
+          <Link href={"https://my.superforex.global/login"} target="_blank">
             <Button background={true} name={t("beginAdventure")} />
           </Link>
         </div>

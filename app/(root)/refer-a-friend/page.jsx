@@ -41,7 +41,7 @@ const Page = () => {
         buttonName={t("ShareBonus")}
         titleBanner={t("ReferAFriendTitle")}
         textBannerColor={true}
-        link={"https://my.superforexs.com/"}
+        link={"https://my.superforex.global/"}
       />
       <Container className="my-[125px] md:grid grid-cols-2  px-0">
         <div className="flex md:justify-start justify-center">

@@ -176,7 +176,7 @@ export default function NoFeesOnDeposit() {
           </Grid>
           <br />
           <br />
-          <Link href={"https://my.superforexs.com/login"} target="_blank">
+          <Link href={"https://my.superforex.global/login"} target="_blank">
             <Button name={t("makeADeposit")} background={true} />
           </Link>
           <br />

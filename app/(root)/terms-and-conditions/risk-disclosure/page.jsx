@@ -30,8 +30,8 @@ const Page = () => {
             graphics, links, or other items within these materials. Botanica
             Glow (Pty) Ltd. does not offer and does not provide services to
             residents and citizens of certain jurisdictions, including
-            Australia, Canada, Japan, Thailand, the United States of America and
-            countries sanctioned by the EU.
+            Australia, Canada, Japan, Thailand, the United States of America,
+            New Zealand and countries sanctioned by the EU.
           </p>
           <p className="mt-5">
             “The Site” shall refer collectively to Superforex.com website and

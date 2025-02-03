@@ -33,7 +33,7 @@ export default async function RootLayout({ children }) {
           {`
           (function(d, m){
               var kommunicateSettings = 
-                  {"appId":"f27a862346507031a182a2dee55b9023","popupWidget":true,"automaticChatOpenOnNavigation":true};
+                  {"appId":"3aad40da961a4e1ffdfc68e7d63a159fb","popupWidget":true,"automaticChatOpenOnNavigation":true};
               var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
               s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
               var h = document.getElementsByTagName("head")[0]; h.appendChild(s);

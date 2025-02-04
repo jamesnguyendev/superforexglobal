@@ -116,11 +116,11 @@ export default function Contacts() {
             <Typography variant="h4">
               {t("customerSupportDepartment")}
             </Typography>
-            <IconText icon={MailIcon} text={"support@superforexglobal.com"} />
+            <IconText icon={MailIcon} text={"support@superforex.global"} />
           </Grid>
           <Grid item size={{ sm: 12, md: 5 }}>
             <Typography variant="h4">{t("partnershipDepartment")}</Typography>
-            <IconText icon={MailIcon} text={"partners@superforexglobal.com"} />
+            <IconText icon={MailIcon} text={"info@superforex.global"} />
           </Grid>
         </Grid>
         <div className="flex flex-col items-center justify-center">

@@ -657,7 +657,7 @@ export default function Header() {
                     <br />
                     <StyleStack img={STP} name={t("accountprime")} link={"/"} />
                     <br />
-                    <StyleStack img={ECN} name={t("accountvip")} link={"/"} />
+                    <StyleStack img={ECN} name={"Pro Account"} link={"/"} />
                     <br />
                     <StyleStack
                       img={DemoAccount}
@@ -924,12 +924,12 @@ export default function Header() {
                   </Grid> */}
                 </Grid>
               </NavigationMenuContent>
-            </NavigationMenuItem>
+            </NavigationMenuItem>{" "}
             <NavigationMenuItem>
               <NavigationMenuTrigger className="text-md">
-                {t("partners")}
+                <Link href={"/partnership-program"}> {t("partners")}</Link>
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[450px] lg:min-w-[650px] rounded-xl bg-white">
+              {/*   <NavigationMenuContent className="md:min-w-[450px] lg:min-w-[650px] rounded-xl bg-white">
                 <Grid container className="rounded-xl bg-white">
                   <Grid
                     xs={6}
@@ -957,13 +957,13 @@ export default function Header() {
                       name={t("partnerearnings")}
                       link="/partners-earnings"
                     />
-                    {/* <br />
+                    <br />
                     <TypographyLink name={"Loại hình Đối tác"} />
                     <br />
                     <TypographyLink name={"Thu nhập của Đối tác"} />
-                    <br /> */}
+                    <br />
                   </Grid>
-                  {/* <Grid
+                  <Grid
                     xs={4}
                     className="p-5"
                     sx={{ display: "flex", flexDirection: "column" }}
@@ -1001,7 +1001,7 @@ export default function Header() {
                       name={t("readywebsite")}
                       link="/partner-websites"
                     />
-                    {/* <br />
+                    <br />
                     <StyleStack img={Links} name={"Đường dẫn liên kết"} />
                     <br />
                     <StyleStack img={Banners} name={"Biểu ngữ"} />
@@ -1011,8 +1011,8 @@ export default function Header() {
                     <StyleStack img={Presentations} name={"Bài thuyết trình"} />
                     <br />
                     <StyleStack img={ReadyWebsites} name={"Website tạo sẵn"} />
-                    <br /> */}
-                  {/* </Grid> */}
+                    <br />
+                  </Grid>
                   <Grid
                     xs={6}
                     className="p-5"
@@ -1036,17 +1036,17 @@ export default function Header() {
                       name={t("rebatesystem")}
                       link="/rebate-system"
                     />
-                    {/* <br />
+                    <br />
                     <StyleStack img={SuperIbBonus} name={"Thưởng Super IB"} />
                     <br />
                     <StyleStack
                       img={RebateSystem}
                       name={"Hệ thống Hoàn tiền"}
                     />
-                    <br /> */}
+                    <br />
                   </Grid>
                 </Grid>
-              </NavigationMenuContent>
+              </NavigationMenuContent> */}
             </NavigationMenuItem>
             {/* <NavigationMenuItem>
               <NavigationMenuTrigger className="text-md">

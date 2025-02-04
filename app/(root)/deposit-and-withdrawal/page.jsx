@@ -449,13 +449,9 @@ export default function DepositAndWithdrawal() {
       </Stack>
 
       <Container maxWidth="lg" className="my-10">
-        <Typography>
-          {t("depositsAndWithdrawalsDescription1")}
-        </Typography>
+        <Typography>{t("depositsAndWithdrawalsDescription1")}</Typography>
         <br />
-        <Typography>
-          {t("depositsAndWithdrawalsDescription2")}
-        </Typography>
+        <Typography>{t("depositsAndWithdrawalsDescription2")}</Typography>
         <br />
         <Typography>
           {t("informationOnTransactionFees")}
@@ -463,9 +459,7 @@ export default function DepositAndWithdrawal() {
           {t("noAdditionalFees")}
         </Typography>
         <br />
-        <Typography>
-          {t("accessAccountHere")}
-        </Typography>
+        <Typography>{t("accessAccountHere")}</Typography>
 
         <Stack direction="row" spacing={5} className="my-10">
           <Button name={t("makeADeposit")} background />
@@ -500,33 +494,25 @@ export default function DepositAndWithdrawal() {
           </p>
         </Stack>
         <div className="border-2 rounded-xl my-5">
-          <p
-            className="font-semi-bold text-center mt-5 mb-3 text-2xl"
-          >
+          <p className="font-semi-bold text-center mt-5 mb-3 text-2xl">
             {t("bankWireTransfers")}
           </p>
           <StyledTable
             rows={tab == "deposit" ? depositBankWire : withdrawlBankWire}
           />
-          <p
-            className="font-semi-bold text-center mt-5 mb-3 text-2xl"
-          >
+          <p className="font-semi-bold text-center mt-5 mb-3 text-2xl">
             {t("creditDebitCards")}
           </p>
           <StyledTable
             rows={tab == "deposit" ? depositCreditDebit : withdrawlCreditDebit}
           />
-          <p
-            className="font-semi-bold text-center mt-5 mb-3 text-2xl"
-          >
+          <p className="font-semi-bold text-center mt-5 mb-3 text-2xl">
             {t("electronicPayments")}
           </p>
           <StyledTable
             rows={tab == "deposit" ? depositElectronic : withdrawlElectronic}
           />
-          <p
-            className="font-semi-bold text-center mt-5 mb-3 text-2xl"
-          >
+          <p className="font-semi-bold text-center mt-5 mb-3 text-2xl">
             {t("cryptocurrencies")}
           </p>
           <StyledTable
@@ -536,22 +522,12 @@ export default function DepositAndWithdrawal() {
                 : withdrawlCryptocurrencies
             }
           />
-          <p
-            className="font-semi-bold text-center mt-5 mb-3 text-2xl"
-          >
+          <p className="font-semi-bold text-center mt-5 mb-3 text-2xl">
             {t("localPayments")}
           </p>
           <StyledTable
             rows={tab == "deposit" ? depositLocal : withdrawlLocal}
             country
-          />
-          <p
-            className="font-semi-bold text-center mt-5 mb-3 text-2xl"
-          >
-            {t("superforexMoney")}
-          </p>
-          <StyledTable
-            rows={tab == "deposit" ? depositSuperforex : withdrawlSuperforex}
           />
         </div>
 

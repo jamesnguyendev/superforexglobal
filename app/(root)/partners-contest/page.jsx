@@ -282,7 +282,7 @@ const Page = () => {
           <h2 className="text-default text-4xl text-center">
             <span className="">{t("bestAffiliateProgram")}</span>
           </h2>
-          <div className="py-16">
+          <div className="py-16"> 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {affiliatePrograms.map((item, index) => (
                 <div className="text-center text-default" key={index}>

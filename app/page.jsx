@@ -10,6 +10,8 @@ import {
   Modal,
   Box,
   Divider,
+  Tab,
+  Tabs,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
@@ -294,52 +296,110 @@ const StyledCard = ({ img, name, text, cal, flag }) => {
     </Card>
   );
 };
+const transactions1 = [
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/EURUSD.svg?updatedAt=1735631748190",
+    name: "#EURUSD",
+    text: "Euro / US Dollar",
+    cal: EURUSD,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/GBPUSD.svg?updatedAt=1735631748231",
+    name: "GBPUSD",
+    text: "GB Pound / US Dollar",
+    cal: GBPUSD,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/XAUUSD.svg?updatedAt=1735631766946",
+    name: "XAUUSD",
+    text: "Gold / US Dollar",
+    cal: XAUUSD,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-palladium.svg?updatedAt=1735632034028",
+    name: "XPDUSD",
+    text: "Palladium",
+    cal: XPDUSD,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/GBPUSD.svg?updatedAt=1735631748231",
+    name: "GBPUSD",
+    text: "GB Pound / US Dollar",
+    cal: GBPUSD,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/XAUUSD.svg?updatedAt=1735631766946",
+    name: "XAUUSD",
+    text: "Gold / US Dollar",
+    cal: XAUUSD,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-palladium.svg?updatedAt=1735632034028",
+    name: "XPDUSD",
+    text: "Palladium",
+    cal: XPDUSD,
+  },
+];
+const transactions2 = [
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-apple.svg?updatedAt=1735632034169",
+    name: "#AAPL",
+    text: "Apple Inc.",
+    cal: AAPL,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-tesla.svg?updatedAt=1735632034118",
+    name: "#TSLA",
+    text: "Tesla",
+    cal: TSLA,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-nasdaq.svg?updatedAt=1735632034083",
+    name: "NAS100",
+    text: "Nasdaq",
+    cal: NAS100,
+  },
+];
+const transactions3 = [
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-apple.svg?updatedAt=1735632034169",
+    name: "#ETHUSD",
+    text: "Ethereum / US Dollar",
+    cal: AAPL,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-nasdaq.svg?updatedAt=1735632034083",
+    name: "#BTCUSD",
+    text: "Bitcoin / US Dollar",
+    cal: AAPL,
+  },
 
-const AutoCardSlider = () => {
-  const transactions = [
-    {
-      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-nasdaq.svg?updatedAt=1735632034083",
-      name: "NAS100",
-      text: "Nasdaq",
-      cal: NAS100,
-    },
-    {
-      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-apple.svg?updatedAt=1735632034169",
-      name: "#AAPL",
-      text: "Apple Inc.",
-      cal: AAPL,
-    },
-    {
-      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-palladium.svg?updatedAt=1735632034028",
-      name: "XPDUSD",
-      text: "Palladium",
-      cal: XPDUSD,
-    },
-    {
-      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/EURUSD.svg?updatedAt=1735631748190",
-      name: "#EURUSD",
-      text: "Euro / US Dollar",
-      cal: EURUSD,
-    },
-    {
-      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-tesla.svg?updatedAt=1735632034118",
-      name: "#TSLA",
-      text: "Tesla",
-      cal: TSLA,
-    },
-    {
-      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/GBPUSD.svg?updatedAt=1735631748231",
-      name: "GBPUSD",
-      text: "GB Pound / US Dollar",
-      cal: GBPUSD,
-    },
-    {
-      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/XAUUSD.svg?updatedAt=1735631766946",
-      name: "XAUUSD",
-      text: "Gold / US Dollar",
-      cal: XAUUSD,
-    },
-  ];
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/EURUSD.svg?updatedAt=1735631748190",
+    name: "#LTCUSD",
+    text: "Litecoin / US Dollar",
+    cal: AAPL,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-tesla.svg?updatedAt=1735632034118",
+    name: "#ZECUSD",
+    text: "Zcash / US Dollar",
+    cal: AAPL,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/GBPUSD.svg?updatedAt=1735631748231",
+    name: "#DASHUSD",
+    text: "Dash / US Dollar",
+    cal: AAPL,
+  },
+  {
+    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/XAUUSD.svg?updatedAt=1735631766946",
+    name: "#BCHUSD",
+    text: "Bitcoin Cash / US Dollar",
+    cal: AAPL,
+  },
+];
+const AutoCardSlider = ({ data }) => {
   const settings = {
     arrows: false,
     infinite: true,
@@ -358,7 +418,7 @@ const AutoCardSlider = () => {
 
   return (
     <Slider {...settings} className="lg:w-2/3 w-full">
-      {transactions.map((transaction, index) => (
+      {data.map((transaction, index) => (
         <StyledCard
           key={index}
           img={transaction.img}
@@ -481,7 +541,6 @@ const PaymentSlider = () => {
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/sticpay.svg?updatedAt=1735633647021",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/bank-wire-transfer.svg?updatedAt=1735633647020",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/perfect-money.svg?updatedAt=1735633646552",
-    "https://ik.imagekit.io/3idyffxxb/New%20Folder/superforex-money.svg?updatedAt=1735633646527",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/visa.svg?updatedAt=1735633646452",
   ];
 
@@ -543,14 +602,45 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`vertical-tabpanel-${index}`}
+      aria-labelledby={`vertical-tab-${index}`}
+      {...other}
+      className="lg:w-[65%] w-full text-default text-lg font-normal overflow-y-hidden"
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <span>{children}</span>
+        </Box>
+      )}
+    </div>
+  );
+}
 export default function Home() {
+  const t = useTranslations("HomePage");
   const [open, setOpen] = useState(false);
-
+  const [value, setValue] = useState(0);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [mounted, setMounted] = useState(false);
 
-  const t = useTranslations("HomePage");
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <main className="text-default">
@@ -585,12 +675,15 @@ export default function Home() {
             <Button name={t("readmore")} background />
           </Grid> */}
           <Grid item size={12}>
-            <StyledStack className="flex justify-center items-center">
-              <AutoCardSlider />
+            <StyledStack className="lg:flex justify-center items-center">
+              <AutoCardSlider data={transactions1} />
+              <AutoCardSlider data={transactions2} />
+              <AutoCardSlider data={transactions3} />
             </StyledStack>
           </Grid>
         </Grid>
       </Container>
+
       {/* <Container maxWidth="lg" className="my-28">
         <Grid container className="items-center">
           <Grid
@@ -612,7 +705,114 @@ export default function Home() {
           </Grid>
         </Grid>
       </Container> */}
-      <OpenAccount handleOpen={handleOpen} />
+      {/* <OpenAccount handleOpen={handleOpen} /> */}
+      <div className="relative bg-[rgb(245,244,249)] my-8">
+        <p className="font-bold flex justify-center py-8 text-4xl">
+          {t("opentrading")}
+        </p>
+        <Container className="px-16 flex *:justify-center">
+          <div className="flex flex-col lg:flex-row bg-[rgb(245,244,249)] flex-grow items-center lg:h-[340px]">
+            <div className="lg:border-r max-lg:border-b-2 border-slate-200 py-10 pe-7">
+              <Tabs
+                orientation="vertical"
+                onChange={handleChange}
+                value={value}
+                sx={{
+                  "& .MuiTabs-indicator": {
+                    backgroundColor: "transparent",
+                  },
+                }}
+              >
+                <Tab
+                  label={"Standard"}
+                  disableRipple
+                  sx={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    "&.Mui-selected": {
+                      color: "#fff",
+                      backgroundColor: "#35465B",
+                      borderRadius: 15,
+                    },
+                  }}
+                />
+                <Tab
+                  label={"ECN"}
+                  disableRipple
+                  sx={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    "&.Mui-selected": {
+                      color: "#fff",
+                      backgroundColor: "#35465B",
+                      borderRadius: 15,
+                    },
+                  }}
+                />
+                <Tab
+                  label={"CENT"}
+                  disableRipple
+                  sx={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    "&.Mui-selected": {
+                      color: "#fff",
+                      backgroundColor: "#35465B",
+                      borderRadius: 15,
+                    },
+                  }}
+                />
+                <Tab
+                  label={"PRIME"}
+                  disableRipple
+                  sx={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    "&.Mui-selected": {
+                      color: "#fff",
+                      backgroundColor: "#35465B",
+                      borderRadius: 15,
+                    },
+                  }}
+                />
+                <Tab
+                  label={"PRO"}
+                  disableRipple
+                  sx={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    "&.Mui-selected": {
+                      color: "#fff",
+                      backgroundColor: "#35465B",
+                      borderRadius: 15,
+                    },
+                  }}
+                />
+              </Tabs>
+            </div>
+            <TabPanel value={value} index={0}>
+              <span className="text-[18px] pt-16">{t("thisistypicall")}</span>
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              <span className="text-[18px]">
+                {t("themainadvantage")}
+                <br />
+                <br />
+                {t("unlikeprofi-stp")}
+              </span>
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+              <span className="text-lg"></span>
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+              <span className="text-lg"></span>
+            </TabPanel>
+            <TabPanel value={value} index={4}>
+              <span className="text-lg"></span>
+            </TabPanel>
+          </div>
+        </Container>
+      </div>
       <Container maxWidth="lg" className="my-28">
         <Grid container spacing={5} className="items-center">
           <Grid item size={{ md: 7, sm: 12 }}>
@@ -641,12 +841,12 @@ export default function Home() {
           <p className="font-bold text-4xl">{t("youbenefit")}</p>
         </Stack>
         <Grid container spacing={5} className="">
-          <StyledIconCard
+          {/* <StyledIconCard
             icon={GlobalIcon}
             name={t("localcurrency")}
             text={t("openanaccount")}
             link="/local-currencies"
-          />
+          /> */}
           {/* <StyledIconCard
             icon={CrownIcon}
             name={t("membershipclub")}
@@ -657,25 +857,25 @@ export default function Home() {
             icon={PresentIcon}
             name={t("bonusprogram")}
             text={t("weoffer")}
-            link=""
+            link="/hot-bonus"
           />
           <StyledIconCard
             icon={SuperforexIcon}
             name={t("mobileapp")}
             text={t("ourappallow")}
-            link=""
+            link="https://play.google.com/store/apps/details?id=com.superforex.cabinet"
           />
-          <StyledIconCard
+          {/* <StyledIconCard
             icon={MoneyProtectIcon}
             name={t("depositprotection")}
             text={t("doyouever")}
             link=""
-          />
+          /> */}
           <StyledIconCard
             icon={ForexCopyIcon}
             name={t("forexcopy")}
             text={t("forexcopyservice")}
-            link=""
+            link="/forex-copy-system"
           />
         </Grid>
         <div
@@ -810,20 +1010,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </Container>
-      <Container maxWidth="lg" className="my-28">
-        <p className="font-bold text-center text-4xl">
-          {t("supportedpayment")}
-        </p>
-        <p className="text-center m-5">
-          {t("and20plus")}
-          <Link href={"/deposit-and-withdrawal"}>
-            <span className="text-primary font-bold">
-              &nbsp; {t("depositandwithdrawals")}
-            </span>
-          </Link>
-        </p>
-        <PaymentSlider />
-      </Container>
+
       <Container maxWidth="lg" className="my-14">
         <p className="font-bold text-center text-5xl">{t("tryityourself")}</p>
         <p className="text-center my-10">{t("thebestwaytodecide")}</p>
@@ -836,6 +1023,7 @@ export default function Home() {
           </Link>
         </Stack>
       </Container>
+
       <Modal
         open={open}
         onClose={handleClose}
@@ -863,8 +1051,27 @@ export default function Home() {
       </Modal>
 
       <Container className="relative">
+        <h3 className="mb-5 font-semibold text-md">{t("riskwarning")}</h3>
         <div className="text-grey text-justify pb-7">{t("sactional")}</div>
-        <div className="text-grey text-justify pb-16">{t("address")}</div>
+        <h3 className="my-5 font-semibold text-md">
+          {t("jurisdictionnotice")}
+        </h3>
+        <div className="text-grey text-justify pb-8">{t("jurisdiction")}</div>
+        <div className="text-grey text-justify pb-16">{t("jurisdiction2")}</div>
+      </Container>
+      <Container maxWidth="lg" className="my-14">
+        <p className="font-bold text-center text-4xl">
+          {t("supportedpayment")}
+        </p>
+        <p className="text-center m-5">
+          {t("and20plus")}
+          <Link href={"/deposit-and-withdrawal"}>
+            <span className="text-primary font-bold">
+              &nbsp; {t("depositandwithdrawals")}
+            </span>
+          </Link>
+        </p>
+        <PaymentSlider />
       </Container>
       <Footer />
     </main>

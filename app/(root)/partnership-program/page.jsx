@@ -66,7 +66,7 @@ const Page = () => {
         <p className="m-0 mx-auto mb-20 mt-8 max-w-3xl text-xl font-normal text-default">
           {t("superForexPartnersRewarded")}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
           <div className="flex flex-col gap-3">
             <Image src={s} width={56} height={56} alt="s.svg" />
             <h4 className="text-primary text-[22px] font-semibold">
@@ -101,9 +101,9 @@ const Page = () => {
               {t("partnersParticipateRewardProgram")}
             </p>
           </div>
-        </div>
+        </div> */}
       </Container>
-      <section className="py-20 bg-[#f5f6fa]">
+      {/* <section className="py-20 bg-[#f5f6fa]">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="">
@@ -131,8 +131,8 @@ const Page = () => {
             </div>
           </div>
         </Container>
-      </section>
-      <Container
+      </section> */}
+      {/* <Container
         className={
           "flex flex-col justify-center items-center max-w-[50.5rem] my-20"
         }
@@ -179,7 +179,7 @@ const Page = () => {
             </TabPanel>
           </Tabs>
         </div>
-      </Container>
+      </Container> */}
       {/* <section className="bg-[#f5f6fa]">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2">
@@ -208,7 +208,7 @@ const Page = () => {
           </div>
         </Container>
       </section> */}
-      <div className="mb-20 mt-60">
+      <div className="mb-20 mt-30">
         <Container className="">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
             <Image
@@ -235,7 +235,7 @@ const Page = () => {
           </div>
         </Container>
       </div>
-      <section className="pb-20 pt-10">
+      {/* <section className="pb-20 pt-10">
         <Container>
           <div className="flex flex-col gap-10">
             <div className="py-3">
@@ -254,8 +254,8 @@ const Page = () => {
             </div>
           </div>
         </Container>
-      </section>
-      <section className="my-20">
+      </section> */}
+      {/* <section className="my-20">
         <Container>
           <div className="flex flex-col gap-28">
             <div className="py-3">
@@ -318,12 +318,12 @@ const Page = () => {
             <KeenSlider data={dataKeenSlider} />
           </div>
         </Container>
-      </section>
-      <section className="bg-[#f5f6fa] my-20 py-20">
+      </section> */}
+      {/* <section className="bg-[#f5f6fa] my-20 py-20">
         <Container>
           <AccountForm title={t("registerStartSuccess")} background={true} />
         </Container>
-      </section>
+      </section> */}
       <section className="my-20">
         <Container>
           <div className="flex flex-col gap-12 max-lg:justify-center items-center">

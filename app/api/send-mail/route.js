@@ -6,9 +6,9 @@ export async function POST(req) {
   try {
     // Setup the transporter for Nodemailer
     const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com",
-      port: 587,
-      secure: false,
+      host: "smtp.hostinger.com",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -21,7 +21,7 @@ export async function POST(req) {
       to: process.env.EMAIL_USER,
       subject: subject,
       text: `
-Hi from Superforexs,
+Hi from Superforex,
 
 You have received a new message from website:
 
@@ -42,13 +42,13 @@ Superforexs support.
 
     return new Response(
       JSON.stringify({ success: true, message: "Email sent successfully!" }),
-      { status: 200, headers: { "Content-Type": "application/json" } }
+      { status: 200, headers: { "Content-Type": "application/json" } },
     );
   } catch (error) {
     console.error("Error sending email:", error);
     return new Response(
       JSON.stringify({ success: false, message: "Failed to send email" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
+      { status: 500, headers: { "Content-Type": "application/json" } },
     );
   }
 }

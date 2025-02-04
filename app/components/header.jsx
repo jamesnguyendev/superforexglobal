@@ -720,12 +720,12 @@ export default function Header() {
                       link={"/deposit-and-withdrawal"}
                     />
                     <br />
-                    <StyleStack
+                    {/* <StyleStack
                       img={Location}
                       name={t("localcurrencies")}
                       link={"/local-currencies"}
                     />
-                    <br />
+                    <br /> */}
                     {/* <p className="text-grey opacity-[.6] font-semibold text-sm">
                       {t("analytics")}
                     </p>

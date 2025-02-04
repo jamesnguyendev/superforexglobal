@@ -214,16 +214,16 @@ const AutoImageSlider = () => {
       dot: true,
       link: "https://my.superforex.global/register",
     },
-    {
-      imgDesktop:
-        "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105448232.png?updatedAt=1735273269821",
-      imgMobile: BannerMobile7,
-      titleBanner: t("localcurrencies"),
-      subTitleBanner: t("forexhasbecome"),
-      buttonName: t("moreinformation"),
-      dot: true,
-      link: "https://my.superforex.global/register",
-    },
+    // {
+    //   imgDesktop:
+    //     "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105448232.png?updatedAt=1735273269821",
+    //   imgMobile: BannerMobile7,
+    //   titleBanner: t("localcurrencies"),
+    //   subTitleBanner: t("forexhasbecome"),
+    //   buttonName: t("moreinformation"),
+    //   dot: true,
+    //   link: "https://my.superforex.global/register",
+    // },
   ];
 
   const settings = {

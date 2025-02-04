@@ -276,35 +276,8 @@ const Page = () => {
           </div>
         </Container>
       </div>
-      <div className="mb-20 mt-60">
-        <Container className="">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
-            <Image
-              src={brokerIcon}
-              alt="brokerIcon"
-              width={100}
-              height={100}
-              className="w-full object-cover hidden lg:block"
-            />
-            <Image
-              src={brokerIconMobile}
-              alt="brokerIcon"
-              width={100}
-              height={100}
-              className="w-full object-cover block lg:hidden"
-            />
-            <div className="text-default">
-              <h1 className=" font-semibold text-[45px] leading-[3rem] mb-3  max-lg:text-center">
-                {t("forexAffiliate")}
-              </h1>
-              <p className="text-center py-5">{t("affiliateWork")}</p>
-              <p className="text-center">{t("partnershipTypes")}</p>
-            </div>
-          </div>
-        </Container>
-      </div>
 
-      <div className="mb-20 mt-60">
+      {/* <div className="mb-20 mt-30">
         <Container>
           <h2 className="text-default text-4xl text-center">
             <span className="">{t("bestAffiliateProgram")}</span>
@@ -327,7 +300,7 @@ const Page = () => {
             </div>
           </div>
         </Container>
-      </div>
+      </div> */}
 
       <div className="my-48">
         <Container>

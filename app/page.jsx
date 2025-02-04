@@ -143,7 +143,7 @@ const AutoImageSlider = () => {
   const images = [
     {
       imgDesktop:
-        "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227110248870.png?updatedAt=1735272464298",
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/5964f2a35e40e11eb851.jpg?updatedAt=1738564363163",
       imgMobile: BannerMobile0,
       titleBanner: t("goldtrading"),
       subTitleBanner: t("stableprofit"),
@@ -357,7 +357,7 @@ const AutoCardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="lg:w-2/3 w-full">
       {transactions.map((transaction, index) => (
         <StyledCard
           key={index}
@@ -376,29 +376,27 @@ const OpenAccount = ({ handleOpen }) => {
   const [tab, setTab] = useState("standard");
   const t = useTranslations("HomePage");
   return (
-    <Container maxWidth="lg" className="my-28">
-      <Grid container>
-        <Grid item size={{ md: 6, sm: 12 }}>
-          {tab == "standard" && (
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/standard.jpg?updatedAt=1735632633266"
-              alt="img"
-            />
-          )}
-          {tab == "profi" && (
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/cent%20account%202.jpg?updatedAt=1735630687750"
-              alt="img"
-            />
-          )}
-          {tab == "ecn" && (
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/ecn.webp?updatedAt=1735632719880"
-              alt="img"
-            />
-          )}
-        </Grid>
-        <Grid item size={{ md: 6, sm: 12 }} className="p-10">
+    <Container maxWidth="lg" className="my-28 flex items-center justify-center">
+      <div className="relative">
+        {tab == "standard" && (
+          <img
+            src="https://ik.imagekit.io/3idyffxxb/New%20Folder/standard.jpg?updatedAt=1735632633266"
+            alt="img"
+          />
+        )}
+        {tab == "profi" && (
+          <img
+            src="https://ik.imagekit.io/3idyffxxb/New%20Folder/cent%20account%202.jpg?updatedAt=1735630687750"
+            alt="img"
+          />
+        )}
+        {tab == "ecn" && (
+          <img
+            src="https://ik.imagekit.io/3idyffxxb/New%20Folder/ecn.webp?updatedAt=1735632719880"
+            alt="img"
+          />
+        )}
+        <div className="absolute transform -translate-y-1/2 top-1/2">
           <p className="font-bold mb-10 text-4xl">{t("opentrading")}</p>
           <Stack direction={"row"} className="mb-10">
             <p
@@ -443,8 +441,8 @@ const OpenAccount = ({ handleOpen }) => {
           <div onClick={handleOpen}>
             <Button name={t("openaccount")} background />
           </div>
-        </Grid>
-      </Grid>
+        </div>
+      </div>
     </Container>
   );
 };
@@ -562,7 +560,7 @@ export default function Home() {
         <Grid container spacing={3} className="my-5">
           <StyledGrid3 name={"100%"} text={t("fundssecurity")} />
           <StyledGrid3 name={"1:500"} text={t("leverage")} />
-          <StyledGrid3 name={"80%"} text={t("commission")} />
+          {/* <StyledGrid3 name={"80%"} text={t("commission")} /> */}
           <StyledGrid3 name={"50$"} text={t("minimumdeposit")} />
         </Grid>
       </Container>
@@ -570,9 +568,9 @@ export default function Home() {
         <p className="font-bold mb-8 text-center text-5xl">{t("welcome")}</p>
         <p className="font-bold text-center">{t("welcome_sub")}</p>
       </Container>
-      <Container maxWidth="lg" className="my-28">
+      <Container maxWidth="lg" className="my-28 ">
         <Grid container spacing={10} className="items-center">
-          <Grid item size={{ md: 7, sm: 12 }}>
+          {/* <Grid item size={{ md: 7, sm: 12 }}>
             <p className="font-bold mb-10 text-4xl">{t("tradethemost")}</p>
             <p className="font-bold mb-5">
               {t("Openaposition")}
@@ -580,15 +578,15 @@ export default function Home() {
               {t("end300other")}
             </p>
             <Button name={t("readmore")} background />
-          </Grid>
-          <Grid item size={{ md: 5, sm: 12 }}>
-            <StyledStack>
+          </Grid> */}
+          <Grid item size={12}>
+            <StyledStack className="flex justify-center items-center">
               <AutoCardSlider />
             </StyledStack>
           </Grid>
         </Grid>
       </Container>
-      <Container maxWidth="lg" className="my-28">
+      {/* <Container maxWidth="lg" className="my-28">
         <Grid container className="items-center">
           <Grid
             item
@@ -608,7 +606,7 @@ export default function Home() {
             />
           </Grid>
         </Grid>
-      </Container>
+      </Container> */}
       <OpenAccount handleOpen={handleOpen} />
       <Container maxWidth="lg" className="my-28">
         <Grid container spacing={5} className="items-center">
@@ -644,12 +642,12 @@ export default function Home() {
             text={t("openanaccount")}
             link="/local-currencies"
           />
-          <StyledIconCard
+          {/* <StyledIconCard
             icon={CrownIcon}
             name={t("membershipclub")}
             text={t("everycustomer")}
             link=""
-          />
+          /> */}
           <StyledIconCard
             icon={PresentIcon}
             name={t("bonusprogram")}

@@ -37,6 +37,7 @@ import ECN from "../../public/ecn.svg";
 import DemoAccount from "../../public/demo.svg";
 import Location from "../../public/location.svg";
 import DepositAndWithdrawal from "../../public/depositAndWithdrawal.svg";
+import MetaTrader4 from "../../public/metaTrader4.svg";
 import Analytics from "../../public/analytics.svg";
 import CryptoCurrencies from "../../public/cryptoCurrencies.svg";
 import GoldTrading from "../../public/goldTrading.svg";
@@ -499,7 +500,7 @@ export default function Header() {
               <NavigationMenuTrigger className="text-md">
                 {t("about")}
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[750px] lg:min-w-[1150px] rounded-xl bg-white">
+              <NavigationMenuContent className="md:min-w-[550px] lg:min-w-[750px] rounded-xl bg-white">
                 <Grid container className="rounded-xl bg-white">
                   <Grid xs={4} className="p-5">
                     <p className="text-grey opacity-[.6] font-semibold text-sm">
@@ -534,13 +535,13 @@ export default function Header() {
                     </p>
                     <StyleStack img={Document} name={t("companynews")} />
                     <br />
-                    <TypographyLink name={t("video")} />
+                    {/* <TypographyLink name={t("video")} />
                     <br />
                     <TypographyLink name={t("expos")} />
                     <br />
                     <TypographyLink name={t("seminars")} />
                     <br />
-                    <TypographyLink name={t("socialresponsibility")} />
+                    <TypographyLink name={t("socialresponsibility")} /> */}
                   </Grid>
                   <Grid xs={4} className="p-5">
                     <p className="text-grey opacity-[.6] font-semibold text-sm">
@@ -552,9 +553,9 @@ export default function Header() {
                       link={"/contacts"}
                     />
                     <br />
-                    <TypographyLink name={t("callback")} link={"/call-back"} />
+                    {/* <TypographyLink name={t("callback")} link={"/call-back"} />
                     <br />
-                    <TypographyLink name={t("fag")} link={"/faq"} />
+                    <TypographyLink name={t("fag")} link={"/faq"} /> */}
                   </Grid>
                 </Grid>
               </NavigationMenuContent>
@@ -654,6 +655,10 @@ export default function Header() {
                       link={"/cent-accounts"}
                     />
                     <br />
+                    <StyleStack img={STP} name={t("accountprime")} link={"/"} />
+                    <br />
+                    <StyleStack img={ECN} name={t("accountvip")} link={"/"} />
+                    <br />
                     <StyleStack
                       img={DemoAccount}
                       name={t("demoaccount")}
@@ -703,7 +708,7 @@ export default function Header() {
                       name={t("indicestrading")}
                       link={"/indices-trading"}
                     />
-                    <TypographyLink name={t("allins")} />
+                    {/* <TypographyLink name={t("allins")} /> */}
                   </Grid>
                   <Grid xs={4} className="p-5">
                     <p className="text-grey opacity-[.6] font-semibold text-sm">
@@ -721,7 +726,7 @@ export default function Header() {
                       link={"/local-currencies"}
                     />
                     <br />
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
+                    {/* <p className="text-grey opacity-[.6] font-semibold text-sm">
                       {t("analytics")}
                     </p>
                     <StyleStack img={Analytics} name={t("allanalytics")} />
@@ -734,7 +739,7 @@ export default function Header() {
                         <TypographyLink name={t("fundamental")} />
                         <TypographyLink name={t("videoanalytics")} />
                       </Grid>
-                    </Stack>
+                    </Stack> */}
                   </Grid>
                 </Grid>
               </NavigationMenuContent>
@@ -743,17 +748,12 @@ export default function Header() {
               <NavigationMenuTrigger className="text-md">
                 {t("services")}
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[750px] lg:min-w-[1150px] rounded-xl bg-white">
-                <Grid container className="rounded-xl bg-white">
-                  <Grid xs={4} className="p-5">
+              <NavigationMenuContent className="md:min-w-[450px] lg:min-w-[650px] rounded-xl">
+                <Grid className="rounded-xl" container>
+                  <Grid xs={6} className="p-5">
                     <p className="text-grey opacity-[.6] font-semibold text-sm">
                       {t("tradingsoftware")}
                     </p>
-                    {/* <StyleStack
-                      img={MetaTrader4}
-                      name={"MetaTrader4"}
-                      link="mt-4"
-                    /> */}
                     <Stack direction={"row"} alignItems={"center"}>
                       <StyleStack
                         img={MobileApp}
@@ -763,6 +763,19 @@ export default function Header() {
                         tagColor={"#6485f9"}
                       />
                     </Stack>
+                    <StyleStack
+                      img={MetaTrader4}
+                      name={"Meta Trader 4"}
+                      link="mt-4"
+                    />
+                    <br />
+                    <StyleStack img={TrainingCentres} name={"Meta Trader 5"} />
+                    <br />
+                    <StyleStack
+                      img={PatternGraphix}
+                      name={"Web Trade"}
+                      link="mt-4"
+                    />
                     {/* <p className="text-grey opacity-[.6] font-semibold text-sm">
                       {t("contests")}
                     </p>
@@ -780,7 +793,7 @@ export default function Header() {
                     <br />
                     <TypographyLink name={t("allcontest")} link={"/contests"} /> */}
                   </Grid>
-                  <Grid xs={4} className="p-5">
+                  {/* <Grid xs={4} className="p-5">
                     <p className="text-grey opacity-[.6] font-semibold text-sm">
                       {t("specialoffer")}
                     </p>
@@ -822,9 +835,9 @@ export default function Header() {
                         link={"/account-packages"}
                       />
                     </Stack> */}
-                  </Grid>
+                  {/* </Grid> */}
                   <Grid
-                    xs={4}
+                    xs={6}
                     className="p-5"
                     sx={{ display: "flex", flexDirection: "column" }}
                   >
@@ -858,7 +871,7 @@ export default function Header() {
                 <Grid container className="rounded-xl bg-white">
                   <Grid xs={4} className="p-5">
                     <StyleStack
-                      img={WelcomeBonus}
+                      img={EasyDepositBonus}
                       link={"/trade-and-earn"}
                       name={t("welcomebonus")}
                       // name={t("trande and earn")}
@@ -874,7 +887,7 @@ export default function Header() {
                       link="/hot-bonus"
                     />
                   </Grid>
-                  <Grid xs={4} className="p-5">
+                  {/* <Grid xs={4} className="p-5">
                     <StyleStack
                       link="/easy-deposit-bonus"
                       img={EasyDepositBonus}
@@ -883,7 +896,7 @@ export default function Header() {
                       tagName={"TOP"}
                       tagColor={"#6485f9"}
                     />
-                  </Grid>
+                  </Grid> */}
                   <Grid xs={4} className="p-5">
                     <StyleStack
                       link="/free-swap"
@@ -893,7 +906,7 @@ export default function Header() {
                       secondName={t("getanadd")}
                     />
                   </Grid>
-                  <Grid xs={4} className="p-5">
+                  {/* <Grid xs={4} className="p-5">
                     <StyleStack
                       link="/refer-a-friend"
                       img={ReferAFriend}
@@ -902,13 +915,13 @@ export default function Header() {
                       tagName={"PROMO"}
                       tagColor={"#bb6bd9"}
                     />
-                  </Grid>
-                  <Grid xs={4} className="p-5">
+                  </Grid> */}
+                  {/* <Grid xs={4} className="p-5">
                     <TypographyLink
                       name={t("bonuseschart")}
                       link="/bonuses-chart"
                     />
-                  </Grid>
+                  </Grid> */}
                 </Grid>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -916,10 +929,10 @@ export default function Header() {
               <NavigationMenuTrigger className="text-md">
                 {t("partners")}
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[750px] lg:min-w-[1150px] rounded-xl bg-white">
+              <NavigationMenuContent className="md:min-w-[450px] lg:min-w-[650px] rounded-xl bg-white">
                 <Grid container className="rounded-xl bg-white">
                   <Grid
-                    xs={4}
+                    xs={6}
                     className="p-5"
                     sx={{ display: "flex", flexDirection: "column" }}
                   >
@@ -950,7 +963,7 @@ export default function Header() {
                     <TypographyLink name={"Thu nhập của Đối tác"} />
                     <br /> */}
                   </Grid>
-                  <Grid
+                  {/* <Grid
                     xs={4}
                     className="p-5"
                     sx={{ display: "flex", flexDirection: "column" }}
@@ -999,9 +1012,9 @@ export default function Header() {
                     <br />
                     <StyleStack img={ReadyWebsites} name={"Website tạo sẵn"} />
                     <br /> */}
-                  </Grid>
+                  {/* </Grid> */}
                   <Grid
-                    xs={4}
+                    xs={6}
                     className="p-5"
                     sx={{ display: "flex", flexDirection: "column" }}
                   >
@@ -1035,7 +1048,7 @@ export default function Header() {
                 </Grid>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <NavigationMenuTrigger className="text-md">
                 {t("education")}
               </NavigationMenuTrigger>
@@ -1070,7 +1083,7 @@ export default function Header() {
                       secondName={t("ournewest")}
                     />
                   </Grid>
-                  {/* <Grid xs={4} className="p-5 ">
+                  <Grid xs={4} className="p-5 ">
                     <StyleStack
                       img={Glossary}
                       name={"Chú thích."}
@@ -1078,7 +1091,7 @@ export default function Header() {
                         "Xem định nghĩa về các thuật ngữ Forex mới nhất tại đây."
                       }
                     />
-                  </Grid> */}
+                  </Grid> 
                   <Grid xs={4} className="p-5">
                     <StyleStack
                       img={PatternGraphix}
@@ -1088,7 +1101,7 @@ export default function Header() {
                   </Grid>
                 </Grid>
               </NavigationMenuContent>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
           </NavigationMenuList>
         </NavigationMenu>
       </div>

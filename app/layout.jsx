@@ -4,7 +4,7 @@ import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
-
+import { Analytics } from "@vercel/analytics/react";
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   style: ["normal", "italic"],
@@ -28,6 +28,7 @@ export default async function RootLayout({ children }) {
         <NextIntlClientProvider messages={messages}>
           <NextTopLoader color="#3ECF8E" showSpinner={false} shadow={false} />
           {children}
+          <Analytics />
         </NextIntlClientProvider>
         <Script id="kommunicate" strategy="lazyOnload">
           {`

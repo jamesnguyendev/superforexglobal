@@ -18,6 +18,8 @@ import phone from "../../../public/phoneIcon.svg";
 import telegram from "../../../public/telegram.svg";
 import Link from "next/link";
 import FrequentlyQuestions from "../../components/frequentlyQuestions";
+import brokerIcon from "../../../public/brokerIcon.svg";
+import brokerIconMobile from "../../../public/brokerIconMobile.svg";
 
 import { useTranslations } from "next-intl";
 
@@ -178,7 +180,7 @@ const Page = () => {
           </Tabs>
         </div>
       </Container>
-      <section className="bg-[#f5f6fa]">
+      {/* <section className="bg-[#f5f6fa]">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="place-content-center">
@@ -205,8 +207,35 @@ const Page = () => {
             </div>
           </div>
         </Container>
-      </section>
-      <section className="py-20">
+      </section> */}
+      <div className="mb-20 mt-60">
+        <Container className="">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+            <Image
+              src={brokerIcon}
+              alt="brokerIcon"
+              width={100}
+              height={100}
+              className="w-full object-cover hidden lg:block"
+            />
+            <Image
+              src={brokerIconMobile}
+              alt="brokerIcon"
+              width={100}
+              height={100}
+              className="w-full object-cover block lg:hidden"
+            />
+            <div className="text-default">
+              <h1 className=" font-semibold text-[45px] leading-[3rem] mb-3  max-lg:text-center">
+                {t("forexAffiliate")}
+              </h1>
+              <p className="text-center py-5">{t("affiliateWork")}</p>
+              <p className="text-center">{t("partnershipTypes")}</p>
+            </div>
+          </div>
+        </Container>
+      </div>
+      <section className="pb-20 pt-10">
         <Container>
           <div className="flex flex-col gap-10">
             <div className="py-3">

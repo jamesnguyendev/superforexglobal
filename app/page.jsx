@@ -62,84 +62,6 @@ import MoneyProtectIcon from "../public/svg-home/moneyprotect.svg";
 import PresentIcon from "../public/svg-home/present.svg";
 import SuperforexIcon from "../public/svg-home/superforex.svg";
 
-const Banner = ({
-  imgDesktop,
-  imgMobile,
-  titleBanner,
-  subTitleBanner,
-  buttonName,
-  textBannerColor,
-  link,
-  blank,
-}) => {
-  return (
-    <section className="">
-      {/* Conditionally render based on window width */}
-      <div className="hidden lg:block">
-        {/* Desktop */}
-        <Image
-          src={imgDesktop}
-          width={11120}
-          height={11120}
-          className="min-h-[35rem] object-cover"
-          alt={imgDesktop}
-          draggable="false"
-          loading="eager"
-        />
-        <div className="absolute top-[37%] text-white font-semibold gap-y-2 pl-[6.2rem]">
-          <h1
-            className={`text-[2.5rem] leading-[3rem] max-w-[350px] ${
-              textBannerColor ? "text-default" : ""
-            }`}
-          >
-            {titleBanner}
-          </h1>
-          <h2
-            className={`pt-2 text-lg ${textBannerColor ? "text-default" : ""}`}
-          >
-            {subTitleBanner}
-          </h2>
-          <div className="pt-6">
-            <Link
-              href={link ? link : "https://my.superforex.global/register"}
-              target={blank ? "_blank" : "_self"}
-            >
-              <Button name={buttonName} background={true} />
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="lg:hidden block">
-        {/* Mobile */}
-        <Image
-          src={imgMobile}
-          width={11120}
-          height={12220}
-          className="min-h-[15rem] object-cover"
-          alt={imgMobile}
-        />
-        <div className="text-default font-semibold gap-y-2 py-6 text-center">
-          <h1 className="text-[2.5rem] leading-[3rem]">{titleBanner}</h1>
-          <h2
-            className={`pt-2 text-lg ${textBannerColor ? "text-default" : ""}`}
-          >
-            {subTitleBanner}
-          </h2>
-          <div className="pt-6">
-            <Link
-              href={link ? link : "https://my.superforex.global/register"}
-              target={blank ? "_blank" : "_self"}
-              style={{ display: "flex", justifyContent: "center" }}
-            >
-              <Button name={buttonName} background={true} />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const AutoImageSlider = () => {
   const t = useTranslations("AutoSlider");
   const images = [
@@ -432,81 +354,6 @@ const AutoCardSlider = ({ data }) => {
   );
 };
 
-const OpenAccount = ({ handleOpen }) => {
-  const [tab, setTab] = useState("standard");
-  const t = useTranslations("HomePage");
-  return (
-    <Container maxWidth="lg" className="my-28 flex items-center justify-center">
-      <div className="relative">
-        {tab == "standard" && (
-          <img
-            src="https://ik.imagekit.io/3idyffxxb/New%20Folder/standard.jpg?updatedAt=1735632633266"
-            alt="img"
-          />
-        )}
-        {tab == "profi" && (
-          <img
-            src="https://ik.imagekit.io/3idyffxxb/New%20Folder/cent%20account%202.jpg?updatedAt=1735630687750"
-            alt="img"
-          />
-        )}
-        {tab == "ecn" && (
-          <img
-            src="https://ik.imagekit.io/3idyffxxb/New%20Folder/ecn.webp?updatedAt=1735632719880"
-            alt="img"
-          />
-        )}
-        <div className="absolute transform -translate-y-1/2 top-1/2">
-          <p className="font-bold mb-10 text-4xl">{t("opentrading")}</p>
-          <Stack direction={"row"} className="mb-10">
-            <p
-              className={`px-3 py-1 rounded-full cursor-pointer ${
-                tab == "standard"
-                  ? "bg-default text-white hover:text-white"
-                  : "hover:text-light_grey"
-              }`}
-              onClick={() => setTab("standard")}
-            >
-              {t("standard")}
-            </p>
-            <p
-              className={`px-3 py-1 rounded-full cursor-pointer ${
-                tab == "profi"
-                  ? "bg-default text-white hover:text-white"
-                  : "hover:text-light_grey"
-              }`}
-              onClick={() => setTab("profi")}
-            >
-              Cent
-            </p>
-            <p
-              className={`px-3 py-1 rounded-full cursor-pointer ${
-                tab == "ecn"
-                  ? "bg-default text-white hover:text-white"
-                  : "hover:text-light_grey"
-              }`}
-              onClick={() => setTab("ecn")}
-            >
-              {t("ecn")}
-            </p>
-          </Stack>
-          {tab == "standard" && <p className="mb-5">{t("thisistypicall")}</p>}
-          {tab == "profi" && <p className="mb-5">{t("theprofi-stp")}</p>}
-          {tab == "ecn" && (
-            <>
-              <p className="">{t("themainadvantage")}</p>
-              <p className="mb-5">{t("unlikeprofi-stp")}</p>
-            </>
-          )}
-          <div onClick={handleOpen}>
-            <Button name={t("openaccount")} background />
-          </div>
-        </div>
-      </div>
-    </Container>
-  );
-};
-
 const StyledIconCard = ({ icon, name, text, link = "" }) => {
   const t = useTranslations("HomePage");
   return (
@@ -641,7 +488,7 @@ export default function Home() {
   if (!mounted) {
     return null;
   }
-
+  //8 giai thương broker tot nhat ==> sửa lại dòng thứ 499 vào ngày mai.
   return (
     <main className="text-default">
       <Header />
@@ -649,13 +496,12 @@ export default function Home() {
       <Container maxWidth="lg" className="my-28">
         <Grid container spacing={3} className="my-5 capitalize">
           <StyledGrid3 name={"$3TN+"} text={t("tradevolume")} />
-          <StyledGrid3 name={"38"} text={t("awardin2024")} />
-          <StyledGrid3 name={"170"} text={t("country")} />
-          <StyledGrid3 name={"17"} text={t("yearsofope")} />
-          <StyledGrid3 name={"24/5"} text={t("supportmutiplelang")} />
+          <StyledGrid3 name={"8"} text={t("awardin2024")} />
+          <StyledGrid3 name={"150"} text={t("country")} />
+          <StyledGrid3 name={"12"} text={t("yearsofope")} />
+          <StyledGrid3 name={"24/7"} text={t("supportmutiplelang")} />
           <StyledGrid3 name={"100%"} text={t("fundssecurity")} />
           <StyledGrid3 name={"1:500"} text={t("leverage")} />
-          {/* <StyledGrid3 name={"80%"} text={t("commission")} /> */}
           <StyledGrid3 name={"50$"} text={t("minimumdeposit")} />
         </Grid>
       </Container>

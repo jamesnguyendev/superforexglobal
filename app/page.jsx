@@ -256,9 +256,9 @@ const StyledGrid3 = ({ name, text }) => {
           justifyContent: "space-between",
         }}
       >
-        <p className="font-bold pb-3 text-4xl">{name}</p>
+        <p className="font-bold pb-3 text-4xl text-primary">{name}</p>
 
-        <p>{text}</p>
+        <p className="font-semibold">{text}</p>
       </Stack>
     </Grid>
   );
@@ -557,7 +557,12 @@ export default function Home() {
       <Header />
       <AutoImageSlider />
       <Container maxWidth="lg" className="my-28">
-        <Grid container spacing={3} className="my-5">
+        <Grid container spacing={3} className="my-5 capitalize">
+          <StyledGrid3 name={"$3TN+"} text={t("tradevolume")} />
+          <StyledGrid3 name={"38"} text={t("awardin2024")} />
+          <StyledGrid3 name={"170"} text={t("country")} />
+          <StyledGrid3 name={"17"} text={t("yearsofope")} />
+          <StyledGrid3 name={"24/5"} text={t("supportmutiplelang")} />
           <StyledGrid3 name={"100%"} text={t("fundssecurity")} />
           <StyledGrid3 name={"1:500"} text={t("leverage")} />
           {/* <StyledGrid3 name={"80%"} text={t("commission")} /> */}

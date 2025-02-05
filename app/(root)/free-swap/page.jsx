@@ -69,10 +69,10 @@ const Page = () => {
     <div>
       <Banner
         imgDesktop={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/9be7972a9b11264f7sadf00.jpg?updatedAt=1734936524209"
+          "https://ik.imagekit.io/kn40ppx9b/Superforex/0785b1c691332d6d7422.jpg?updatedAt=1736824575921"
         }
         imgMobile={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/63675181c0ba7de424abfe.jpg?updatedAt=1734938646685"
+          "https://ik.imagekit.io/kn40ppx9b/Superforex/9a0d63e14d15f14ba804.jpg?updatedAt=1736824707631"
         }
         buttonName={t("ClaimBonus")}
         titleBanner={t("Title")}

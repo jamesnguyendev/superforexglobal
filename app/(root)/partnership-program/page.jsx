@@ -339,7 +339,7 @@ const Page = () => {
                 target="_blank"
               >
                 <Image src={mail} width={24} height={24} alt={mail} />
-                partners@superforex.com
+                info@superforex.global
               </Link>
               <Link
                 href="https://wa.me/+359888997126"
@@ -347,23 +347,7 @@ const Page = () => {
                 target="_blank"
               >
                 <Image src={phone} width={24} height={24} alt={phone} />
-                +359888997126
-              </Link>
-              <Link
-                href="https://t.me/SuperForexPartnerDep"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <Image src={telegram} width={24} height={24} alt={telegram} />
-                @SuperForexPartnerDep
-              </Link>
-              <Link
-                href="https://t.me/SuperForexPartners"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <Image src={telegram} width={24} height={24} alt={telegram} />
-                @SuperForexPartners
+                +87 2888896968
               </Link>
             </div>
           </div>

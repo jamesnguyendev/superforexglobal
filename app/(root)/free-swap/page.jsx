@@ -79,13 +79,8 @@ const Page = () => {
         subTitleBanner={t("SubTitle")}
         link={"#register"}
         blank={true}
-      />
-      <Container className="mt-20">
-        <p className="m-0 mx-auto mb-20 max-w-3xl text-xl font-normal text-default">
-          {t("Description")}
-        </p>
-      </Container>
-
+      />{" "}
+      <br />
       <Whychoose data={datas} title={t("WhyChooseTitle")} />
       <Container
         className={"flex justify-center items-center max-w-[56rem] my-20"}

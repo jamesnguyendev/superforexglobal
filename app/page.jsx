@@ -511,8 +511,7 @@ export default function Home() {
         </Grid>
       </Container>
       <Container maxWidth="lg" className="my-28">
-        <p className="font-bold mb-8 text-center text-5xl">{t("welcome")}</p>
-        <p className="font-bold text-center">{t("welcome_sub")}</p>
+        <p className="font-bold text-center text-5xl">{t("welcome")}</p>
       </Container>
       <Container maxWidth="lg" className="my-28 ">
         <Grid container spacing={10} className="items-center">
@@ -531,7 +530,7 @@ export default function Home() {
         </p>
         <Container className="px-16 flex *:justify-center">
           <div className="flex flex-col lg:flex-row bg-[rgb(245,244,249)] flex-grow items-center lg:h-[340px]">
-            <div className="lg:border-r max-lg:border-b-2 border-slate-200 py-10 pe-7">
+            <div className="lg:border-r max-lg:border-b-2 border-slate-200  pe-7">
               <Tabs
                 orientation="vertical"
                 onChange={handleChange}
@@ -610,7 +609,7 @@ export default function Home() {
               </Tabs>
             </div>
             <TabPanel value={value} index={0}>
-              <span className="text-[18px] pt-16">{t("thisistypicall")}</span>
+              <span className="text-[18px]">{t("thisistypicall")}</span>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <span className="text-[18px]">

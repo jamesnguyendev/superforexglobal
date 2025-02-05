@@ -162,6 +162,8 @@
     "theprofi-stp": "Cent账户是专为喜欢大宗交易的经验丰富的交易员设计的账户。该账户没有掉期或点差。交易量为100,000 USD，最大杠杆为1:500。",
     "themainadvantage": "ECN账户提供比标准账户和Profi-STP账户更快的速度。该账户直接连接到电子通信网络（ECN），为交易工具提供更精确的价格，并具有更快的订单执行速度。",
     "unlikeprofi-stp": "与Profi-STP账户不同，ECN账户提供浮动点差，并包含掉期。交易量为100,000 USD（比标准账户的10,000 USD要大）。",
+    "tabindex2": "Cent帳戶（也稱為Standard Cent或Cent Account）是一種專為新投資者設計的交易帳戶，適合想要以小額資金開始交易的人。使用Cent帳戶，您可以以極小的交易量開立訂單，最低可達0.01手。所有貨幣單位、帳戶費用、交易成本、盈虧等都將轉換為美分（Cent）而非美元（USD）。這使交易者即使資金有限，也能夠長期進行交易。根據標準慣例，Cent外匯帳戶的規模約為普通帳戶的1/100。該比例適用於交易量及基礎貨幣單位。然而，點值（pip value）及交易資產的匯率保持不變。100 Cent = 0.01標準手。100 Cent USD = 1 USD。",
+    "tabindex3": "然而，XAUUSD的極低點差將顯著提升您的交易體驗。",
     "openaccount": "开设账户",
     "bychoosingsuperForex": "选择SuperForex，您将享受",
     "youbenefit": "我们的独特福利",

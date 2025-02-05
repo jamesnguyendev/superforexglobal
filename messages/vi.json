@@ -164,6 +164,8 @@
     "themainadvantage": "Ưu điểm chính của tài khoản ECN so với các loại tài khoản chuẩn/Cent là tốc độ nhanh hơn. Bởi vì tài khoản này kết nối trực tiếp với Mạng Giao tiếp Điện tử, chúng cung cấp báo giá chính xác hơn trên tất cả các công cụ giao dịch và tốc độ thực hiện lệnh nhanh hơn.",
     "unlikeprofi-stp": "Không giống Standard, tài khoản ECN có mức chênh lệch giá thả nổi và bao gồm các hoán đổi. Kích thước lô giao dịch là 100.000 USD (cao hơn mức 10.000 USD chuẩn).",
     "openaccount": "Mở tài khoản",
+    "tabindex2": "Tài khoản Cent (hay còn gọi là Standard Cent, Cent Account), đây là một loại tài khoản giao dịch dành riêng cho các nhà đầu tư mới và muốn bắt đầu với số vốn nhỏ. Với Cent Account, bạn có thể mở giao dịch với khối lượng cực bé, chỉ khoảng 0.01 lot. Các đơn vị tiền, các loại phụ phí tài khoản, chi phí giao dịch, lợi nhuận, hay thua lỗ đều được quy đổi sang tiền Cent thay cho USD. Điều này giúp các Trader hoạt động lâu dài với một số tiền vốn khiêm tốn. Theo quy ước chuẩn, tài khoản Cent Forex có tỷ lệ nhỏ hơn tài khoản thường khoảng 100 lần. Tỷ lệ này được tính trên cả khối lượng giao dịch và đơn vị tiền cơ sở. Tuy nhiên, giá trị pip và tỷ giá của các tài sản giao dịch sẽ được giữ nguyên. 100 Cent = 0.01 Standard Lot. 100 Cent USD = 1 USD.",
+    "tabindex3": "Tuy nhiên với mức chênh lệch cực thấp với XAUUSD sẽ khiến trải nghiệm của bạn tốt hơn rất nhiều",
     "bychoosingsuperForex": "Khi chọn SuperForex",
     "youbenefit": "Bạn sẽ hưởng lợi từ các ưu đãi đặc biệt của chúng tôi",
     "localcurrency": "Tài khoản bằng tiền tệ địa phương",

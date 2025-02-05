@@ -162,6 +162,8 @@
     "theprofi-stp": "Centový účet je vysoce specializovaný typ obchodního účtu. Je navržen speciálně pro zkušené obchodníky, kteří preferují vyšší objemy obchodování. Tento účet nemá swapy ani spread. Velikost lotu je vyšší (ve srovnání se standardními účty) - 100 000 USD, a páka může být až 1:500.",
     "themainadvantage": "Hlavní výhodou ECN účtů oproti standardním/profi-STP variantám je jejich rychlost. Protože se připojují přímo k elektronické komunikační síti, tyto účty poskytují přesnější nabídky na všech obchodních nástrojích a rychlejší provádění objednávek.",
     "unlikeprofi-stp": "Na rozdíl od Profi-STP mají ECN účty plovoucí spready a zahrnují swapy. Velikost lotu je 100 000 USD (více než standardních 10 000 USD).",
+    "tabindex2": "Centový účet (také známý jako Standard Cent nebo Cent Account) je typ obchodního účtu navržený speciálně pro nové investory, kteří chtějí začít s malým kapitálem. S centovým účtem můžete otevírat obchody s velmi malými objemy, již od 0,01 lotu. Všechny peněžní jednotky, poplatky za účet, transakční náklady, zisky a ztráty jsou převedeny na centy namísto USD. To umožňuje obchodníkům pracovat dlouhodobě i s omezeným kapitálem. Podle standardní konvence je centový forexový účet přibližně 100krát menší než běžný účet. Tento poměr platí jak pro obchodní objem, tak pro základní měnové jednotky. Hodnota pipu a směnné kurzy obchodovaných aktiv však zůstávají nezměněny. 100 centů = 0,01 standardního lotu. 100 centů USD = 1 USD.",
+    "tabindex3": "Extrémně nízký spread na XAUUSD však výrazně zlepší váš obchodní zážitek.",
     "openaccount": "Otevřít účet",
     "bychoosingsuperForex": "Výběrem SuperForex",
     "youbenefit": "Získáte výhody z našich speciálních nabídek",

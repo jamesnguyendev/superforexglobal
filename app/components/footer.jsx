@@ -127,10 +127,6 @@ export default function Footer() {
             <TypographyLink name={t("welcomeplus")} link={"/trade-and-earn"} />
             <TypographyLink name={t("75energy")} link={"/free-swap"} />
             <TypographyLink name={t("hotbonus")} link={"/hot-bonus"} />
-            <TypographyLink
-              name={t("easydepositbonus")}
-              link={"/easy-deposit-bonus"}
-            />
           </Grid>
 
           <Grid xs={4} className="p-3  lg:block hidden">

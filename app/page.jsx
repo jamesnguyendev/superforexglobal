@@ -381,14 +381,14 @@ const StyledIconCard = ({ icon, name, text, link = "" }) => {
 
 const PaymentSlider = () => {
   const images = [
-    "https://ik.imagekit.io/3idyffxxb/New%20Folder/online-naira.svg?updatedAt=1735633650700",
-    "https://ik.imagekit.io/3idyffxxb/New%20Folder/mtn.svg?updatedAt=1735633650376",
-    "https://ik.imagekit.io/3idyffxxb/New%20Folder/fasapay.svg?updatedAt=1735633649716",
+    "https://ik.imagekit.io/kn40ppx9b/Superforex/0014244_enimo.png?updatedAt=1738742314155",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/mastercard.svg?updatedAt=1735633649637",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/bitcoin.svg?updatedAt=1735633647168",
+    "https://ik.imagekit.io/kn40ppx9b/Superforex/%E1%BB%8Bu.png?updatedAt=1738743856880",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/triv.svg?updatedAt=1735633647103",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/vodacom.svg?updatedAt=1735633647036",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/astropay.svg?updatedAt=1735633647093",
+    "https://ik.imagekit.io/kn40ppx9b/Superforex/images%20(2).png?updatedAt=1738743262960",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/bitwallet.svg?updatedAt=1735633647061",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/sticpay.svg?updatedAt=1735633647021",
     "https://ik.imagekit.io/3idyffxxb/New%20Folder/bank-wire-transfer.svg?updatedAt=1735633647020",
@@ -621,10 +621,13 @@ export default function Home() {
               </span>
             </TabPanel>
             <TabPanel value={value} index={2}>
-              <span className="text-lg"></span>
+              <span className="text-lg">{t("tabindex2")}</span>
             </TabPanel>
             <TabPanel value={value} index={3}>
-              <span className="text-lg"></span>
+              <span className="text-lg">
+                {t("thisistypicall")} <br />
+                {t("tabindex3")}
+              </span>
             </TabPanel>
             <TabPanel value={value} index={4}>
               <span className="text-lg"></span>
@@ -635,7 +638,7 @@ export default function Home() {
       <Container maxWidth="lg" className="my-28">
         <Grid container spacing={5} className="items-center">
           <Grid item size={{ md: 7, sm: 12 }}>
-            <p className="font-bold mb-10 text-4xl">{t("sfx")}</p>
+            <p className="font-bold mb-5 text-4xl">{t("sfx")}</p>
             <p className="mb-5">{t("manageyourtrading")}</p>
             <Link
               href={
@@ -647,7 +650,7 @@ export default function Home() {
           </Grid>
           <Grid item size={{ md: 5, sm: 12 }} className="items-end">
             <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/mobile-app.png?updatedAt=1735632792088"
+              src="https://ik.imagekit.io/kn40ppx9b/Superforex/Untitled%203.png?updatedAt=1738745545915"
               alt="img"
             />
           </Grid>

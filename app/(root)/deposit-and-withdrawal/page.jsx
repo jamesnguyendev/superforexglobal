@@ -112,6 +112,12 @@ const depositElectronic = [
     text3: "Instant",
   },
   {
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/0014244_enimo.png?updatedAt=1738742314155",
+    text1: "USD, EUR",
+    text2: "No commission",
+    text3: "Instant",
+  },
+  {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/online-naira.svg?updatedAt=1735643194625",
     text1: "NGN",
     text2: "No commission",
@@ -138,12 +144,6 @@ const depositElectronic = [
   {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/mpesa-airtel.svg?updatedAt=1735643194326",
     text1: "TZS",
-    text2: "No commission",
-    text3: "Instant",
-  },
-  {
-    img: "https://ik.imagekit.io/3idyffxxb/deposit/mtn.svg?updatedAt=1735643193890",
-    text1: "UGX, GHS, RWF",
     text2: "No commission",
     text3: "Instant",
   },
@@ -204,13 +204,6 @@ const depositLocal = [
     img: "/Image/flags/namibia.webp",
     country: "Namibia",
     text1: "NAD",
-    text2: "No commission",
-    text3: "Instant",
-  },
-  {
-    img: "/Image/flags/iran.webp",
-    country: "Iran",
-    text1: "IRR",
     text2: "No commission",
     text3: "Instant",
   },

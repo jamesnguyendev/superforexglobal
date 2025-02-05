@@ -54,9 +54,9 @@ const Page = () => {
       name: t("volume"),
       desc1: t("descvolume1"),
       desc2: t("descvolume2"),
-      widthimg: 250,
+      widthimg: 200,
       currency: 2000,
-      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/screenshot-1734682584527-removebg-preview.png?updatedAt=1734682782747",
+      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/LOA-MARSHALL-STANMORE-II-VOICE-WITH-GOOGLE-ASSISTANT-1cc.jpg?updatedAt=1738727087414",
     },
     {
       widthimg: 200,
@@ -91,7 +91,7 @@ const Page = () => {
       widthimg: 300,
     },
     {
-      widthimg: 280,
+      widthimg: 250,
       currency: 50000,
       name: t("sh"),
       desc1: t("sh1"),
@@ -100,10 +100,11 @@ const Page = () => {
     },
     {
       currency: 350000,
+      widthimg: 360,
       name: "Peugeot 3008",
       desc1: t("cardeposit"),
       desc2: t("cardeposit2"),
-      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/f08ea534f6244b7a1235-removebg-preview.png?updatedAt=1734684352879",
+      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/PEUGEOT-3008-XAM.png?updatedAt=1738727857796",
     },
   ];
   return (
@@ -164,7 +165,7 @@ const Page = () => {
               width={600}
               height={150}
               alt="mars"
-              className="object-cover "
+              className="object-cover"
             />
             <div className="flex flex-col ">
               <h1 className="font-semibold text-slate-700 text-2xl mb-3">

@@ -281,43 +281,48 @@ const transactions2 = [
     text: "Nasdaq",
     cal: NAS100,
   },
+  {
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/goog.svg?updatedAt=1738722372586",
+    name: "GOOGL",
+    text: "Google",
+    cal: NAS100,
+  },
+  {
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/msft.svg?updatedAt=1738722731014",
+    name: "MSFT",
+    text: "Microsoft",
+    cal: NAS100,
+  },
+  {
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/fb.svg?updatedAt=1738722731061",
+    name: "META",
+    text: "Meta",
+    cal: NAS100,
+  },
 ];
 const transactions3 = [
   {
-    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-apple.svg?updatedAt=1735632034169",
-    name: "#ETHUSD",
-    text: "Ethereum / US Dollar",
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/es35.svg?updatedAt=1738724215152",
+    name: "ES35",
+    text: "Spain 35",
     cal: AAPL,
   },
   {
-    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-nasdaq.svg?updatedAt=1735632034083",
-    name: "#BTCUSD",
-    text: "Bitcoin / US Dollar",
-    cal: AAPL,
-  },
-
-  {
-    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/EURUSD.svg?updatedAt=1735631748190",
-    name: "#LTCUSD",
-    text: "Litecoin / US Dollar",
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/Layer%202.png?updatedAt=1738730021840",
+    name: "US30",
+    text: "US Wall Street 30",
     cal: AAPL,
   },
   {
-    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/icon-tesla.svg?updatedAt=1735632034118",
-    name: "#ZECUSD",
-    text: "Zcash / US Dollar",
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/Layer%202s.png?updatedAt=1738730249112",
+    name: "UK100",
+    text: "UK 100",
     cal: AAPL,
   },
   {
-    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/GBPUSD.svg?updatedAt=1735631748231",
-    name: "#DASHUSD",
-    text: "Dash / US Dollar",
-    cal: AAPL,
-  },
-  {
-    img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/XAUUSD.svg?updatedAt=1735631766946",
-    name: "#BCHUSD",
-    text: "Bitcoin Cash / US Dollar",
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/Layerss%202.png?updatedAt=1738730359670",
+    name: "FR40",
+    text: "France 40",
     cal: AAPL,
   },
 ];
@@ -511,15 +516,6 @@ export default function Home() {
       </Container>
       <Container maxWidth="lg" className="my-28 ">
         <Grid container spacing={10} className="items-center">
-          {/* <Grid item size={{ md: 7, sm: 12 }}>
-            <p className="font-bold mb-10 text-4xl">{t("tradethemost")}</p>
-            <p className="font-bold mb-5">
-              {t("Openaposition")}
-              <span className="text-primary">&nbsp;{t("EUR/USD")}&nbsp;</span>
-              {t("end300other")}
-            </p>
-            <Button name={t("readmore")} background />
-          </Grid> */}
           <Grid item size={12}>
             <StyledStack className="lg:flex justify-center items-center">
               <AutoCardSlider data={transactions1} />
@@ -529,29 +525,6 @@ export default function Home() {
           </Grid>
         </Grid>
       </Container>
-
-      {/* <Container maxWidth="lg" className="my-28">
-        <Grid container className="items-center">
-          <Grid
-            item
-            size={{ lg: 6, sm: 12 }}
-            className="lg:pl-10 max-[700px]:p-10"
-          >
-            <p className="font-bold mb-10 text-4xl">{t("ifsupport")}</p>
-            <p className="mb-5">{t("eliudkipchoge")}</p>
-            <div onClick={handleOpen}>
-              <Button name={t("openaccount")} background />
-            </div>
-          </Grid>
-          <Grid item size={{ lg: 6, sm: 12 }}>
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/eliud-kipchoge.png?updatedAt=1735632446105"
-              alt="image"
-            />
-          </Grid>
-        </Grid>
-      </Container> */}
-      {/* <OpenAccount handleOpen={handleOpen} /> */}
       <div className="relative bg-[rgb(245,244,249)] my-8">
         <p className="font-bold flex justify-center py-8 text-4xl">
           {t("opentrading")}
@@ -687,18 +660,6 @@ export default function Home() {
           <p className="font-bold text-4xl">{t("youbenefit")}</p>
         </Stack>
         <Grid container spacing={5} className="">
-          {/* <StyledIconCard
-            icon={GlobalIcon}
-            name={t("localcurrency")}
-            text={t("openanaccount")}
-            link="/local-currencies"
-          /> */}
-          {/* <StyledIconCard
-            icon={CrownIcon}
-            name={t("membershipclub")}
-            text={t("everycustomer")}
-            link=""
-          /> */}
           <StyledIconCard
             icon={PresentIcon}
             name={t("bonusprogram")}
@@ -711,12 +672,6 @@ export default function Home() {
             text={t("ourappallow")}
             link="https://play.google.com/store/apps/details?id=com.superforex.cabinet"
           />
-          {/* <StyledIconCard
-            icon={MoneyProtectIcon}
-            name={t("depositprotection")}
-            text={t("doyouever")}
-            link=""
-          /> */}
           <StyledIconCard
             icon={ForexCopyIcon}
             name={t("forexcopy")}

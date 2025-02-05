@@ -119,9 +119,9 @@ const DepositSlider = ({
           <Image
             alt=""
             src={gift?.img}
-            width={150}
+            width={gift?.widthimg}
             height={10}
-            className="w-32"
+            className=""
           />
         ) : null}
       </div>

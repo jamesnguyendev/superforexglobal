@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 "use client";
 import React, { useState, useEffect } from "react";
 
@@ -128,16 +129,6 @@ const AutoImageSlider = () => {
       dot: true,
       link: "/stp-accounts",
     },
-    // {
-    //   imgDesktop:
-    //     "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105448232.png?updatedAt=1735273269821",
-    //   imgMobile: BannerMobile7,
-    //   titleBanner: t("localcurrencies"),
-    //   subTitleBanner: t("forexhasbecome"),
-    //   buttonName: t("moreinformation"),
-    //   dot: true,
-    //   link: "https://my.superforex.global/register",
-    // },
   ];
 
   const settings = {
@@ -434,6 +425,89 @@ const PaymentSlider = () => {
   );
 };
 
+const InfiniteSlider = () => {
+  const t = useTranslations("HomePage");
+  const LOGOS = [
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/fd-2023.svg?updatedAt=1735633180412",
+      title: t("bestforex"),
+      name: t("financederivative"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2022.svg?updatedAt=1735633180502",
+      title: t("bestcryptocurrency"),
+      name: t("globalbusiness"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/wfa-2022.svg?updatedAt=1735633180491",
+      title: t("thebestwithdrawal"),
+      name: t("byworldfinancial"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2021.svg?updatedAt=1735633180540",
+      title: t("bestecnbroker"),
+      name: t("globalbusiness"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/ibm-2021.svg?updatedAt=1735633180379",
+      title: t("bestECNBrokerAfrica2021IBM"),
+      name: t("bestECNBrokerAfrica2021IBMDescription"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2020.svg?updatedAt=1735633180477",
+      title: t("bestNewECNBrokerAfrica2020"),
+      name: t("bestNewECNBrokerAfrica2020Description"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/show-fx-2017.svg?updatedAt=1735633180286",
+      title: t("bestAffiliateProgram2017"),
+      name: t("bestAffiliateProgram2017Description"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/show-fx-2016.svg?updatedAt=1735633180488",
+      title: t("bestForexBrokerMENA2016"),
+      name: t("bestForexBrokerMENA2016Description"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/fx-report-2015.svg?updatedAt=1735633180507",
+      title: t("fastestGrowingBroker2015"),
+      name: t("fastestGrowingBroker2015Description"),
+    },
+    {
+      img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/show-fx-2015.svg?updatedAt=1735633180416",
+      title: t("bestNewcomer2015"),
+      name: t("bestNewcomer2015Description"),
+    },
+  ];
+
+  return (
+    <div className="relative m-auto w-full overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[100px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[100px] after:-scale-x-100 after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
+      <div className="animate-infinite-slider flex gap-6 capitalize">
+        {LOGOS.map((item, index) => (
+          <div
+            className="slide flex flex-col  items-center justify-center my-6"
+            key={index}
+          >
+            <div className=" w-[250px] h-full shadow-xl p-4 rounded-2xl">
+              <Image
+                alt="ab"
+                width={100}
+                height={100}
+                src={item.img}
+                className="w-full aspect-video  "
+              />
+              <div className="flex flex-col text-center">
+                <span className="font-semibold mb-2">{item.title}</span>
+                <span className="truncate">{item.name}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -483,7 +557,7 @@ export default function Home() {
   if (!mounted) {
     return null;
   }
-  //8 giai thương broker tot nhat ==> sửa lại dòng thứ 499 vào ngày mai.
+
   return (
     <main className="text-default">
       <Header />
@@ -719,94 +793,12 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      {/* <Container maxWidth="lg" className="my-28">
+      <Container maxWidth="lg" className="my-28">
         <p className="font-bold text-center text-4xl">{t("ourawards")}</p>
-        <Grid container spacing={5} className="my-10">
-          <marquee scrollamount="10" hspace="20" vspace="10">
-            <div className="flex">
-              <Grid
-                item
-                size={{ md: 9, xs: 12 }}
-                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-              >
-                <img
-                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/fd-2023.svg?updatedAt=1735633180412"
-                  width={80}
-                  height={80}
-                  alt={"img"}
-                  className="m-5 items-center"
-                />
-                <p className="font-bold p-1 text-center text-xl">
-                  {t("bestforex")}
-                </p>
-                <p className="font-bold p-3 text-light_grey">
-                  {t("financederivative")}
-                </p>
-              </Grid>
-
-              <Grid
-                item
-                size={{ md: 9, xs: 12 }}
-                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-              >
-                <img
-                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2022.svg?updatedAt=1735633180502"
-                  width={80}
-                  height={80}
-                  alt={"img"}
-                  className="m-5 items-center"
-                />
-                <p className="font-bold p-1 text-center text-xl">
-                  {t("bestcryptocurrency")}
-                </p>
-                <p className="font-bold p-3 text-light_grey">
-                  {t("globalbusiness")}
-                </p>
-              </Grid>
-
-              <Grid
-                item
-                size={{ md: 9, xs: 12 }}
-                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-              >
-                <img
-                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/wfa-2022.svg?updatedAt=1735633180491"
-                  width={80}
-                  height={80}
-                  alt={"img"}
-                  className="m-5 items-center"
-                />
-                <p className="font-bold p-1 text-center text-xl">
-                  {t("thebestwithdrawal")}
-                </p>
-                <p className="font-bold p-3 text-light_grey">
-                  {t("byworldfinancial")}
-                </p>
-              </Grid>
-
-              <Grid
-                item
-                size={{ md:9, xs: 12 }}
-                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-              >
-                <img
-                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2021.svg?updatedAt=1735633180540"
-                  width={80}
-                  height={80}
-                  alt={"img"}
-                  className="m-5 items-center"
-                />
-                <p className="font-bold p-1 text-center text-xl">
-                  {t("bestecnbroker")}
-                </p>
-                <p className="font-bold p-3 text-light_grey">
-                  {t("globalbusiness")}
-                </p>
-              </Grid>
-            </div>
-          </marquee>
-        </Grid>
-      </Container> */}
+        <div className="my-10">
+          <InfiniteSlider />
+        </div>
+      </Container>
       <Container maxWidth="lg" className="my-14">
         <p className="font-bold text-center text-5xl">{t("tryityourself")}</p>
         <p className="text-center my-10">{t("thebestwaytodecide")}</p>

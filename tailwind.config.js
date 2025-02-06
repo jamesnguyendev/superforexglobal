@@ -8,6 +8,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 7s linear infinite",
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-150px * 5))",
+          },
+        },
+      },
       colors: {
         primary: "#3ECF8E",
         default: "#35465B",

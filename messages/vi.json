@@ -1,7 +1,7 @@
 {
   "Header": {
     "about": "Về chúng tôi",
-    "traders": "Thương nhân",
+    "traders": "Giao dịch",
     "signin": "Đăng nhập",
     "services": "Dịch vụ",
     "partners": "Đối tác",
@@ -76,7 +76,7 @@
     "welcomebonus": "Giao dịch và kiếm tiền",
     "increase": "Tăng khoản tiền nạp của bạn để nhận thêm những phần thưởng giá trị hơn",
     "increase100%": "Tăng mỗi lần nạp thêm 10% để giao dịch có lợi nhuận nhất.",
-    "30ex": "10% Tiền thưởng cực hot",
+    "30ex": "10% Tiền thưởng nóng",
     "thehottest": "Thưởng Nóng 10% Nhận thêm động lực giao dịch với phần thưởng bổ sung 10% cho mỗi khoản tiền nạp.",
     "easydeposit": "Tiền thưởng nạp dễ dàng",
     "superforexgives": "SuperForex tặng thêm 10% cho tiền nạp.",
@@ -220,7 +220,7 @@
     "protect100%": "Bảo vệ 100% tài khoản",
     "ourmostpopular": "Ưu đãi phổ biến nhất của chúng tôi vừa được cải thiện",
     "Takealook": "Hãy xem qua",
-    "30%Extreme": "Thưởng Nóng Cực Đỉnh 10%",
+    "30%Extreme": "Thưởng Nóng 10%",
     "thehottestoffer": "Ưu đãi nóng nhất trên thị trường Forex",
     "getbonus": "Nhận thưởng",
     "Standardaccount": "Tài khoản Tiêu chuẩn",
@@ -1409,7 +1409,7 @@
     "page": " trang."
   },
   "HotBonusAgreement": {
-    "line0": "10% Tiền thưởng cực nóng",
+    "line0": "10% Tiền thưởng nóng",
     "line1": "Thông tin chung:",
     "line2": "Thời gian khuyến mãi:",
     "line3": "Tiêu chí khuyến mãi:",

@@ -500,9 +500,9 @@ export default function Header() {
               <NavigationMenuTrigger className="text-md">
                 {t("about")}
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[550px] lg:min-w-[750px] rounded-xl bg-white">
+              <NavigationMenuContent className="md:min-w-[350px] lg:min-w-[550px] rounded-xl bg-white">
                 <Grid container className="rounded-xl bg-white">
-                  <Grid xs={4} className="p-5">
+                  <Grid xs={6} className="p-5">
                     <p className="text-grey opacity-[.6] font-semibold text-sm">
                       {t("information")}
                     </p>
@@ -529,21 +529,7 @@ export default function Header() {
                       link={"/funds-security"}
                     />
                   </Grid>
-                  <Grid xs={4} className="p-5">
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("media")}
-                    </p>
-                    <StyleStack img={Document} name={t("companynews")} />
-                    <br />
-                    {/* <TypographyLink name={t("video")} />
-                    <br />
-                    <TypographyLink name={t("expos")} />
-                    <br />
-                    <TypographyLink name={t("seminars")} />
-                    <br />
-                    <TypographyLink name={t("socialresponsibility")} /> */}
-                  </Grid>
-                  <Grid xs={4} className="p-5">
+                  <Grid xs={6} className="p-5">
                     <p className="text-grey opacity-[.6] font-semibold text-sm">
                       {t("contact")}
                     </p>
@@ -553,9 +539,6 @@ export default function Header() {
                       link={"/contacts"}
                     />
                     <br />
-                    {/* <TypographyLink name={t("callback")} link={"/call-back"} />
-                    <br />
-                    <TypographyLink name={t("fag")} link={"/faq"} /> */}
                   </Grid>
                 </Grid>
               </NavigationMenuContent>
@@ -576,78 +559,11 @@ export default function Header() {
                       link={"/stp-accounts"}
                     />
                     <br />
-                    {/* <Stack direction={"row"}>
-                      <Grid xs={6} marginRight={2}>
-                        <TypographyLink
-                          name={t("standard")}
-                          link={"/standard-account"}
-                        />
-                        <br />
-                        <TypographyLink
-                          name={t("swapfree")}
-                          link={"/swap-free-islamic-account"}
-                        />
-                        <TypographyLink
-                          name={"No Spread"}
-                          link={"/no-spread-account"}
-                        />
-                        <Stack direction={"row"} alignItems={"center"}>
-                          <TypographyLink
-                            name={t("superstp")}
-                            link={"/sticpay-stp-account"}
-                          />
-                          <TypographyTag name={"STICPAY"} color={"#f35822"} />
-                        </Stack>
-                      </Grid>
-                      <Grid xs={6} marginLeft={2}>
-                        <TypographyLink
-                          name={t("microcent")}
-                          link={"/micro-cent-account"}
-                        />
-                        <br />
-                        <TypographyLink
-                          name={"Profi STP"}
-                          link={"/profi-stp-account"}
-                        />
-                        <br />
-                        <TypographyLink
-                          name={t("crypto")}
-                          link={"/crypto-account"}
-                        />
-                        <br />
-                      </Grid>
-                    </Stack> */}
                     <StyleStack
                       img={ECN}
                       name={t("ecnaccount")}
                       link={"/ecn-accounts"}
                     />
-                    {/* <Stack direction={"row"}>
-                      <Grid xs={6} marginRight={2}>
-                        <TypographyLink
-                          name={t("ecnstandart")}
-                          link={"/ecn-standard-account"}
-                        />
-                        <TypographyLink
-                          name={t("ecnstandartmini")}
-                          link={"/ecn-standard-mini-account"}
-                        />
-                        <TypographyLink
-                          name={t("swapfree")}
-                          link={"/ecn-islamic-account"}
-                        />
-                      </Grid>
-                      <Grid xs={6} marginLeft={2}>
-                        <TypographyLink
-                          name={t("swappfreemini")}
-                          link={"/ecn-islamic-mini-account"}
-                        />
-                        <TypographyLink
-                          name={t("ecncryto")}
-                          link={"/ecn-crypto-account"}
-                        />
-                      </Grid>
-                    </Stack> */}
                     <br />
                     <StyleStack
                       img={STP}
@@ -720,26 +636,10 @@ export default function Header() {
                       link={"/deposit-and-withdrawal"}
                     />
                     <br />
-                    {/* <StyleStack
-                      img={Location}
-                      name={t("localcurrencies")}
-                      link={"/local-currencies"}
+                    <TypographyLink
+                      name={"Economic Calendar"}
+                      link={"/economic-calendar"}
                     />
-                    <br /> */}
-                    {/* <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("analytics")}
-                    </p>
-                    <StyleStack img={Analytics} name={t("allanalytics")} />
-                    <Stack direction={"row"}>
-                      <Grid xs={6} marginRight={2}>
-                        <TypographyLink name={t("technicalanlytics")} />
-                        <TypographyLink name={t("economic")} />
-                      </Grid>
-                      <Grid xs={6} marginLeft={2}>
-                        <TypographyLink name={t("fundamental")} />
-                        <TypographyLink name={t("videoanalytics")} />
-                      </Grid>
-                    </Stack> */}
                   </Grid>
                 </Grid>
               </NavigationMenuContent>
@@ -776,66 +676,7 @@ export default function Header() {
                       name={"Web Trade"}
                       link="mt-4"
                     />
-                    {/* <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("contests")}
-                    </p>
-                    <StyleStack
-                      img={GoldRush}
-                      name={t("goldrush")}
-                      link={"/gold-rush"}
-                    />
-                    <br />
-                    <StyleStack
-                      img={CryptoMania}
-                      name={"CryptoMania"}
-                      link={"/cryptomania"}
-                    />
-                    <br />
-                    <TypographyLink name={t("allcontest")} link={"/contests"} /> */}
                   </Grid>
-                  {/* <Grid xs={4} className="p-5">
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("specialoffer")}
-                    </p>
-                    <StyleStack
-                      img={AutoResetBalance}
-                      name={t("autoreset")}
-                      link={"/auto-reset-balance"}
-                    />
-                    <StyleStack
-                      img={NoFeesOnDeposit}
-                      name={t("nofeeson")}
-                      link={"/no-fees-on-deposit"}
-                    />
-                    <StyleStack
-                      img={DepositProtection}
-                      name={t("depositprotection")}
-                      link={"/deposit-protection"}
-                    />
-                    <StyleStack
-                      img={InterestRateOnEquity}
-                      name={t("interestrate")}
-                      link={"/interest-rate-on-equity"}
-                    />
-                    <Stack direction={"row"} alignItems={"center"}>
-                      <StyleStack
-                        img={MembershipClub}
-                        name={t("membershipclub")}
-                        tagName={"PROMO"}
-                        tagColor={"#bb6bd9"}
-                        link={"/membership-club"}
-                      />
-                    </Stack>
-                    {/* <Stack direction={"row"} alignItems={"center"}>
-                      <StyleStack
-                        img={AccountPackages}
-                        name={t("accountpackage")}
-                        tagName={"PROMO"}
-                        tagColor={"#bb6bd9"}
-                        link={"/account-packages"}
-                      />
-                    </Stack> */}
-                  {/* </Grid> */}
                   <Grid
                     xs={6}
                     className="p-5"
@@ -850,7 +691,6 @@ export default function Header() {
                       link={"/forex-copy-system"}
                     />
                     {/* <br /> */}
-                    <TypographyLink name={t("masterchart")} />
                     <TypographyLink
                       name={t("becomeafollower")}
                       link={"/forex-copy-follower-conditions"}
@@ -887,16 +727,6 @@ export default function Header() {
                       link="/hot-bonus"
                     />
                   </Grid>
-                  {/* <Grid xs={4} className="p-5">
-                    <StyleStack
-                      link="/easy-deposit-bonus"
-                      img={EasyDepositBonus}
-                      name={t("easydeposit")}
-                      secondName={t("superforexgives")}
-                      tagName={"TOP"}
-                      tagColor={"#6485f9"}
-                    />
-                  </Grid> */}
                   <Grid xs={4} className="p-5">
                     <StyleStack
                       link="/free-swap"
@@ -906,22 +736,6 @@ export default function Header() {
                       secondName={t("getanadd")}
                     />
                   </Grid>
-                  {/* <Grid xs={4} className="p-5">
-                    <StyleStack
-                      link="/refer-a-friend"
-                      img={ReferAFriend}
-                      name={t("referafriend")}
-                      secondName={t("sharethebonus")}
-                      tagName={"PROMO"}
-                      tagColor={"#bb6bd9"}
-                    />
-                  </Grid> */}
-                  {/* <Grid xs={4} className="p-5">
-                    <TypographyLink
-                      name={t("bonuseschart")}
-                      link="/bonuses-chart"
-                    />
-                  </Grid> */}
                 </Grid>
               </NavigationMenuContent>
             </NavigationMenuItem>{" "}
@@ -929,179 +743,7 @@ export default function Header() {
               <NavigationMenuTrigger className="text-md">
                 <Link href={"/partnership-program"}> {t("partners")}</Link>
               </NavigationMenuTrigger>
-              {/*   <NavigationMenuContent className="md:min-w-[450px] lg:min-w-[650px] rounded-xl bg-white">
-                <Grid container className="rounded-xl bg-white">
-                  <Grid
-                    xs={6}
-                    className="p-5"
-                    sx={{ display: "flex", flexDirection: "column" }}
-                  >
-                    <Typography className="text-grey opacity-[.6] font-semibold uppercase">
-                      {t("whybecomeapartner")}
-                    </Typography>
-                    <StyleStack
-                      img={PartnershipProgram}
-                      name={t("partnershipprogram")}
-                      link="/partnership-program"
-                    />
-                    <StyleStack
-                      img={PartnerContest}
-                      name={t("goldenchallenge")}
-                      link="/partners-contest"
-                    />
-                    <TypographyLink
-                      name={t("topship")}
-                      link="/partnership-types"
-                    />
-                    <TypographyLink
-                      name={t("partnerearnings")}
-                      link="/partners-earnings"
-                    />
-                    <br />
-                    <TypographyLink name={"Loại hình Đối tác"} />
-                    <br />
-                    <TypographyLink name={"Thu nhập của Đối tác"} />
-                    <br />
-                  </Grid>
-                  <Grid
-                    xs={4}
-                    className="p-5"
-                    sx={{ display: "flex", flexDirection: "column" }}
-                  >
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("promotionaltools")}
-                    </p>
-                    <StyleStack
-                      img={IbCertificates}
-                      name={t("ibcert")}
-                      link="/ib-certificates"
-                    />
-                    <StyleStack
-                      img={Links}
-                      name={t("affiliate")}
-                      link="/affiliate-links"
-                    />
-                    <StyleStack
-                      img={Banners}
-                      name={t("banners")}
-                      link="/banners"
-                    />
-                    <StyleStack
-                      img={Merchandise}
-                      name={t("merchandise")}
-                      link="/merchandise"
-                    />
-                    <StyleStack
-                      img={Presentations}
-                      name={t("presentations")}
-                      link="/presentations"
-                    />
-                    <StyleStack
-                      img={ReadyWebsites}
-                      name={t("readywebsite")}
-                      link="/partner-websites"
-                    />
-                    <br />
-                    <StyleStack img={Links} name={"Đường dẫn liên kết"} />
-                    <br />
-                    <StyleStack img={Banners} name={"Biểu ngữ"} />
-                    <br />
-                    <StyleStack img={Merchandise} name={"Mua bán"} />
-                    <br />
-                    <StyleStack img={Presentations} name={"Bài thuyết trình"} />
-                    <br />
-                    <StyleStack img={ReadyWebsites} name={"Website tạo sẵn"} />
-                    <br />
-                  </Grid>
-                  <Grid
-                    xs={6}
-                    className="p-5"
-                    sx={{ display: "flex", flexDirection: "column" }}
-                  >
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("ibprivileges")}
-                    </p>
-                    <StyleStack
-                      img={SuperForexMoney}
-                      name={t("superforexmoney")}
-                      link="/superforex-money"
-                    />
-                    <StyleStack
-                      img={SuperIbBonus}
-                      name={t("superibbonus")}
-                      link="/super-ib-bonus"
-                    />
-                    <StyleStack
-                      img={RebateSystem}
-                      name={t("rebatesystem")}
-                      link="/rebate-system"
-                    />
-                    <br />
-                    <StyleStack img={SuperIbBonus} name={"Thưởng Super IB"} />
-                    <br />
-                    <StyleStack
-                      img={RebateSystem}
-                      name={"Hệ thống Hoàn tiền"}
-                    />
-                    <br />
-                  </Grid>
-                </Grid>
-              </NavigationMenuContent> */}
             </NavigationMenuItem>
-            {/* <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-md">
-                {t("education")}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[750px] lg:min-w-[1150px] rounded-xl bg-white">
-                <Grid container className="rounded-xl bg-white">
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      img={Education}
-                      name={t("education")}
-                      secondName={t("comprehensive")}
-                      link="/education"
-                    />
-                  </Grid>
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      img={TrainingCentres}
-                      name={t("traningcentres")}
-                      secondName={t("visitouroffices")}
-                    />
-                  </Grid>
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      img={Seminars}
-                      name={t("seminars")}
-                      secondName={t("highlights")}
-                    />
-                  </Grid>
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      img={EducationVideos}
-                      name={t("educationvideos")}
-                      secondName={t("ournewest")}
-                    />
-                  </Grid>
-                  <Grid xs={4} className="p-5 ">
-                    <StyleStack
-                      img={Glossary}
-                      name={"Chú thích."}
-                      secondName={
-                        "Xem định nghĩa về các thuật ngữ Forex mới nhất tại đây."
-                      }
-                    />
-                  </Grid> 
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      img={PatternGraphix}
-                      name={t("patterngraphix")}
-                      secondName={t("identify")}
-                    />
-                  </Grid>
-                </Grid>
-              </NavigationMenuContent>
-            </NavigationMenuItem> */}
           </NavigationMenuList>
         </NavigationMenu>
       </div>

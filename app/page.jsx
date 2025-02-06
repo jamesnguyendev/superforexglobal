@@ -83,7 +83,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("tradingwithspreads"),
       buttonName: t("moreinformation"),
       textBannerColor: true,
-      link: "https://my.superforex.global/register",
+      link: "/ecn-accounts",
     },
     {
       imgDesktop:
@@ -94,7 +94,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("applyonlocal"),
       buttonName: t("learnmore"),
       textBannerColor: false,
-      link: "https://my.superforex.global/register",
+      link: "/free-swap",
     },
     {
       imgDesktop:
@@ -109,23 +109,13 @@ const AutoImageSlider = () => {
     },
     {
       imgDesktop:
-        "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105954389.png?updatedAt=1735272455464",
-      imgMobile: BannerMobile4,
-      titleBanner: t("protect100%"),
-      subTitleBanner: t("ourmostpopular"),
-      buttonName: t("Takealook"),
-      dot: true,
-      link: "https://my.superforex.global/register",
-    },
-    {
-      imgDesktop:
         "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105605300.png?updatedAt=1735272457272",
       imgMobile: BannerMobile5,
       titleBanner: t("30%Extreme"),
       subTitleBanner: t("thehottestoffer"),
       buttonName: t("getbonus"),
       dot: true,
-      link: "https://my.superforex.global/register",
+      link: "/hot-bonus",
     },
     {
       imgDesktop:
@@ -136,7 +126,7 @@ const AutoImageSlider = () => {
       textBannerColor: true,
       buttonName: t("moreinformation"),
       dot: true,
-      link: "https://my.superforex.global/register",
+      link: "/stp-accounts",
     },
     // {
     //   imgDesktop:
@@ -729,91 +719,94 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Container maxWidth="lg" className="my-28">
+      {/* <Container maxWidth="lg" className="my-28">
         <p className="font-bold text-center text-4xl">{t("ourawards")}</p>
         <Grid container spacing={5} className="my-10">
-          <Grid
-            item
-            size={{ md: 3, xs: 12 }}
-            className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-          >
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/fd-2023.svg?updatedAt=1735633180412"
-              width={80}
-              height={80}
-              alt={"img"}
-              className="m-5 items-center"
-            />
-            <p className="font-bold p-1 text-center text-xl">
-              {t("bestforex")}
-            </p>
-            <p className="font-bold p-3 text-light_grey">
-              {t("financederivative")}
-            </p>
-          </Grid>
+          <marquee scrollamount="10" hspace="20" vspace="10">
+            <div className="flex">
+              <Grid
+                item
+                size={{ md: 9, xs: 12 }}
+                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
+              >
+                <img
+                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/fd-2023.svg?updatedAt=1735633180412"
+                  width={80}
+                  height={80}
+                  alt={"img"}
+                  className="m-5 items-center"
+                />
+                <p className="font-bold p-1 text-center text-xl">
+                  {t("bestforex")}
+                </p>
+                <p className="font-bold p-3 text-light_grey">
+                  {t("financederivative")}
+                </p>
+              </Grid>
 
-          <Grid
-            item
-            size={{ md: 3, xs: 12 }}
-            className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-          >
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2022.svg?updatedAt=1735633180502"
-              width={80}
-              height={80}
-              alt={"img"}
-              className="m-5 items-center"
-            />
-            <p className="font-bold p-1 text-center text-xl">
-              {t("bestcryptocurrency")}
-            </p>
-            <p className="font-bold p-3 text-light_grey">
-              {t("globalbusiness")}
-            </p>
-          </Grid>
+              <Grid
+                item
+                size={{ md: 9, xs: 12 }}
+                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
+              >
+                <img
+                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2022.svg?updatedAt=1735633180502"
+                  width={80}
+                  height={80}
+                  alt={"img"}
+                  className="m-5 items-center"
+                />
+                <p className="font-bold p-1 text-center text-xl">
+                  {t("bestcryptocurrency")}
+                </p>
+                <p className="font-bold p-3 text-light_grey">
+                  {t("globalbusiness")}
+                </p>
+              </Grid>
 
-          <Grid
-            item
-            size={{ md: 3, xs: 12 }}
-            className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-          >
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/wfa-2022.svg?updatedAt=1735633180491"
-              width={80}
-              height={80}
-              alt={"img"}
-              className="m-5 items-center"
-            />
-            <p className="font-bold p-1 text-center text-xl">
-              {t("thebestwithdrawal")}
-            </p>
-            <p className="font-bold p-3 text-light_grey">
-              {t("byworldfinancial")}
-            </p>
-          </Grid>
+              <Grid
+                item
+                size={{ md: 9, xs: 12 }}
+                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
+              >
+                <img
+                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/wfa-2022.svg?updatedAt=1735633180491"
+                  width={80}
+                  height={80}
+                  alt={"img"}
+                  className="m-5 items-center"
+                />
+                <p className="font-bold p-1 text-center text-xl">
+                  {t("thebestwithdrawal")}
+                </p>
+                <p className="font-bold p-3 text-light_grey">
+                  {t("byworldfinancial")}
+                </p>
+              </Grid>
 
-          <Grid
-            item
-            size={{ md: 3, xs: 12 }}
-            className="rounded-xl flex flex-col items-center hover:shadow-2xl"
-          >
-            <img
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2021.svg?updatedAt=1735633180540"
-              width={80}
-              height={80}
-              alt={"img"}
-              className="m-5 items-center"
-            />
-            <p className="font-bold p-1 text-center text-xl">
-              {t("bestecnbroker")}
-            </p>
-            <p className="font-bold p-3 text-light_grey">
-              {t("globalbusiness")}
-            </p>
-          </Grid>
+              <Grid
+                item
+                size={{ md:9, xs: 12 }}
+                className="rounded-xl flex flex-col items-center hover:shadow-2xl"
+              >
+                <img
+                  src="https://ik.imagekit.io/3idyffxxb/New%20Folder/gbm-2021.svg?updatedAt=1735633180540"
+                  width={80}
+                  height={80}
+                  alt={"img"}
+                  className="m-5 items-center"
+                />
+                <p className="font-bold p-1 text-center text-xl">
+                  {t("bestecnbroker")}
+                </p>
+                <p className="font-bold p-3 text-light_grey">
+                  {t("globalbusiness")}
+                </p>
+              </Grid>
+            </div>
+          </marquee>
         </Grid>
-      </Container>
-
+      </Container> */}
       <Container maxWidth="lg" className="my-14">
         <p className="font-bold text-center text-5xl">{t("tryityourself")}</p>
         <p className="text-center my-10">{t("thebestwaytodecide")}</p>

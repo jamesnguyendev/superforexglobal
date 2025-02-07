@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid2";
 import StyledGrid4 from "./grid4";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function FundsSecurity() {
   const t = useTranslations("FundsSecurity");
@@ -32,52 +33,115 @@ export default function FundsSecurity() {
         <Typography className="text-default">
           {t("fundsSecurityDescription")}
         </Typography>
-
-        <Grid
-          container
-          spacing={2}
-          className="py-10"
-          justifyContent="center"
-          style={{ display: "flex", justifyContent: "space-between" }}
-        >
-          <StyledGrid4
-            img={
-              "https://ik.imagekit.io/3idyffxxb/New%20Folder/segregated-funds.jpg?updatedAt=1735635981101"
-            }
-            name={t("segregatedFunds")}
-            text={t("segregatedFundsDescription")}
-          />
-          <StyledGrid4
-            img={
-              "https://ik.imagekit.io/3idyffxxb/New%20Folder/ssl-certificate.jpg?updatedAt=1735635981096"
-            }
-            name={t("sslCertificate")}
-            text={t("sslCertificateDescription")}
-          />
-          <StyledGrid4
-            img={
-              "https://ik.imagekit.io/3idyffxxb/New%20Folder/account-verification.jpg?updatedAt=1735635981112"
-            }
-            name={t("accountVerification")}
-            text={t("accountVerificationDescription")}
-          />
-          <StyledGrid4
-            img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/login-history.jpg?updatedAt=1735635980977"}
-            name={t("loginHistory")}
-            text={t("loginHistoryDescription")}
-          />
-          <StyledGrid4
-            img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/device-id.jpg?updatedAt=1735635981102"}
-            name={t("deviceID")}
-            text={t("deviceIDDescription")}
-          />
-          <StyledGrid4
-            img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/allowed-ip.jpg?updatedAt=1735635980906"}
-            name={t("allowedIPList")}
-            text={t("allowedIPListDescription")}
-          />
-        </Grid>
-
+        {/* ////// */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-24 mb-12 my-6">
+          <div className="">
+            <Image
+              alt="sl"
+              width={100}
+              height={100}
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/segregated-funds.jpg?updatedAt=1735635981101"
+              }
+              className="w-full h-full rounded-lg"
+              quality={100}
+            />
+          </div>
+          <div className="flex flex-col gap-6">
+            <span className="text-2xl">{t("segregatedFunds")}</span>
+            <span className="">{t("segregatedFundsDescription")}</span>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-24 mb-12">
+          <div className="md:order-2">
+            <Image
+              alt="sl"
+              width={100}
+              height={100}
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/ssl-certificate.jpg?updatedAt=1735635981096"
+              }
+              className="w-full h-full rounded-lg"
+              quality={100}
+            />
+          </div>
+          <div className="flex flex-col gap-6 ">
+            <span className="text-2xl">{t("sslCertificate")}</span>
+            <span className="">{t("sslCertificateDescription")}</span>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12  md:mb-24 mb-12">
+          <div className="">
+            <Image
+              alt="sl"
+              width={100}
+              height={100}
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/account-verification.jpg?updatedAt=1735635981112"
+              }
+              className="w-full h-full rounded-lg"
+              quality={100}
+            />
+          </div>
+          <div className="flex flex-col gap-6 ">
+            <span className="text-2xl">{t("accountVerification")}</span>
+            <span className="">{t("accountVerificationDescription")}</span>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12  md:mb-24 mb-12">
+          <div className="md:order-2">
+            <Image
+              alt="sl"
+              width={100}
+              height={100}
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/login-history.jpg?updatedAt=1735635980977"
+              }
+              className="w-full h-full rounded-lg"
+              quality={100}
+            />
+          </div>
+          <div className="flex flex-col gap-6 ">
+            <span className="text-2xl">{t("loginHistory")}</span>
+            <span className="">{t("loginHistoryDescription")}</span>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12  md:mb-24 mb-12">
+          <div className="">
+            <Image
+              alt="sl"
+              width={100}
+              height={100}
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/device-id.jpg?updatedAt=1735635981102"
+              }
+              className="w-full h-full rounded-lg"
+              quality={100}
+            />
+          </div>
+          <div className="flex flex-col gap-6 ">
+            <span className="text-2xl">{t("deviceID")}</span>
+            <span className="">{t("deviceIDDescription")}</span>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-24 mb-12">
+          <div className="md:order-2">
+            <Image
+              alt="sl"
+              width={100}
+              height={100}
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/allowed-ip.jpg?updatedAt=1735635980906"
+              }
+              className="w-full h-full rounded-lg"
+              quality={100}
+            />
+          </div>
+          <div className="flex flex-col gap-6 ">
+            <span className="text-2xl">{t("allowedIPList")}</span>
+            <span className="">{t("allowedIPListDescription")}</span>
+          </div>
+        </div>
         <Typography className="text-default">
           {t("fundsSecurityConclusion")}
         </Typography>

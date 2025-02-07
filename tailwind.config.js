@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        ["infinite-slider"]: "infiniteSlider 7s linear infinite",
+        ["infinite-slider"]: "infiniteSlider 100s linear infinite",
       },
       keyframes: {
         infiniteSlider: {

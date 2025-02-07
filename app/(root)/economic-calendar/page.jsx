@@ -1,18 +1,53 @@
+"use client";
+
 import { Container } from "@mui/material";
+import Script from "next/script";
 import React from "react";
+import { useEffect } from "react";
 
 const Page = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src =
+      "https://s3.tradingview.com/external-embedding/embed-widget-events.js";
+    script.async = true;
+    script.innerHTML = JSON.stringify({
+      width: "100%",
+      height: "100%",
+      colorTheme: "light",
+      isTransparent: false,
+      locale: "en",
+      importanceFilter: "-1,0,1",
+      countryFilter:
+        "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu",
+    });
+
+    const container = document.querySelector(".tradingview-widget-container");
+    if (container) {
+      container.appendChild(script);
+    }
+  }, []);
+
   return (
     <Container>
       <div className="flex justify-center w-full mb-16">
-        <iframe
-          src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&features=datepicker,timezone&countries=33,14,4,34,38,32,6,11,51,5,39,72,60,110,43,35,71,22,36,26,12,9,37,25,178,10,17&calType=week&timeZone=2&lang=52"
-          className="w-full h-screen"
-          frameborder="0"
-          allowtransparency="true"
-          marginwidth="0"
-          marginheight="0"
-        ></iframe>
+       
+
+        <div className="tradingview-widget-container w-full h-full">
+          <div className="tradingview-widget-container__widget"></div>
+          <div className="tradingview-widget-copyright">
+            <a
+              href="https://www.tradingview.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span className="text-blue-500">
+                Track all markets on TradingView
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </Container>
   );

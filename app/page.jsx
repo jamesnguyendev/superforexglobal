@@ -427,6 +427,9 @@ const PaymentSlider = () => {
 
 const InfiniteSlider = () => {
   const t = useTranslations("HomePage");
+  const [index, setIndex] = useState(0); // Vị trí phần tử hiện tại
+  const itemWidth = 250 + 24; // 250px (width) + 24px (gap)
+
   const LOGOS = [
     {
       img: "https://ik.imagekit.io/3idyffxxb/New%20Folder/fd-2023.svg?updatedAt=1735633180412",
@@ -479,16 +482,48 @@ const InfiniteSlider = () => {
       name: t("bestNewcomer2015Description"),
     },
   ];
+  const totalItems = LOGOS.length;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % totalItems);
+    }, 2000); // 10 giây
+
+    return () => clearInterval(interval);
+  }, [totalItems]);
 
   return (
     <div className="relative m-auto w-full overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[100px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[100px] after:-scale-x-100 after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
-      <div className="animate-infinite-slider flex gap-6 capitalize">
+      <div
+        className="flex gap-6 transition-transform duration-1000 ease-in-out"
+        style={{ transform: `translateX(-${index * itemWidth}px)` }}
+      >
         {LOGOS.map((item, index) => (
           <div
             className="slide flex flex-col  items-center justify-center my-6"
             key={index}
           >
-            <div className=" w-[250px] h-full shadow-xl p-4 rounded-2xl">
+            <div className=" w-[250px] h-full p-4 rounded-2xl">
+              <Image
+                alt="ab"
+                width={100}
+                height={100}
+                src={item.img}
+                className="w-full aspect-video  "
+              />
+              <div className="flex flex-col text-center">
+                <span className="font-semibold mb-2">{item.title}</span>
+                <span className="truncate">{item.name}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+        {LOGOS.map((item, index) => (
+          <div
+            className="slide flex flex-col  items-center justify-center my-6"
+            key={index}
+          >
+            <div className=" w-[250px] h-full p-4 rounded-2xl">
               <Image
                 alt="ab"
                 width={100}

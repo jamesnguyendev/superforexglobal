@@ -522,8 +522,6 @@ export default function Header() {
                       link={"/regulation"}
                     />
                     <br />
-                    <TypographyLink name={t("awards")} link={"/awards"} />
-                    <br />
                     <TypographyLink
                       name={t("fundssecurity")}
                       link={"/funds-security"}

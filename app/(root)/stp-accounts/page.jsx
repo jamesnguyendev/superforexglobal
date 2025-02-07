@@ -353,10 +353,13 @@ const StyledTable = () => {
       "Account currency",
       "USD, EUR, GBP, CNY, AED, MYR, IDR, RUB, ZAR, NGN, INR, THB, BRL, BDT, EGP, CHF, MXN, JPY, PHP, HKD, SGD, PEN, TZS, KES, GHS, UGX, ZMW, RWF, VND, XAF, PLN, AUD, CAD, JOD"
     ),
-    createData("Minimum deposit", "5 USD"),
+    createData("Minimum deposit", "50 USD"),
     createData("Maximum deposit", "Unlimited"),
     createData("Recommended deposit", "50 USD"),
-    createData("Compatible with bonuses", "Welcome, Energy, Hot, No deposit"),
+    createData(
+      "Compatible with bonuses",
+      "Trade And Earn, 10% Bonus, Free Swap"
+    ),
     createData("Lot size", "0.01 lot"),
     createData("Maximum leverage", "1:500"),
     createData("Swaps", "Yes"),
@@ -430,7 +433,7 @@ export default function STPAccounts() {
             }
             name={"Local Currencies"}
             text={
-              "SuperForex offers trading accounts in local currencies to eliminate extra currency conversion costs, so you can focus on what's important - making money."
+              "SuperForex provides trading accounts in local currencies, helping you avoid unnecessary conversion fees. This allows you to concentrate on what truly matters—maximizing your profits."
             }
           />
           <StyledGridImg3
@@ -439,7 +442,7 @@ export default function STPAccounts() {
             }
             name={"Human Customer Service"}
             text={
-              "No robots here, just real people to help you out. Our live support staff are available 24/5 to help you with any issues you may have."
+              "Real people here, not robots! Our dedicated live support team is on hand 24/5 to assist you with any issues."
             }
           />
           <StyledGridImg3
@@ -448,7 +451,7 @@ export default function STPAccounts() {
             }
             name={"Openness"}
             text={
-              "Your transaction instantly appears on the Forex market. Therefore, you can influence its condition independently."
+              "Once you make a transaction, it appears immediately on the Forex market. This means you have the power to influence its state directly."
             }
           />
           <StyledGridImg3
@@ -457,7 +460,7 @@ export default function STPAccounts() {
             }
             name={"Reliability"}
             text={
-              "You can be sure that your funds will be completely safe, since SuperForex is a regulated and award-winning broker."
+              "Rest assured, your funds will be fully secured with SuperForex, a regulated and award-winning broker."
             }
           />
         </Grid>
@@ -471,21 +474,21 @@ export default function STPAccounts() {
             </p>
             <br />
             <Typography>
-              When choosing a SuperForex trading account, it is important to
-              consider your investment goals and level of experience. For
-              example, our Micro account is designed for beginner traders with a
-              starting balance of just $50. The Standard account is a good
-              choice for experienced traders who are looking to trade larger
-              volumes, with a larger lot size and a support of Forex Copy
-              system.
+              When choosing a SuperForex trading account, it's important to
+              consider your investment goals and experience level. Here are some
+              options: Micro Account: Ideal for beginner traders, with a
+              starting balance of just $50. Standard Account: Suitable for
+              experienced traders looking to trade larger volumes, featuring a
+              larger lot size and support for the Forex Copy system. Profi-STP
+              Account: Designed for those wanting to trade even larger volumes,
+              offering a maximum leverage of 1:500.
             </Typography>
             <br />
             <Typography>
-              For those who want to trade even larger volumes, we offer the
-              Profi-STP account, which has a maximum leverage of 1:500. Each
-              account type offers different benefits, so it is important to
-              choose the one that best suits your needs. For more information on
-              our account types, please check the account comparison table.
+              Each account type provides different benefits, so it's essential
+              to select the one that best fits your needs. For more detailed
+              information on our account types, please check the account
+              comparison table.
             </Typography>
           </Grid>
           <Grid
@@ -596,24 +599,24 @@ export default function STPAccounts() {
             </p>
             <br />
             <Typography>
-              Choosing the right broker is essential if you want to be
-              successful in online trading. SuperForex is a global brokerage
-              that offers online currency trading services to clients from all
-              over the world since 2013. We offer a variety of account types,
-              from beginner to professional, and our experienced team is always
-              on hand to provide support and advice.
+              Selecting the right broker is crucial for success in online
+              trading. Since 2013, SuperForex has been providing global online
+              currency trading services to clients worldwide. We offer a variety
+              of account types, catering to both beginners and professionals,
+              and our experienced team is always available to provide support
+              and advice.
             </Typography>
             <br />
             <Typography>
-              We pride ourselves on our excellent customer service, and we offer
-              a wide range of features and benefits that make us a top choice
-              for currency traders. SuperForex is regulated by the International
-              Financial Services Commission, and we offer a secure and safe
-              trading environment. Our advanced technology helps to ensure that
-              your trades are executed quickly and efficiently, and we offer
-              competitive spreads and leverage. With SuperForex, you can be sure
-              that you are getting the best possible service and value for your
-              money.
+              We take pride in our excellent customer service and offer a wide
+              range of features and benefits that make us a top choice for
+              currency traders. SuperForex is regulated by the International
+              Financial Services Commission, ensuring a secure and safe trading
+              environment. Our advanced technology helps to ensure that your
+              trades are executed quickly and efficiently, and we offer
+              competitive spreads and leverage. With SuperForex, you can be
+              confident that you are receiving the best possible service and
+              value for your money.
             </Typography>
           </Grid>
           <Grid

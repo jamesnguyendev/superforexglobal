@@ -400,13 +400,6 @@ const withdrawlLocal = [
     text2: "Local bank wire fee",
     text3: "1 - 3 business hours",
   },
-  {
-    img: "/Image/flags/iran.webp",
-    country: "Iran",
-    text1: "IRR",
-    text2: "Local bank wire fee",
-    text3: "1 - 3 business hours",
-  },
 ];
 
 const withdrawlSuperforex = [

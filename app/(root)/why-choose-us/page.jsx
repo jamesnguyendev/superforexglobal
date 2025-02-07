@@ -153,6 +153,7 @@ export default function WhyChooseUs() {
           name={t("mobileTrading")}
           text1={t("mobileTradingDescription")}
           text2={t("mobileAppUsage")}
+          link="/mobile-app"
           reverse
         />
         <StyledGrid2
@@ -166,7 +167,7 @@ export default function WhyChooseUs() {
           text1={t("manyDepositMethodsDescription")}
           link="/deposit-and-withdrawal"
         />
-        <StyledGrid2
+        {/* <StyledGrid2
           icon={
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/education.svg?updatedAt=1735634886011"
           }
@@ -177,7 +178,7 @@ export default function WhyChooseUs() {
           text1={t("educationDescription")}
           reverse
           link="/education"
-        />
+        /> */}
         <StyledGrid2
           icon={
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/forex-copy.svg?updatedAt=1735634886287"
@@ -188,6 +189,7 @@ export default function WhyChooseUs() {
           name={"Forex Copy"}
           text1={t("forexCopyDescription")}
           link="/forex-copy-system"
+          reverse
         />
         <StyledGrid2
           icon={
@@ -198,7 +200,6 @@ export default function WhyChooseUs() {
           }
           name={t("bonusesAndContests")}
           text1={t("bonusesAndContestsDescription")}
-          reverse
         />
         <StyledGrid2
           icon={
@@ -210,6 +211,8 @@ export default function WhyChooseUs() {
           name={t("economicNewsAndAnalysis")}
           text1={t("economicNewsAndAnalysisDescription")}
           text2={t("marketUnderstanding")}
+          link="/economic-calendar"
+          reverse
         />
         <StyledGrid2
           icon={
@@ -221,11 +224,9 @@ export default function WhyChooseUs() {
           name={t("diversityOfAccounts")}
           text1={t("diversityOfAccountsDescription")}
           link="/stp-accounts"
-          reverse
         />
 
-        <Stack className="text-default">
-          <p className="p-5 text-3xl">{t("specialOffers")}</p>
+        {/* <Stack className="text-default">
           <StyledGrid2
             icon={
               "https://ik.imagekit.io/3idyffxxb/New%20Folder/news-analysis.svg?updatedAt=1735634889296"
@@ -253,7 +254,7 @@ export default function WhyChooseUs() {
             link="/no-fees-on-deposit"
             reverse
           />
-        </Stack>
+        </Stack> */}
       </Container>
     </>
   );

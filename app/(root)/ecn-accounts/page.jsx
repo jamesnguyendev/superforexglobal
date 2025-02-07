@@ -89,7 +89,7 @@ export default function ECNAccounts() {
             }
             name={"Floating Spreads"}
             text={
-              "Since the number of participants in the ECN network is large, the spread values ​​are very variable and sensitive to any events."
+              "Due to the extensive number of participants in the ECN network, spread values are highly variable and react quickly to any events."
             }
           />
           <StyledGridImg3
@@ -98,7 +98,7 @@ export default function ECNAccounts() {
             }
             name={"Transparency"}
             text={
-              "Any trade offer that has entered the system immediately becomes available to all participants and the usual “order book” will be available to you."
+              'Any trade offer that enters the system immediately becomes accessible to all participants, ensuring transparency and efficiency. Additionally, the usual "order book" will be available to you, providing a comprehensive view of all open buy and sell orders in the market. This allows you to make informed trading decisions based on the most current market data.'
             }
           />
           <StyledGridImg3
@@ -107,7 +107,7 @@ export default function ECNAccounts() {
             }
             name={"Openness"}
             text={
-              "Your transaction instantly appears on the Forex market. Therefore, you can influence its condition independently."
+              "Your transaction instantly appears on the Forex market, allowing you to influence its condition directly and independently. This real-time visibility empowers you to make informed decisions and react swiftly to market changes."
             }
           />
           <StyledGridImg3
@@ -116,7 +116,7 @@ export default function ECNAccounts() {
             }
             name={"Reliability"}
             text={
-              "You can be sure that your funds will be completely safe, since SuperForex is a regulated and award-winning broker."
+              "You can rest assured that your funds will be completely safe with SuperForex, as we are a regulated and award-winning broker. Our commitment to security and excellence ensures that your investments are protected and managed with the highest standards."
             }
           />
         </Grid>
@@ -130,19 +130,20 @@ export default function ECNAccounts() {
             </p>
             <br />
             <Typography>
-              SuperForex, as a regulated ECN broker, offers you new types of
-              accounts for professional currency trading. ECN accounts allow you
-              to display trading operations directly on the Forex exchange,
-              bypassing the intermediary banks. Therefore, all market
-              participants can interact with each other without intermediaries
-              and requotes. Thanks to our ECN accounts, your execution requests
-              will be processed instantly.
+              SuperForex, as a regulated ECN broker, offers new types of
+              accounts for professional currency trading. With our ECN accounts,
+              trading operations are displayed directly on the Forex exchange,
+              bypassing intermediary banks. This allows market participants to
+              interact without intermediaries and requotes. Your execution
+              requests are processed instantly, providing a seamless trading
+              experience.
             </Typography>
             <br />
             <p className="font-bold">
-              Ecn accounts offer more transparency and low latency, which means
-              that your trades will be executed quickly and with minimal
-              slippage.
+              ECN accounts offer increased transparency and low latency,
+              ensuring that your trades are executed quickly and with minimal
+              slippage. This means you can take advantage of market
+              opportunities with greater efficiency and confidence.
             </p>
           </Grid>
           <Grid
@@ -186,13 +187,14 @@ export default function ECNAccounts() {
             <p className="font-bold text-5xl">ECN Technology</p>
             <br />
             <Typography>
-              ECN (Electronic Communications Network) technology is one of the
-              most preferred methods for trading on the Forex market. Especially
-              when paired with Expert Advisors, ECN accounts prove to be one the
-              fastest ways to execute profitable orders. Overall, opening an
-              account with an ECN broker is a great way to tap into the dynamic
+              ECN (Electronic Communications Network) technology is highly
+              favored for Forex trading. When combined with Expert Advisors, ECN
+              accounts offer one of the fastest ways to execute profitable
+              orders. Opening an ECN account allows you to engage in the dynamic
               world of financial markets while maintaining your independence and
-              control at all times.
+              control. This approach offers speed, transparency, and efficiency,
+              making it an excellent choice for traders looking to maximize
+              their potential in the market.
             </Typography>
           </Grid>
         </Grid>
@@ -206,14 +208,18 @@ export default function ECNAccounts() {
             </p>
             <br />
             <Typography>
-              You are free to choose among a wide variety of ECN accounts. Each
-              individual type of account comes with different conditions, so you
-              can choose the one that is right for your strategy and goals.
+              You have the flexibility to choose from a wide variety of ECN
+              accounts, each offering unique conditions tailored to different
+              strategies and goals. This allows you to find the perfect fit for
+              your trading needs.
             </Typography>
             <br />
             <Typography>
-              Regardless of the option you pick, you can enjoy peace of mind
-              knowing that you're always getting the tightest spreads possible.
+              No matter which option you select, you can be confident that
+              you're always getting the tightest spreads possible, ensuring
+              optimal trading conditions and peace of mind. Explore the options
+              and select the account that best aligns with your trading
+              objectives.
             </Typography>
           </Grid>
           <Grid

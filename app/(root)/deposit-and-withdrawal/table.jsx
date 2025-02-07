@@ -205,13 +205,6 @@ const depositLocal = [
     text2: "No commission",
     text3: "Instant",
   },
-  {
-    img: "/Image/flags/iran.webp",
-    country: "Iran",
-    text1: "IRR",
-    text2: "No commission",
-    text3: "Instant",
-  },
 ];
 
 const depositSuperforex = [
@@ -402,13 +395,6 @@ const withdrawlLocal = [
     img: "/Image/flags/namibia.webp",
     country: "Namibia",
     text1: "NAD",
-    text2: "Local bank wire fee",
-    text3: "1 - 3 business hours",
-  },
-  {
-    img: "/Image/flags/iran.webp",
-    country: "Iran",
-    text1: "IRR",
     text2: "Local bank wire fee",
     text3: "1 - 3 business hours",
   },

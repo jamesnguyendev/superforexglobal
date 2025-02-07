@@ -24,7 +24,7 @@ const Page = () => {
             financial fraud and terrorist activity.
           </p>
           <p className="mt-5">
-            Finateqs Corp. holds a zero tolerance fraud policy, and is taking
+            Superfin Corp. holds a zero tolerance fraud policy, and is taking
             all measures possible to prevent it. Any fraudulent activity will be
             documented and all accounts related to it will be immediately
             closed. All funds in these accounts will be forfeited.
@@ -32,7 +32,7 @@ const Page = () => {
 
           <h1 className="text-2xl font-bold mt-10">Prevention</h1>
           <p className="mt-5">
-            Finateqs Corp. aims to ensure the integrity of any sensitive data it
+            Superfin Corp. aims to ensure the integrity of any sensitive data it
             obtains, such as your account information and the transactions you
             make, using a variety of security measures and fraud controls.
             Securing your electronic transactions requires us to be provided
@@ -125,14 +125,14 @@ const Page = () => {
             How do I know my documents are safe with you?
           </h1>
           <p className="mt-5">
-            Finateqs Corp. holds the security of documentation at the highest
+            Superfin Corp. holds the security of documentation at the highest
             priority, and treats all documents it receives with utmost respect
             and confidentiality. All files we obtain are fully protected using
             the highest possible level of encryption at every step of the review
             process.
           </p>
           <p className="mt-5">
-            We thank you for your cooperation in helping us make Finateqs Corp.
+            We thank you for your cooperation in helping us make Superfin Corp.
             a safer place to trade.
           </p>
         </div>

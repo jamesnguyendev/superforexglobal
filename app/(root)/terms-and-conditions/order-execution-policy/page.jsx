@@ -16,7 +16,7 @@ const Page = () => {
 
           <h1 className="text-2xl font-bold mt-10">1. Introduction</h1>
           <p className="mt-5">
-            Finateqs Corp., operating under the trading name SuperForex, having
+            Superfin Corp., operating under the trading name SuperForex, having
             its registered address at Second Floor No 24, Albert Hoy Avenue,
             Belize City, Belize. , registration number 137723, hereinafter
             collectively referred to as “SuperForex”, we”, or “us”, is

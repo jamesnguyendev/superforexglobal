@@ -57,7 +57,7 @@
     "allanalytics": "All analytics",
     "technicalanlytics": "Technical analytics",
     "videoanalytics": "Video analytics",
-    "economic": "Economic analytics",
+    "economic": "Economic calendar",
     "fundamental": "Fundamental analytics",
     "tradingsoftware": "TRADING SOFTWARE",
     "mobileapp": "Mobile Application",
@@ -132,7 +132,8 @@
     "highlightsofsuperforex": "Highlights of SuperForex offline events.",
     "nospread": "No Spread",
     "becomeourpartner": "Become our partner and get the following privileges.",
-    "superibonus": "Super IB Bonus"
+    "superibonus": "Super IB Bonus",
+    "webtrade": "Web Trade"
   },
   "HomePage": {
     "welcome": "Welcome to SuperForex",

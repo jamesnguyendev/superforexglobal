@@ -68,7 +68,7 @@ const AutoImageSlider = () => {
   const images = [
     {
       imgDesktop:
-        "https://ik.imagekit.io/kn40ppx9b/Superforex/5964f2a35e40e11eb851.jpg?updatedAt=1738564363163",
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/web%20SF%20(1920%20x%20550%20px)%2022.png?updatedAt=1739160877835",
       imgMobile: BannerMobile0,
       titleBanner: t("goldtrading"),
       subTitleBanner: t("stableprofit"),
@@ -597,7 +597,7 @@ export default function Home() {
     <main className="text-default">
       <Header />
       <AutoImageSlider />
-      <Container maxWidth="lg" className="my-28">
+      <Container maxWidth="lg" className="my-12">
         <Grid container spacing={3} className="my-5 capitalize">
           <StyledGrid3 name={"$3TN+"} text={t("tradevolume")} />
           <StyledGrid3 name={"8"} text={t("awardin2024")} />

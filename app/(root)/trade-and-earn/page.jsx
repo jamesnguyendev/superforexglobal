@@ -56,7 +56,7 @@ const Page = () => {
       desc2: t("descvolume2"),
       widthimg: 200,
       currency: 2000,
-      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/LOA-MARSHALL-STANMORE-II-VOICE-WITH-GOOGLE-ASSISTANT-1cc.jpg?updatedAt=1738727087414",
+      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/f0855b2ac69279cc2083.jpg?updatedAt=1739170907669",
     },
     {
       widthimg: 200,

@@ -527,7 +527,7 @@ const MenuMobile = () => {
                     </h1>
                   </Link>
                 </div>
-                <div className="px-4 flex flex-col gap-2 pb-44 mb-44">
+                <div className="px-4 flex flex-col gap-2 pb-32 ">
                   <Link
                     href={"/economic-calendar"}
                     onClick={() => setState(false)}
@@ -583,8 +583,8 @@ const MenuMobile = () => {
                           "https://ik.imagekit.io/kn40ppx9b/Superforex/clone.png?updatedAt=1738914841762"
                         }
                         alt=""
-                        width={30}
-                        height={30}
+                        width={22}
+                        height={22}
                       />
                       <div className="">{t("forexcopy")}</div>
                     </Link>
@@ -733,12 +733,12 @@ const MenuMobile = () => {
                       <div className="">
                         <Image
                           src={
-                            "https://ik.imagekit.io/kn40ppx9b/Superforex/settings.png?updatedAt=1739163294342"
+                            "https://ik.imagekit.io/kn40ppx9b/Superforex/gift-box-benefits.png?updatedAt=1738915591118"
                           }
                           width={22}
                           height={10}
                           alt=""
-                          className="w-full"
+                          className="w-5"
                         />
                       </div>
                       <div className="">

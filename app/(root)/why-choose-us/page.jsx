@@ -20,7 +20,7 @@ const StyledGrid2 = ({ name, text1, text2, icon, img, link, reverse }) => {
       className="text-default"
       style={reverse && { display: "flex", flexDirection: "row-reverse" }}
     >
-      <Grid size={6} alignContent="center">
+      <Grid size={{ xs: 12, sm: 6 }} alignContent="center">
         <Stack
           className="p-5"
           style={{ display: "flex", alignItems: "space-between" }}
@@ -43,47 +43,11 @@ const StyledGrid2 = ({ name, text1, text2, icon, img, link, reverse }) => {
         </Stack>
       </Grid>
 
-      <Grid size={6}>
+      <Grid size={{ xs: 12, sm: 6 }}>
         <Card className="p-5">
           <img src={img} />
         </Card>
       </Grid>
-    </Grid>
-  );
-};
-
-const StyledGrid3 = ({ name, img, link }) => {
-  const t = useTranslations("WhyChooseUs");
-  return (
-    <Grid
-      item
-      size={3}
-      className="px-4"
-      style={{ display: "flex", justifyContent: "space-between" }}
-    >
-      <Card
-        className="text-center flex flex-col items-center"
-        style={{
-          flexGrow: 1,
-          flexDirection: "column",
-          justifyContent: "space-between",
-        }}
-      >
-        <Card className="h-150 w-150 flex items-center justify-center">
-          <img src={img} />
-        </Card>
-        <Stack className="p-4">
-          <CardContent>
-            <Typography variant="h6" className="text-default">
-              {name}
-            </Typography>
-          </CardContent>
-          <Link href={link} className="flex justify-center">
-            <Button name={t("moreInfo")} background={true} />
-          </Link>
-          {/* <StyledButton link={link} /> */}
-        </Stack>
-      </Card>
     </Grid>
   );
 };

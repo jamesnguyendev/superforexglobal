@@ -748,7 +748,7 @@ export default function Home() {
           </Grid>
           <Grid item size={{ md: 5, sm: 12 }} className="items-end">
             <img
-              src="https://ik.imagekit.io/kn40ppx9b/Superforex/3%20q.png?updatedAt=1738746259874https://ik.imagekit.io/kn40ppx9b/Superforex/3%20q.png?updatedAt=1738746259874https://ik.imagekit.io/kn40ppx9b/Superforex/3%20q.png?updatedAt=1738746259874https://ik.imagekit.io/kn40ppx9b/Superforex/3%20q.png?updatedAt=1738746259874https://ik.imagekit.io/kn40ppx9b/Superforex/3%20q.png?updatedAt=1738746259874"
+              src="https://ik.imagekit.io/kn40ppx9b/Superforex/2%20dien%20thoai%20sf%202.png?updatedAt=1739177211642"
               alt="img"
             />
           </Grid>

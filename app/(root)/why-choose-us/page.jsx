@@ -148,7 +148,7 @@ export default function WhyChooseUs() {
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/mobile-trading.svg?updatedAt=1735634889916"
           }
           img={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/mobile-trading.jpg?updatedAt=1735634889822"
+            "https://ik.imagekit.io/kn40ppx9b/Superforex/trading%20platform.jpg?updatedAt=1739177332678"
           }
           name={t("mobileTrading")}
           text1={t("mobileTradingDescription")}
@@ -161,30 +161,18 @@ export default function WhyChooseUs() {
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/many-deposit-methods.svg?updatedAt=1735634889348"
           }
           img={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/many-deposit-methods.jpg?updatedAt=1735634889529"
+            "https://ik.imagekit.io/kn40ppx9b/Superforex/pexels-photo-5031038.webp?updatedAt=1739177882377"
           }
           name={t("manyDepositMethods")}
           text1={t("manyDepositMethodsDescription")}
           link="/deposit-and-withdrawal"
         />
-        {/* <StyledGrid2
-          icon={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/education.svg?updatedAt=1735634886011"
-          }
-          img={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/education.jpg?updatedAt=1735635033333"
-          }
-          name={t("education")}
-          text1={t("educationDescription")}
-          reverse
-          link="/education"
-        /> */}
         <StyledGrid2
           icon={
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/forex-copy.svg?updatedAt=1735634886287"
           }
           img={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/forex-copy.jpg?updatedAt=1735634886196"
+            "https://ik.imagekit.io/kn40ppx9b/Superforex/how-to-select-best-mobile-trading-app-for-investment-img-3-768x512.webp?updatedAt=1739177950380"
           }
           name={"Forex Copy"}
           text1={t("forexCopyDescription")}
@@ -196,7 +184,7 @@ export default function WhyChooseUs() {
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/bonuses-contests.svg?updatedAt=1735634886312"
           }
           img={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/bonuses-contests.jpg?updatedAt=1735634885986"
+            "https://ik.imagekit.io/kn40ppx9b/Superforex/closeup-successful-businessman-p.jpg?updatedAt=1739177622066"
           }
           name={t("bonusesAndContests")}
           text1={t("bonusesAndContestsDescription")}
@@ -206,7 +194,7 @@ export default function WhyChooseUs() {
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/news-analysis.svg?updatedAt=1735634889296"
           }
           img={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/news-analysis.jpg?updatedAt=1735634889424"
+            "https://ik.imagekit.io/kn40ppx9b/Superforex/pexels-anna-nekrashevich-6801874.jpg?updatedAt=1739177685754"
           }
           name={t("economicNewsAndAnalysis")}
           text1={t("economicNewsAndAnalysisDescription")}
@@ -219,42 +207,12 @@ export default function WhyChooseUs() {
             "https://ik.imagekit.io/3idyffxxb/New%20Folder/diversity-of-accounts.svg?updatedAt=1735634886260"
           }
           img={
-            "https://ik.imagekit.io/3idyffxxb/New%20Folder/diversity-of-accounts.jpg?updatedAt=1735634885952"
+            "https://ik.imagekit.io/kn40ppx9b/Superforex/stacked-credit-cards.jpg?updatedAt=1739177728576"
           }
           name={t("diversityOfAccounts")}
           text1={t("diversityOfAccountsDescription")}
           link="/stp-accounts"
         />
-
-        {/* <Stack className="text-default">
-          <StyledGrid2
-            icon={
-              "https://ik.imagekit.io/3idyffxxb/New%20Folder/news-analysis.svg?updatedAt=1735634889296"
-            }
-            img={
-              "https://ik.imagekit.io/3idyffxxb/New%20Folder/auto-reset-balance.jpg?updatedAt=1735634886265"
-            }
-            name={t("autoResetBalance")}
-            text1={
-              "It often happens that if you make any mistakes during trading, they will gradually eat away at your deposits. Suffering losses can be tough as they bring your account balance closer and closer to zero, and particularly bad situations can take that even below zero, putting you in debt."
-            }
-            link={"/auto-reset-balance"}
-          />
-          <StyledGrid2
-            icon={
-              "https://ik.imagekit.io/3idyffxxb/New%20Folder/diversity-of-accounts.svg?updatedAt=1735634886260"
-            }
-            img={
-              "https://ik.imagekit.io/3idyffxxb/New%20Folder/no-fees-on-deposit.jpg?updatedAt=1735634886229"
-            }
-            name={t("noDepositFees")}
-            text1={
-              "SuperForex provides you with more than 30 methods for depositing and withdrawing money. Since we work only with trusted financial partners, we will cover in full or partially the intermediary fees charged by the payment systems when customers deposit funds with us. SuperForex does not charge any internal payments for deposits or withdrawals.SuperForex provides you with more than 30 methods for depositing and withdrawing money. Since we work only with trusted financial partners, we will cover in full or partially the intermediary fees charged by the payment systems when customers deposit funds with us. SuperForex does not charge any internal payments for deposits or withdrawals."
-            }
-            link="/no-fees-on-deposit"
-            reverse
-          />
-        </Stack> */}
       </Container>
     </>
   );

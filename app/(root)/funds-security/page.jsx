@@ -38,10 +38,10 @@ export default function FundsSecurity() {
           <div className="">
             <Image
               alt="sl"
-              width={100}
+              width={800}
               height={100}
               src={
-                "https://ik.imagekit.io/3idyffxxb/New%20Folder/segregated-funds.jpg?updatedAt=1735635981101"
+                "https://ik.imagekit.io/kn40ppx9b/Superforex/lock-network-technology-concept.jpg?updatedAt=1739178825509"
               }
               className="w-full h-full rounded-lg"
               quality={100}
@@ -56,10 +56,10 @@ export default function FundsSecurity() {
           <div className="md:order-2">
             <Image
               alt="sl"
-              width={100}
+              width={800}
               height={100}
               src={
-                "https://ik.imagekit.io/3idyffxxb/New%20Folder/ssl-certificate.jpg?updatedAt=1735635981096"
+                "https://ik.imagekit.io/kn40ppx9b/Superforex/depositphotos_113549952-stock-ph.jpg?updatedAt=1739178891868"
               }
               className="w-full h-full rounded-lg"
               quality={100}
@@ -74,10 +74,10 @@ export default function FundsSecurity() {
           <div className="">
             <Image
               alt="sl"
-              width={100}
+              width={800}
               height={100}
               src={
-                "https://ik.imagekit.io/3idyffxxb/New%20Folder/account-verification.jpg?updatedAt=1735635981112"
+                "https://ik.imagekit.io/kn40ppx9b/Superforex/human-hand-holding-magnifying-glass-searching-people-icons-background_488220-11531.avif?updatedAt=1739179059269"
               }
               className="w-full h-full rounded-lg"
               quality={100}
@@ -92,10 +92,10 @@ export default function FundsSecurity() {
           <div className="md:order-2">
             <Image
               alt="sl"
-              width={100}
+              width={800}
               height={100}
               src={
-                "https://ik.imagekit.io/3idyffxxb/New%20Folder/login-history.jpg?updatedAt=1735635980977"
+                "https://ik.imagekit.io/kn40ppx9b/Superforex/depositphotos_361862490-stock-ph.jpg?updatedAt=1739178891821"
               }
               className="w-full h-full rounded-lg"
               quality={100}
@@ -110,10 +110,10 @@ export default function FundsSecurity() {
           <div className="">
             <Image
               alt="sl"
-              width={100}
+              width={800}
               height={100}
               src={
-                "https://ik.imagekit.io/3idyffxxb/New%20Folder/device-id.jpg?updatedAt=1735635981102"
+                "https://ik.imagekit.io/kn40ppx9b/Superforex/online-business-businessman-hold.jpg?updatedAt=1739179149500"
               }
               className="w-full h-full rounded-lg"
               quality={100}
@@ -128,10 +128,10 @@ export default function FundsSecurity() {
           <div className="md:order-2">
             <Image
               alt="sl"
-              width={100}
+              width={500}
               height={100}
               src={
-                "https://ik.imagekit.io/3idyffxxb/New%20Folder/allowed-ip.jpg?updatedAt=1735635980906"
+                "https://ik.imagekit.io/kn40ppx9b/Superforex/cybersecurity4.jpg?updatedAt=1739179206117"
               }
               className="w-full h-full rounded-lg"
               quality={100}

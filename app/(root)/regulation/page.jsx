@@ -84,21 +84,23 @@ const StyledGrid3 = ({ name, img }) => {
     <Grid
       item
       size={{ xs: 12, sm: 6, md: 3 }}
-      style={{ display: "flex", justifyContent: "space-between" }}
+      style={{ display: "flex", justifyContent: "center" }}
     >
       <Card
         className="text-center flex flex-col items-center"
         style={{
           flexGrow: 1,
           flexDirection: "column",
-          justifyContent: "space-between",
+          alignItems: "center",
+          height: "100%",
         }}
       >
         <Card className="h-150 w-150 rounded-full p-3 flex items-center justify-center">
-          <img src={img} width={96} height={96} alt={img} />
+          <img src={img} width={96} height={96} alt={name} />
         </Card>
-        <Stack className="p-4">
-          <CardContent>
+
+        <Stack className="p-4" sx={{ display: "flex", alignItems: "center" }}>
+          <CardContent sx={{ textAlign: "center", flexGrow: 1 }}>
             <Typography variant="h7" className="text-default">
               {name}
             </Typography>
@@ -108,6 +110,7 @@ const StyledGrid3 = ({ name, img }) => {
     </Grid>
   );
 };
+
 
 export default function Regulation() {
   const t = useTranslations("Regulation");
@@ -183,6 +186,7 @@ export default function Regulation() {
               spacing={2}
               justifyContent="center"
               alignContent="space-between"
+              sx={{ display: "flex", flexGrow: 1 }}
               marginY={5}
             >
               <StyledGrid3

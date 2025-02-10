@@ -76,7 +76,7 @@ export default function FundsSecurity() {
               alt="sl"
               width={800}
               height={100}
-              src={
+              src={           
                 "https://ik.imagekit.io/kn40ppx9b/Superforex/human-hand-holding-magnifying-glass-searching-people-icons-background_488220-11531.avif?updatedAt=1739179059269"
               }
               className="w-full h-full rounded-lg"

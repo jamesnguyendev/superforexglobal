@@ -111,7 +111,6 @@ const StyledGrid3 = ({ name, img }) => {
   );
 };
 
-
 export default function Regulation() {
   const t = useTranslations("Regulation");
   const handleLinkClick = (event) => {
@@ -119,7 +118,7 @@ export default function Regulation() {
     window.open(
       "https://superforex.com/finateqs-investor-compensation-fund.pdf",
       "_blank",
-      "noopener,noreferrer"
+      "noopener,noreferrer",
     );
   };
 
@@ -204,12 +203,14 @@ export default function Regulation() {
               <StyledGrid3
                 name={t("insuranceOfFunds")}
                 img={
-                  "https://ik.imagekit.io/3idyffxxb/New%20Folder/deposit-protection.svg?updatedAt=1735635478936"
+                  "https://ik.imagekit.io/kn40ppx9b/Superforex/deposit-protection.svg?updatedAt=1739241138642"
                 }
               />
               <StyledGrid3
                 name={t("safetyAndSecurityOfFunds")}
-                img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/funds-security%20(1).svg?updatedAt=1735635490888"}
+                img={
+                  "https://ik.imagekit.io/3idyffxxb/New%20Folder/funds-security%20(1).svg?updatedAt=1735635490888"
+                }
               />
             </Grid>
           </Stack>

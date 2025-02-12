@@ -69,7 +69,8 @@ const AutoImageSlider = () => {
     {
       imgDesktop:
         "https://ik.imagekit.io/kn40ppx9b/Superforex/web%20SF%20(1920%20x%20550%20px)%2022.png?updatedAt=1739160877835",
-      imgMobile: BannerMobile0,
+      imgMobile:
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/mobile%20enc.jpg?updatedAt=1739335506618",
       titleBanner: t("goldtrading"),
       subTitleBanner: t("stableprofit"),
       buttonName: t("openaccount"),
@@ -78,12 +79,12 @@ const AutoImageSlider = () => {
     },
     {
       imgDesktop:
-        "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105809052.png?updatedAt=1735272455857",
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/ECN%20account%20bong%20bong.jpg?updatedAt=1739334575998",
       imgMobile: BannerMobile1,
       titleBanner: t("ecnaccount"),
       subTitleBanner: t("tradingwithspreads"),
       buttonName: t("moreinformation"),
-      textBannerColor: true,
+      textBannerColor: false,
       link: "/ecn-accounts",
     },
     {

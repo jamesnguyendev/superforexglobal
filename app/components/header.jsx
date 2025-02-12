@@ -720,7 +720,7 @@ export default function Header() {
                       img={
                         "https://ik.imagekit.io/kn40ppx9b/Superforex/transaction-euro.png?updatedAt=1738914691398"
                       }
-                      name={"Web Trade"}
+                      name={t("webtrade")}
                       link="mt-4"
                     />
                   </Grid>

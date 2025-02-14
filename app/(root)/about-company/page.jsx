@@ -91,21 +91,14 @@ export default function AboutCompany() {
           >
             <StyledGrid4 number={"150+"} text={t("countries")} />
             <StyledGrid4 number={"1"} text={t("secondToOpenDeal")} />
-            <StyledGrid4
-              number={"$ 100,000"}
-              text={t("dailyProfit")}
-            />
+            <StyledGrid4 number={"$ 100,000"} text={t("dailyProfit")} />
           </Grid>
         </Stack>
 
         <Stack className="text-default py-5 relative" style={{ zIndex: 2 }}>
-          <Typography>
-            {t("description1")}
-          </Typography>
+          <Typography>{t("description1")}</Typography>
 
-          <Typography>
-            {t("description2")}
-          </Typography>
+          <Typography>{t("description2")}</Typography>
         </Stack>
       </Container>
 
@@ -124,17 +117,23 @@ export default function AboutCompany() {
           >
             <StyledGrid3
               name={t("whyChooseUs")}
-              img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/why-choose-us.svg?updatedAt=1735634181181"}
+              img={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/why-choose-us.svg?updatedAt=1735634181181"
+              }
               link="/why-choose-us"
             />
             <StyledGrid3
               name={t("regulation")}
-              img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/regulation.svg?updatedAt=1735634181731"}
+              img={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/regulation.svg?updatedAt=1735634181731"
+              }
               link="/regulation"
             />
             <StyledGrid3
               name={t("awards")}
-              img={"https://ik.imagekit.io/3idyffxxb/New%20Folder/awards.svg?updatedAt=1735634181232"}
+              img={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/awards.svg?updatedAt=1735634181232"
+              }
               link="/awards"
             />
             <StyledGrid3
@@ -187,37 +186,23 @@ export default function AboutCompany() {
 
             {tab == "mission" && (
               <>
-                <CardContent>
-                  {t("goalDescription1")}
-                </CardContent>
-                <CardContent>
-                  {t("goalDescription2")}
-                </CardContent>
+                <CardContent>{t("goalDescription1")}</CardContent>
+                <CardContent>{t("goalDescription2")}</CardContent>
               </>
             )}
 
             {tab == "vision" && (
               <>
-                <CardContent>
-                  {t("visionDescription")}
-                </CardContent>
+                <CardContent>{t("visionDescription")}</CardContent>
               </>
             )}
 
             {tab == "value" && (
               <>
-                <CardContent>
-                  {t("trust")}
-                </CardContent>
-                <CardContent>
-                  {t("quality")}
-                </CardContent>
-                <CardContent>
-                  {t("professionalism")}
-                </CardContent>
-                <CardContent>
-                  {t("leadership")}
-                </CardContent>
+                <CardContent>{t("trust")}</CardContent>
+                <CardContent>{t("quality")}</CardContent>
+                <CardContent>{t("professionalism")}</CardContent>
+                <CardContent>{t("leadership")}</CardContent>
               </>
             )}
           </Card>

@@ -76,7 +76,7 @@ const Page = () => {
             Regarding refund issues, the customer can contact our support team:
           </p>
           <p className="mt-5 underline text-primary font-bold hover:text-default">
-            support@superforex.com
+            info@superforex.global
           </p>
           <p className="mt-5">Refund timeframes 1-4 working hours.</p>
         </div>

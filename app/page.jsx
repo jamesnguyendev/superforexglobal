@@ -96,7 +96,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("applyonlocal"),
       buttonName: t("learnmore"),
       textBannerColor: false,
-      link: "/free-swap",
+      link: "/terms-and-conditions/energy-bonus-agreement",
     },
     {
       imgDesktop:
@@ -107,7 +107,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("increaseyourprofits"),
       buttonName: t("joincontest"),
       textBannerColor: false,
-      link: "/trade-and-earn",
+      link: "/terms-and-conditions/easy-deposit-bonus-agreement",
     },
     {
       imgDesktop:
@@ -117,7 +117,7 @@ const AutoImageSlider = () => {
       subTitleBanner: t("thehottestoffer"),
       buttonName: t("getbonus"),
       dot: true,
-      link: "/hot-bonus",
+      link: "/terms-and-conditions/extreme-hot-bonus",
     },
     {
       imgDesktop:

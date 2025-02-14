@@ -46,7 +46,7 @@ const Page = () => {
               {/* <li>
                 E-mail:
                 <span className="ms-2 underline text-primary font-bold hover:text-default">
-                  support@superforex.com
+                  info@superforex.global
                 </span>
               </li> */}
               <li>a copy of your valid passport with the signature page;</li>
@@ -81,7 +81,7 @@ const Page = () => {
             If you have any questions please don’t hesitate to contact our
             customer support:
             <span className="ms-2 underline text-primary font-bold hover:text-default">
-              support@superforex.com
+              info@superforex.global
             </span>
           </p>
 
@@ -117,7 +117,7 @@ const Page = () => {
             picture, save the images as jpeg,bmp,png,doc and docx, then send it
             to us via mail to
             <span className="ms-2 underline text-primary font-bold hover:text-default">
-              support@superforex.com
+              info@superforex.global
             </span>
           </p>
 

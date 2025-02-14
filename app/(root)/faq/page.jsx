@@ -59,7 +59,7 @@ const Client = () => {
           "An error occurred when I was trying to upload the document. What should I do?"
         }
         ans={
-          "If you get an error message and your document fails to be uploaded, please send detailed information about the error to support@superforex.com, specify your account number, and attach screenshots of the error page. You can also try to verify your account using another Internet browser."
+          "If you get an error message and your document fails to be uploaded, please send detailed information about the error to info@superforex.global, specify your account number, and attach screenshots of the error page. You can also try to verify your account using another Internet browser."
         }
       />
       <CardItem
@@ -99,7 +99,7 @@ const Client = () => {
       <CardItem
         ques={"How can I change my leverage?"}
         ans={
-          "Send an email to support@superforex.com with the following information: trading account number, phone password, and the desired leverage. You can also contact the Customer Support Service via chat and provide the same data."
+          "Send an email to info@superforex.global with the following information: trading account number, phone password, and the desired leverage. You can also contact the Customer Support Service via chat and provide the same data."
         }
       />
       <CardItem
@@ -115,7 +115,7 @@ const Client = () => {
           "I forgot my withdrawal password (or I want to change it). What should I do?"
         }
         ans={
-          "If you forget or want to change your withdrawal password, contact us via email at support@superforex.com or via Live Chat, providing the following information: account number and phone password."
+          "If you forget or want to change your withdrawal password, contact us via email at info@superforex.global or via Live Chat, providing the following information: account number and phone password."
         }
       />
       <CardItem

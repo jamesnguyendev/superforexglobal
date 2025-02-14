@@ -371,7 +371,7 @@ const Page = () => {
             Should you require any additional information about the Risk
             Disclosure of SuperForex, please contact us at
             <span className="ms-2 underline text-primary font-bold hover:text-default">
-              support@superforex.com
+              info@superforex.global
             </span>
           </p>
         </div>

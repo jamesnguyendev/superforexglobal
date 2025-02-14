@@ -61,7 +61,7 @@ const Page = () => {
             If you have any questions about these terms of use, please contact
             us at
             <span className="ms-2 underline text-primary font-bold hover:text-default">
-              support@superforex.com
+              info@superforex.global
             </span>
           </p>
 

@@ -38,7 +38,7 @@ const Page = () => {
             If you have any questions about our Privacy Policy, please contact
             us at
             <span className="ms-2 underline text-primary font-bold hover:text-default">
-              support@superforex.com
+              info@superforex.global
             </span>
           </p>
 
@@ -205,7 +205,7 @@ const Page = () => {
             SuperForex processes your personal information, please contact us by
             email at
             <span className="ms-2 underline text-primary font-bold hover:text-default">
-              support@superforex.com
+              info@superforex.global
             </span>
           </p>
         </div>

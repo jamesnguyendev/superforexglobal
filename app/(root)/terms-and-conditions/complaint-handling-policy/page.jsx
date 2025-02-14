@@ -44,17 +44,13 @@ const Page = () => {
           <p className="mt-5">
             <ul className="list-disc ms-8">
               <li>
-                E-mail: 
+                E-mail:
                 <span className="ms-2 underline text-primary font-bold hover:text-default">
-                support@superforex.com
+                  info@superforex.global
                 </span>
               </li>
-              <li>
-              Telephone: +65-3-1590282 (International format)
-              </li>
-              <li>
-              Skype: client-support.superforex
-              </li>
+              <li>Telephone: +65-3-1590282 (International format)</li>
+              <li>Skype: client-support.superforex</li>
             </ul>
           </p>
           <p className="mt-5">

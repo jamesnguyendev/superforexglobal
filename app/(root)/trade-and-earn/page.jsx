@@ -51,6 +51,22 @@ const Page = () => {
 
   const item = [
     {
+      name: t("voucher"),
+      desc1: t("voucher1"),
+      desc2: t("voucher2"),
+      widthimg: 200,
+      currency: 500,
+      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/cumt.jpg?updatedAt=1739524301129",
+    },
+    {
+      name: t("hearphone"),
+      desc1: t("hearphone1"),
+      desc2: t("hearphone2"),
+      widthimg: 200,
+      currency: 1000,
+      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/231206035739-670nc.webp?updatedAt=1739525441691",
+    },
+    {
       name: t("volume"),
       desc1: t("descvolume1"),
       desc2: t("descvolume2"),
@@ -125,38 +141,35 @@ const Page = () => {
 
       <section className={"pt-24 mb-14 px-10 text-default"}>
         <div className="grid lg:grid-cols-3 gap-x-3 gap-y-28 md:grid-cols-2 grid-cols-1">
-          {item.map(
-            (i, index) =>
-              index !== item.length - 1 && (
-                <div
-                  className=" flex flex-col gap-8 text-center items-center justify-end"
-                  key={index}
-                >
-                  <div className="">
-                    <Image
-                      src={i.img}
-                      quality={100}
-                      width={i.widthimg} // Chiều rộng
-                      height={150} // Chiều cao
-                      alt="mars"
-                      className="object-cover "
-                    />
-                  </div>
-                  <div className="flex flex-col ">
-                    <h1 className="font-semibold text-slate-700 text-2xl mb-3">
-                      {i.name}
-                    </h1>
-                    <div className="text-lg">
-                      <span>{i.desc1}</span>
-                      <br />
-                      <span>{i.desc2}</span>
-                    </div>
-                  </div>
+          {item.map((i, index) => (
+            <div
+              className=" flex flex-col gap-8 text-center items-center justify-end"
+              key={index}
+            >
+              <div className="">
+                <Image
+                  src={i.img}
+                  quality={100}
+                  width={i.widthimg} // Chiều rộng
+                  height={150} // Chiều cao
+                  alt="mars"
+                  className="object-cover "
+                />
+              </div>
+              <div className="flex flex-col ">
+                <h1 className="font-semibold text-slate-700 text-2xl mb-3">
+                  {i.name}
+                </h1>
+                <div className="text-lg">
+                  <span>{i.desc1}</span>
+                  <br />
+                  <span>{i.desc2}</span>
                 </div>
-              ),
-          )}
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="grid gap-x-3 gap-y-14 md:gap-y-28 grid-cols-1 ">
+        {/* <div className="grid gap-x-3 gap-y-14 md:gap-y-28 grid-cols-1 ">
           <div className=" flex flex-col text-center items-center justify-center place-self-center	">
             <Image
               src={
@@ -179,7 +192,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className={"pb-24"}>
         <Container className="flex justify-center text-default">
@@ -197,7 +210,7 @@ const Page = () => {
       <WhyChoose data={data} title={t("WhyChooseWelcomeBonus")} />
       <div
         className={
-          "flex justify-center items-center max-w-[50rem] mx-auto my-7"
+          "flex justify-center items-center max-w-[70rem] mx-auto my-7"
         }
       >
         <DepositSlider

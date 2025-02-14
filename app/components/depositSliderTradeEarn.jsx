@@ -17,6 +17,8 @@ const DepositSlider = ({
   filter,
 }) => {
   const steps = [
+    "500 USD",
+    "1,000 USD",
     "2,000 USD",
     "5,000 USD",
     "10,000 USD",
@@ -66,40 +68,52 @@ const DepositSlider = ({
           <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(0)}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
             <h3 className="flex items-center mb-1 text-lg font-semibold ">
-              2,000 USD
+              500 USD
             </h3>
           </li>
           <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(1)}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
             <h3 className="flex items-center mb-1 text-lg font-semibold ">
-              5,000 USD
+              1,000 USD
             </h3>
           </li>
           <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(2)}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
             <h3 className="flex items-center mb-1 text-lg font-semibold ">
-              10,000 USD
+              2,000 USD
             </h3>
           </li>
           <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(3)}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
             <h3 className="flex items-center mb-1 text-lg font-semibold ">
-              15,000 USD
+              5,000 USD
             </h3>
           </li>
           <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(4)}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
             <h3 className="flex items-center mb-1 text-lg font-semibold ">
-              25,000 USD
+              10,000 USD
             </h3>
           </li>
           <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(5)}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
             <h3 className="flex items-center mb-1 text-lg font-semibold ">
+              15,000 USD
+            </h3>
+          </li>
+          <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(6)}>
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
+            <h3 className="flex items-center mb-1 text-lg font-semibold ">
+              25,000 USD
+            </h3>
+          </li>
+          <li className="mb-10 ms-6 cursor-pointer" onClick={handleStep(7)}>
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
+            <h3 className="flex items-center mb-1 text-lg font-semibold ">
               50,000 USD
             </h3>
           </li>
-          <li className="md:mb-5 ms-6 cursor-pointer" onClick={handleStep(6)}>
+          <li className="md:mb-5 ms-6 cursor-pointer" onClick={handleStep(8)}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-8 ring-white "></span>
             <h3 className="flex items-center mb-1 text-lg font-semibold ">
               350,000 USD

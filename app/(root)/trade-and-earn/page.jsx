@@ -120,6 +120,7 @@ const Page = () => {
         titleBanner={t("WelcomeBonus")}
         subTitleBanner={t("GetMoreOnEachDeposit")}
         buttonName={t("ClaimBonus")}
+        link="/terms-and-conditions/easy-deposit-bonus-agreement"
       />
 
       <section className={"pt-24 mb-14 px-10 text-default"}>

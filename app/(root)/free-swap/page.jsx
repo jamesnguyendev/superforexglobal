@@ -77,7 +77,7 @@ const Page = () => {
         buttonName={t("ClaimBonus")}
         titleBanner={t("Title")}
         subTitleBanner={t("SubTitle")}
-        link={"#register"}
+        link={"/terms-and-conditions/energy-bonus-agreement"}
         blank={true}
       />{" "}
       <br />

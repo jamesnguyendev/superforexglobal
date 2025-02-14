@@ -58,7 +58,7 @@ const Page = () => {
         buttonName={t("bannerBtn")}
         titleBanner={t("bannerTitle")}
         subTitleBanner={t("bannerSubTitle")}
-        link={"#register"}
+        link={"/terms-and-conditions/extreme-hot-bonus"}
       />
       <Container className="mt-20">
         <p className="m-0 mx-auto mb-20 000max-w-3xl text-xl font-normal text-default">

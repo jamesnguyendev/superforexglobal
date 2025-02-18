@@ -72,7 +72,7 @@ const Page = () => {
       desc2: t("descvolume2"),
       widthimg: 200,
       currency: 2000,
-      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/f0855b2ac69279cc2083.jpg?updatedAt=1739170907669",
+      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/db6926d175c1c89f91d0.jpg?updatedAt=1734687281329",
     },
     {
       widthimg: 200,

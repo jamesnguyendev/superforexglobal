@@ -15,7 +15,7 @@ const DepositSlider = ({
   sliderNameSecond,
   valueSecond,
 }) => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState(500);
 
   const handleChange = (event, newValue) => {
     if (typeof newValue === "number") {
@@ -27,6 +27,10 @@ const DepositSlider = ({
     let result = 0;
     if (times === 2) {
       result = value * 2;
+      return result.toLocaleString();
+    }
+    if (times === 1.1) {
+      result = value * 1.1;
       return result.toLocaleString();
     }
     if (times === 4) {
@@ -72,14 +76,14 @@ const DepositSlider = ({
             >
               {sliderNameSecond}
               <span className={"flex flex-row justify-center items-center"}>
-                {value >= 100 ? valueSecond : "100%"}
+                {value >= 100 ? valueSecond : "10%"}
               </span>
             </Typography>
           ) : null}
           <Slider
             value={value}
-            min={1}
-            step={1}
+            min={500}
+            step={10}
             max={50000}
             className={"text-primary"}
             getAriaValueText={valueLabelFormat}

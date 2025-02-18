@@ -74,7 +74,7 @@ const Page = () => {
           sliderName={t("slider1")}
           bottomName={t("sliderBottom")}
           buttonName={t("sliderBtn")}
-          time={4}
+          time={1.1}
           valueDefault={"10,000"}
           sliderNameSecond={t("slider2")}
           valueSecond={"10%"}

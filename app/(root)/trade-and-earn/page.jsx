@@ -157,7 +157,7 @@ const Page = () => {
                 />
               </div>
               <div className="flex flex-col ">
-                <h1 className="font-semibold text-slate-700 text-2xl mb-3">
+                <h1 className="font-semibold text-slate-700 text-2xl mb-4">
                   {i.name}
                 </h1>
                 <div className="text-lg">

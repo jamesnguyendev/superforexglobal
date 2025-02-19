@@ -290,7 +290,7 @@ const transactions3 = [
     cal: AAPL,
   },
   {
-    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/Layer%202.png?updatedAt=1738730021840",
+    img: "https://ik.imagekit.io/kn40ppx9b/Superforex/mom.png?updatedAt=1739931411406",
     name: "US30",
     text: "US Wall Street 30",
     cal: AAPL,

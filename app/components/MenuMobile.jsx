@@ -527,7 +527,7 @@ const MenuMobile = () => {
                     </h1>
                   </Link>
                 </div>
-                <div className="px-4 flex flex-col gap-2 pb-32 ">
+                <div className="px-4 flex flex-col gap-2">
                   <Link
                     href={"/economic-calendar"}
                     onClick={() => setState(false)}
@@ -535,6 +535,17 @@ const MenuMobile = () => {
                   >
                     <h1 className="text-md opacity-70 font-bold flex items-center gap-3">
                       {t("economic")}
+                    </h1>
+                  </Link>
+                </div>
+                <div className="px-4 flex flex-col gap-2 pb-32 ">
+                  <Link
+                    href={"/profit-calculator"}
+                    onClick={() => setState(false)}
+                    className="rounded py-2 active:ring-2 active:ring-primary"
+                  >
+                    <h1 className="text-md opacity-70 font-bold flex items-center gap-3">
+                      {t("profitcalculator")}
                     </h1>
                   </Link>
                 </div>

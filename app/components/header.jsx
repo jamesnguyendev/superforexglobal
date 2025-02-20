@@ -673,8 +673,13 @@ export default function Header() {
                     />
                     <br />
                     <TypographyLink
-                      name={"Economic Calendar"}
+                      name={t("economic")}
                       link={"/economic-calendar"}
+                    />
+                    <br />
+                    <TypographyLink
+                      name={t("profitcalculator")}
+                      link={"/profit-calculator"}
                     />
                   </Grid>
                 </Grid>

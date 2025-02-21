@@ -11,7 +11,7 @@ function getCookie(name) {
 
 const TradingViewWidget = () => {
   const intervalRef = useRef(null);
-  const [localeCookie, setLocaleCookie] = useState();
+  const [localeCookie, setLocaleCookie] = useState("en");
 
   console.log(localeCookie);
 
@@ -29,7 +29,7 @@ const TradingViewWidget = () => {
   useEffect(() => {
     if (!localeCookie) return; // Chỉ chạy khi localeCookie có giá trị
     const container = document.querySelector(
-      ".tradingview-widget-container__widget"
+      ".tradingview-widget-container__widget",
     );
     if (container) container.innerHTML = ""; // Xóa widget cũ trước khi thêm mới
 

@@ -332,7 +332,7 @@ const Page = () => {
                 {t("partnershipDepartmentContacts")}
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-9 lg:grid-cols-4 *:flex *:gap-4 text-default text-lg font-semibold *:place-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-9 *:flex *:gap-4 text-default text-lg font-semibold *:place-items-center">
               <Link
                 href="mailto:partners@superforex.com"
                 rel="nofollow noopener noreferrer"

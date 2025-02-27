@@ -673,8 +673,13 @@ export default function Header() {
                     />
                     <br />
                     <TypographyLink
-                      name={"Economic Calendar"}
+                      name={t("economic")}
                       link={"/economic-calendar"}
+                    />
+                    <br />
+                    <TypographyLink
+                      name={t("profitcalculator")}
+                      link={"/profit-calculator"}
                     />
                   </Grid>
                 </Grid>
@@ -706,7 +711,7 @@ export default function Header() {
                         "https://ik.imagekit.io/kn40ppx9b/Superforex/square-4.png?updatedAt=1738914536409"
                       }
                       name={"Meta Trader 4"}
-                      link="mt-4"
+                      // link="mt-4"
                     />
                     <br />
                     <StyleStack
@@ -721,7 +726,7 @@ export default function Header() {
                         "https://ik.imagekit.io/kn40ppx9b/Superforex/transaction-euro.png?updatedAt=1738914691398"
                       }
                       name={t("webtrade")}
-                      link="mt-4"
+                      // link="mt-4"
                     />
                   </Grid>
                   <Grid

@@ -158,7 +158,7 @@ const depositElectronic = [
 const depositCryptocurrencies = [
   {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/coins.svg?updatedAt=1735643190813",
-    text1: "BTC, LTC, DOGE, PPC, DASH, RDD, ZEC, BLK, USDT",
+    text1: "USDT",
     text2: "No commission",
     text3: "Instant",
   },
@@ -222,25 +222,25 @@ const withdrawlBankWire = [
   {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/bank-wire-transfer.svg?updatedAt=1735643190883",
     text1: "All",
-    text2: "3% + 35 USD",
+    text2: "No commission",
     text3: "2 - 4 business days",
   },
   {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/bank-wire-transfer-sa.svg?updatedAt=1735643190731",
     text1: "ZAR",
-    text2: "From 1.4% to 3.8%",
+    text2: "No commission",
     text3: "2 - 4 business days",
   },
   {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/bank-wire-transfer-asia.svg?updatedAt=1735643191013",
     text1: "IDR, MYR, THB, VND",
-    text2: "3.00%",
+    text2: "No commission",
     text3: "1 - 3 business hours",
   },
   {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/banktransfer-brl-mxn.svg?updatedAt=1735643190924",
     text1: "BRL, MXN",
-    text2: "5%",
+    text2: "No commission",
     text3: "2 - 4 business days",
   },
 ];
@@ -351,8 +351,8 @@ const withdrawlElectronic = [
 const withdrawlCryptocurrencies = [
   {
     img: "https://ik.imagekit.io/3idyffxxb/deposit/coins.svg?updatedAt=1735643190813",
-    text1: "BTC, LTC, DOGE, PPC, DASH, RDD, ZEC, BLK, USDT",
-    text2: "3 USD + 5%",
+    text1: "USDT",
+    text2: "2 USD for TRC20, 20 USD for ERC20",
     text3: "1 - 3 business hours",
   },
 ];

@@ -169,43 +169,6 @@ const Page = () => {
             </div>
           ))}
         </div>
-        {/* <div className="grid gap-x-3 gap-y-14 md:gap-y-28 grid-cols-1 ">
-          <div className=" flex flex-col text-center items-center justify-center place-self-center	">
-            <Image
-              src={
-                "https://ik.imagekit.io/kn40ppx9b/Superforex/f08ea534f6244b7a1235-removebg-preview.png?updatedAt=1734684352879"
-              }
-              quality={100}
-              width={600}
-              height={150}
-              alt="mars"
-              className="object-cover"
-            />
-            <div className="flex flex-col ">
-              <h1 className="font-semibold text-slate-700 text-2xl mb-3">
-                Peugeot 3008
-              </h1>
-              <div className="text-lg">
-                <span>{t("cardeposit")}</span>
-                <br />
-                <span>{t("cardeposit2")}</span>
-              </div>
-            </div>
-          </div>
-        </div> */}
-      </section>
-      <section className={"pb-24"}>
-        <Container className="flex justify-center text-default">
-          <p className={"m-0 max-w-3xl text-xl font-normal text-default"}>
-            {t("SuperForexDescription")}
-            <br />
-            <br />
-            {t("AllAccountTypesEligible")}
-            <br />
-            <br />
-            {t("RecurringBonusLine")}
-          </p>
-        </Container>
       </section>
       <WhyChoose data={data} title={t("WhyChooseWelcomeBonus")} />
       <div

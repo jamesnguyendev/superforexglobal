@@ -61,9 +61,11 @@ const Page = () => {
         link={"/terms-and-conditions/extreme-hot-bonus"}
       />
       <Container className="mt-20">
-        <p className="m-0 mx-auto mb-20 000max-w-3xl text-xl font-normal text-default">
-          {t("intro")}
-        </p>
+        <div className="m-0 mx-auto mb-20 flex flex-col gap-6  text-xl font-normal text-default">
+          <p>{t("SuperForexDescription")}</p>
+          <p>{t("AllAccountTypesEligible")}</p>
+          <p>{t("RecurringBonusLine")}</p>
+        </div>
       </Container>
       <Whychoose data={datas} title={t("whyChoose")} />
       <Container

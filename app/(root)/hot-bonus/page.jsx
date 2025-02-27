@@ -85,7 +85,6 @@ const Page = () => {
       <HowDoesItWork
         title={t("howItWorksTitle")}
         subTitle={t("howItWorksSubTitle")}
-        titleOption={t("howItWorksOptionTitle")}
         topicTitle={t("step1Title")}
         topicContent={t("step1Content")}
         topicTitleNd={t("step2Title")}

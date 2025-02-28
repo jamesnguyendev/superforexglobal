@@ -12,8 +12,8 @@ const ButtonCustomize = ({ name, background, type }) => {
       type={type}
       className={
         background
-          ? "bg-primary text-white rounded-full hover:bg-default px-5 py-1"
-          : "text-primary rounded-full hover:text-default hover:bg-white py-1"
+          ? "bg-primary text-white rounded-full hover:bg-default pr-2 pl-4 py-1"
+          : "text-primary rounded-full hover:text-default hover:bg-white py-1 border-primary border pr-2 pl-4 hover:border-default"
       }
       style={{
         textTransform: "none",

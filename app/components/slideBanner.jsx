@@ -19,9 +19,9 @@ const SlideImage = ({ slides, nav }) => {
   }, [slides.length]);
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative pt-2">
       <div
-        className={`flex transition ease-out duration-500`} // Updated duration to be more noticeable
+        className={`flex transition ease-out duration-500 mt-16`} // Updated duration to be more noticeable
         style={{
           transform: `translateX(-${current * 100}%)`,
         }}

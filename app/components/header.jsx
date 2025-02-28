@@ -183,6 +183,7 @@ export default function Header() {
   const [flag, setFlag] = useState(english);
   const t = useTranslations("Header");
   const [localeCookie, setLocaleCookie] = useState(null);
+  const [opacityHeader, setOpacityHeader] = useState(false);
 
   useEffect(() => {
     const localeCookies = getCookie("NEXT_LOCALE_SUPERFOREX");
@@ -325,9 +326,31 @@ export default function Header() {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setOpacityHeader(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Container maxWidth="lg" className="relative z-50">
-      <Stack direction="row" justifyContent="space-between" paddingY={1}>
+    <Container
+      maxWidth=""
+      className={` shadow-xl z-50  flex items-center justify-around py-2 fixed  ${
+        opacityHeader ? "bg-white" : "bg-white/80 backdrop-blur-sm"
+      }`}
+    >
+      <Stack
+        direction="row"
+        justifyContent="space-between"
+        paddingY={1}
+        className=""
+      >
         <Link href={"/"}>
           <Image
             src={SuperForexLogo}
@@ -335,6 +358,324 @@ export default function Header() {
             className="cursor-pointer"
           />
         </Link>
+      </Stack>
+
+      <div className="">
+        <NavigationMenu className="hidden md:flex text-default">
+          <NavigationMenuList className="relative">
+            <NavigationMenuItem className="">
+              <NavigationMenuTrigger className="text-md">
+                {t("about")}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="md:min-w-[350px] lg:min-w-[550px] rounded-xl bg-">
+                <Grid container className="rounded-xl ">
+                  <Grid xs={6} className="p-5">
+                    <p className="text-grey opacity-[.6] font-semibold text-sm">
+                      {t("information")}
+                    </p>
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/info%20(1).png?updatedAt=1738911236098"
+                      }
+                      name={t("aboutcompany")}
+                      link={"/about-company"}
+                    />
+                    <br />
+                    <TypographyLink
+                      name={t("whychooseus")}
+                      link={"/why-choose-us"}
+                    />
+                    <br />
+                    <TypographyLink
+                      name={t("regulation")}
+                      link={"/regulation"}
+                    />
+                    <br />
+                    <TypographyLink
+                      name={t("fundssecurity")}
+                      link={"/funds-security"}
+                    />
+                  </Grid>
+                  <Grid xs={6} className="p-5">
+                    <p className="text-grey opacity-[.6] font-semibold text-sm">
+                      {t("contact")}
+                    </p>
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/phone-call%20(1).png?updatedAt=1738911455805"
+                      }
+                      name={t("contacts")}
+                      link={"/contacts"}
+                    />
+                    <br />
+                  </Grid>
+                </Grid>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-md">
+                {t("traders")}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="md:min-w-[350px] lg:min-w-[550px] rounded-xl bg-white">
+                <Grid container className="rounded-xl bg-white">
+                  <Grid xs={6} className="p-5">
+                    <p className="text-grey opacity-[.6] font-semibold text-sm">
+                      {t("account")}
+                    </p>
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card%20(1).png?updatedAt=1738911658825"
+                      }
+                      name={t("stpaccount")}
+                      link={"/stp-accounts"}
+                    />
+                    <br />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/membership-vip.png?updatedAt=1738911809927"
+                      }
+                      name={t("ecnaccount")}
+                      link={"/ecn-accounts"}
+                    />
+                    <br />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card-buyer.png?updatedAt=1738912254026"
+                      }
+                      name={t("centaccount")}
+                      link={"/cent-accounts"}
+                    />
+                    <br />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/membership-vip%20(2).png?updatedAt=1738912410051"
+                      }
+                      name={t("accountprime")}
+                      link={"/"}
+                    />
+                    <br />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card%20(3).png?updatedAt=1738912647339"
+                      }
+                      name={"Pro Account"}
+                      link={"/"}
+                    />
+                    <br />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card-buyer%20(1).png?updatedAt=1738912736354"
+                      }
+                      name={t("demoaccount")}
+                      link={"/demo-account"}
+                    />
+                    <p className="text-grey opacity-[.6] font-semibold text-sm mt-3 mb-2">
+                      {t("financials")}
+                    </p>
+                    <TypographyLink
+                      name={t("economic")}
+                      link={"/economic-calendar"}
+                    />
+                    <br />
+                    <TypographyLink
+                      name={t("profitcalculator")}
+                      link={"/profit-calculator"}
+                    />
+                  </Grid>
+                  <Grid
+                    xs={6}
+                    className="p-5"
+                    sx={{ display: "flex", flexDirection: "column" }}
+                  >
+                    <p className="text-grey opacity-[.6] font-semibold text-sm">
+                      {t("tradinginstruments")}
+                    </p>
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/coins-crypto.png?updatedAt=1738912884988"
+                      }
+                      name={t("cryptocurrencies")}
+                      link={"/cryptocurrencies"}
+                    />
+                    {/* <br /> */}
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/boxes.png?updatedAt=1738913722516"
+                      }
+                      name={t("goldtrading")}
+                      link={"/gold-trading"}
+                    />
+                    {/* <br /> */}
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/layers.png?updatedAt=1738913478264"
+                      }
+                      name={t("mestalstrading")}
+                      link={"/metals-trading"}
+                    />
+                    {/* <br /> */}
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/growth-chart-invest.png?updatedAt=1738913791550"
+                      }
+                      name={t("stocktrading")}
+                      link={"/stock-trading"}
+                    />
+                    {/* <br /> */}
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/car-oil.png?updatedAt=1738913881286"
+                      }
+                      name={t("oiltrading")}
+                      link="/oil-trading"
+                    />
+                    {/* <br /> */}
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/meter-bolt.png?updatedAt=1738914068135"
+                      }
+                      name={t("indicestrading")}
+                      link={"/indices-trading"}
+                    />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/deposit.png?updatedAt=1738914177710"
+                      }
+                      name={t("depositwithdrawal")}
+                      link={"/deposit-and-withdrawal"}
+                    />
+                    {/* <TypographyLink name={t("allins")} /> */}
+                  </Grid>
+                </Grid>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-md">
+                {t("services")}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="md:min-w-[450px] lg:min-w-[650px] rounded-xl">
+                <Grid className="rounded-xl" container>
+                  <Grid xs={6} className="p-5">
+                    <p className="text-grey opacity-[.6] font-semibold text-sm">
+                      {t("tradingsoftware")}
+                    </p>
+                    <Stack direction={"row"} alignItems={"center"}>
+                      <StyleStack
+                        img={
+                          "https://ik.imagekit.io/kn40ppx9b/Superforex/mobile-notch.png?updatedAt=1738914394421"
+                        }
+                        name={t("mobileapp")}
+                        link={"/mobile-app"}
+                        tagName={"TOP"}
+                        tagColor={"#6485f9"}
+                      />
+                    </Stack>
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/square-4.png?updatedAt=1738914536409"
+                      }
+                      name={"Meta Trader 4"}
+                      // link="mt-4"
+                    />
+                    <br />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/square-5.png?updatedAt=1738914606656"
+                      }
+                      name={"Meta Trader 5"}
+                    />
+                    <br />
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/transaction-euro.png?updatedAt=1738914691398"
+                      }
+                      name={t("webtrade")}
+                      // link="mt-4"
+                    />
+                  </Grid>
+                  <Grid
+                    xs={6}
+                    className="p-5"
+                    sx={{ display: "flex", flexDirection: "column" }}
+                  >
+                    <p className="text-grey opacity-[.6] font-semibold text-sm">
+                      {t("forexcopysys")}
+                    </p>
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/clone.png?updatedAt=1738914841762"
+                      }
+                      name={t("forexcopy")}
+                      link={"/forex-copy-system"}
+                    />
+                    {/* <br /> */}
+                    <TypographyLink
+                      name={t("becomeafollower")}
+                      link={"/forex-copy-follower-conditions"}
+                    />
+                    <TypographyLink
+                      name={t("becomeamaster")}
+                      link={"/forex-copy-master-conditions"}
+                    />
+                  </Grid>
+                </Grid>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-md">
+                {t("bonuses")}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="md:min-w-[550px] lg:min-w-[750px] rounded-xl bg-white">
+                <Grid container className="rounded-xl bg-white">
+                  <Grid xs={6} className="p-5">
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/gift-box-benefits.png?updatedAt=1738915591118"
+                      }
+                      link={"/trade-and-earn"}
+                      name={t("welcomebonus")}
+                      // name={t("trande and earn")}
+                      secondName={t("increase")}
+                    />{" "}
+                    <StyleStack
+                      link="/free-swap"
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/thunderstorm.png?updatedAt=1738915294213"
+                      }
+                      name={t("energybonus")}
+                      // name={t("energybonus")} doi thanh free swap
+                      secondName={t("getanadd")}
+                    />
+                  </Grid>
+                  <Grid xs={6} className="p-5">
+                    <StyleStack
+                      img={
+                        "https://ik.imagekit.io/kn40ppx9b/Superforex/usd-circle.png?updatedAt=1738915853443"
+                      }
+                      name={t("30ex")}
+                      secondName={t("thehottest")}
+                      // secondName={t("thehottest")} con 10 percent
+                      link="/hot-bonus"
+                    />
+                  </Grid>
+                </Grid>
+              </NavigationMenuContent>
+            </NavigationMenuItem>{" "}
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-md">
+                <Link href={"/partnership-program"}> {t("partners")}</Link>
+              </NavigationMenuTrigger>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+
+      <Stack
+        direction="row"
+        justifyContent="space-between"
+        paddingY={1}
+        className=""
+      >
         <div className="hidden md:flex gap-3 justify-center items-center">
           <Link href={"https://my.superforex.global"} target="_blank">
             <ButtonCustomize name={t("signin")} />
@@ -492,321 +833,6 @@ export default function Header() {
         </div>
         <MenuMobile />
       </Stack>
-
-      <div className="">
-        <NavigationMenu className="hidden md:flex text-default">
-          <NavigationMenuList className="relative">
-            <NavigationMenuItem className="">
-              <NavigationMenuTrigger className="text-md">
-                {t("about")}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[350px] lg:min-w-[550px] rounded-xl bg-white">
-                <Grid container className="rounded-xl bg-white">
-                  <Grid xs={6} className="p-5">
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("information")}
-                    </p>
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/info%20(1).png?updatedAt=1738911236098"
-                      }
-                      name={t("aboutcompany")}
-                      link={"/about-company"}
-                    />
-                    <br />
-                    <TypographyLink
-                      name={t("whychooseus")}
-                      link={"/why-choose-us"}
-                    />
-                    <br />
-                    <TypographyLink
-                      name={t("regulation")}
-                      link={"/regulation"}
-                    />
-                    <br />
-                    <TypographyLink
-                      name={t("fundssecurity")}
-                      link={"/funds-security"}
-                    />
-                  </Grid>
-                  <Grid xs={6} className="p-5">
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("contact")}
-                    </p>
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/phone-call%20(1).png?updatedAt=1738911455805"
-                      }
-                      name={t("contacts")}
-                      link={"/contacts"}
-                    />
-                    <br />
-                  </Grid>
-                </Grid>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-md">
-                {t("traders")}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[750px] lg:min-w-[1150px] rounded-xl bg-white">
-                <Grid container className="rounded-xl bg-white">
-                  <Grid xs={4} className="p-5">
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("account")}
-                    </p>
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card%20(1).png?updatedAt=1738911658825"
-                      }
-                      name={t("stpaccount")}
-                      link={"/stp-accounts"}
-                    />
-                    <br />
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/membership-vip.png?updatedAt=1738911809927"
-                      }
-                      name={t("ecnaccount")}
-                      link={"/ecn-accounts"}
-                    />
-                    <br />
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card-buyer.png?updatedAt=1738912254026"
-                      }
-                      name={t("centaccount")}
-                      link={"/cent-accounts"}
-                    />
-                    <br />
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/membership-vip%20(2).png?updatedAt=1738912410051"
-                      }
-                      name={t("accountprime")}
-                      link={"/"}
-                    />
-                    <br />
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card%20(3).png?updatedAt=1738912647339"
-                      }
-                      name={"Pro Account"}
-                      link={"/"}
-                    />
-                    <br />
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/credit-card-buyer%20(1).png?updatedAt=1738912736354"
-                      }
-                      name={t("demoaccount")}
-                      link={"/demo-account"}
-                    />
-                  </Grid>
-                  <Grid
-                    xs={4}
-                    className="p-5"
-                    sx={{ display: "flex", flexDirection: "column" }}
-                  >
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("tradinginstruments")}
-                    </p>
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/coins-crypto.png?updatedAt=1738912884988"
-                      }
-                      name={t("cryptocurrencies")}
-                      link={"/cryptocurrencies"}
-                    />
-                    {/* <br /> */}
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/boxes.png?updatedAt=1738913722516"
-                      }
-                      name={t("goldtrading")}
-                      link={"/gold-trading"}
-                    />
-                    {/* <br /> */}
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/layers.png?updatedAt=1738913478264"
-                      }
-                      name={t("mestalstrading")}
-                      link={"/metals-trading"}
-                    />
-                    {/* <br /> */}
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/growth-chart-invest.png?updatedAt=1738913791550"
-                      }
-                      name={t("stocktrading")}
-                      link={"/stock-trading"}
-                    />
-                    {/* <br /> */}
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/car-oil.png?updatedAt=1738913881286"
-                      }
-                      name={t("oiltrading")}
-                      link="/oil-trading"
-                    />
-                    {/* <br /> */}
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/meter-bolt.png?updatedAt=1738914068135"
-                      }
-                      name={t("indicestrading")}
-                      link={"/indices-trading"}
-                    />
-                    {/* <TypographyLink name={t("allins")} /> */}
-                  </Grid>
-                  <Grid xs={4} className="p-5">
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("financials")}
-                    </p>
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/deposit.png?updatedAt=1738914177710"
-                      }
-                      name={t("depositwithdrawal")}
-                      link={"/deposit-and-withdrawal"}
-                    />
-                    <br />
-                    <TypographyLink
-                      name={t("economic")}
-                      link={"/economic-calendar"}
-                    />
-                    <br />
-                    <TypographyLink
-                      name={t("profitcalculator")}
-                      link={"/profit-calculator"}
-                    />
-                  </Grid>
-                </Grid>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-md">
-                {t("services")}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[450px] lg:min-w-[650px] rounded-xl">
-                <Grid className="rounded-xl" container>
-                  <Grid xs={6} className="p-5">
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("tradingsoftware")}
-                    </p>
-                    <Stack direction={"row"} alignItems={"center"}>
-                      <StyleStack
-                        img={
-                          "https://ik.imagekit.io/kn40ppx9b/Superforex/mobile-notch.png?updatedAt=1738914394421"
-                        }
-                        name={t("mobileapp")}
-                        link={"/mobile-app"}
-                        tagName={"TOP"}
-                        tagColor={"#6485f9"}
-                      />
-                    </Stack>
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/square-4.png?updatedAt=1738914536409"
-                      }
-                      name={"Meta Trader 4"}
-                      // link="mt-4"
-                    />
-                    <br />
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/square-5.png?updatedAt=1738914606656"
-                      }
-                      name={"Meta Trader 5"}
-                    />
-                    <br />
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/transaction-euro.png?updatedAt=1738914691398"
-                      }
-                      name={t("webtrade")}
-                      // link="mt-4"
-                    />
-                  </Grid>
-                  <Grid
-                    xs={6}
-                    className="p-5"
-                    sx={{ display: "flex", flexDirection: "column" }}
-                  >
-                    <p className="text-grey opacity-[.6] font-semibold text-sm">
-                      {t("forexcopysys")}
-                    </p>
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/clone.png?updatedAt=1738914841762"
-                      }
-                      name={t("forexcopy")}
-                      link={"/forex-copy-system"}
-                    />
-                    {/* <br /> */}
-                    <TypographyLink
-                      name={t("becomeafollower")}
-                      link={"/forex-copy-follower-conditions"}
-                    />
-                    <TypographyLink
-                      name={t("becomeamaster")}
-                      link={"/forex-copy-master-conditions"}
-                    />
-                  </Grid>
-                </Grid>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-md">
-                {t("bonuses")}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="md:min-w-[750px] lg:min-w-[1150px] rounded-xl bg-white">
-                <Grid container className="rounded-xl bg-white">
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/gift-box-benefits.png?updatedAt=1738915591118"
-                      }
-                      link={"/trade-and-earn"}
-                      name={t("welcomebonus")}
-                      // name={t("trande and earn")}
-                      secondName={t("increase")}
-                    />
-                  </Grid>
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/usd-circle.png?updatedAt=1738915853443"
-                      }
-                      name={t("30ex")}
-                      secondName={t("thehottest")}
-                      // secondName={t("thehottest")} con 10 percent
-                      link="/hot-bonus"
-                    />
-                  </Grid>
-                  <Grid xs={4} className="p-5">
-                    <StyleStack
-                      link="/free-swap"
-                      img={
-                        "https://ik.imagekit.io/kn40ppx9b/Superforex/thunderstorm.png?updatedAt=1738915294213"
-                      }
-                      name={t("energybonus")}
-                      // name={t("energybonus")} doi thanh free swap
-                      secondName={t("getanadd")}
-                    />
-                  </Grid>
-                </Grid>
-              </NavigationMenuContent>
-            </NavigationMenuItem>{" "}
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-md">
-                <Link href={"/partnership-program"}> {t("partners")}</Link>
-              </NavigationMenuTrigger>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-      </div>
     </Container>
   );
 }

@@ -69,17 +69,17 @@ const Page = () => {
     <div>
       <Banner
         imgDesktop={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/0785b1c691332d6d7422.jpg?updatedAt=1736824575921"
+          "https://ik.imagekit.io/kn40ppx9b/Superforex/1ee21263b3c90d9754d8.jpg?updatedAt=1740712054995"
         }
         imgMobile={
-          "https://ik.imagekit.io/kn40ppx9b/Superforex/9a0d63e14d15f14ba804.jpg?updatedAt=1736824707631"
+          "https://ik.imagekit.io/kn40ppx9b/Superforex/e458aa345a96e4c8bd87.jpg?updatedAt=1740649137698"
         }
         buttonName={t("ClaimBonus")}
         titleBanner={t("Title")}
         subTitleBanner={t("SubTitle")}
         link={"/terms-and-conditions/energy-bonus-agreement"}
         blank={true}
-      />{" "}
+      />
       <br />
       <Whychoose data={datas} title={t("WhyChooseTitle")} />
       <Container

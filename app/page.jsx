@@ -89,7 +89,7 @@ const AutoImageSlider = () => {
     },
     {
       imgDesktop:
-        "https://ik.imagekit.io/kn40ppx9b/Superforex/0785b1c691332d6d7422.jpg?updatedAt=1736824575921",
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/1ee21263b3c90d9754d8.jpg?updatedAt=1740712054995",
       imgMobile:
         "https://ik.imagekit.io/kn40ppx9b/Superforex/9a0d63e14d15f14ba804.jpg?updatedAt=1736824707631",
       titleBanner: t("30bonus"),

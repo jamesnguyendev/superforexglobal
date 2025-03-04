@@ -79,6 +79,17 @@ const AutoImageSlider = () => {
     },
     {
       imgDesktop:
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/7fd1fb1bdbee67b03eff.jpg?updatedAt=1736821505597",
+      imgMobile:
+        "https://ik.imagekit.io/kn40ppx9b/Superforex/d7eb3010bde701b958f6.jpg?updatedAt=1736830105397",
+      titleBanner: t("cryptomania"),
+      subTitleBanner: t("increaseyourprofits"),
+      buttonName: t("joincontest"),
+      textBannerColor: false,
+      link: "/trade-and-earn",
+    },
+    {
+      imgDesktop:
         "https://ik.imagekit.io/kn40ppx9b/Superforex/ECN%20account%20bong%20bong.jpg?updatedAt=1739334575998",
       imgMobile: BannerMobile1,
       titleBanner: t("ecnaccount"),
@@ -98,20 +109,10 @@ const AutoImageSlider = () => {
       textBannerColor: false,
       link: "/free-swap",
     },
+
     {
       imgDesktop:
-        "https://ik.imagekit.io/kn40ppx9b/Superforex/7fd1fb1bdbee67b03eff.jpg?updatedAt=1736821505597",
-      imgMobile:
-        "https://ik.imagekit.io/kn40ppx9b/Superforex/d7eb3010bde701b958f6.jpg?updatedAt=1736830105397",
-      titleBanner: t("cryptomania"),
-      subTitleBanner: t("increaseyourprofits"),
-      buttonName: t("joincontest"),
-      textBannerColor: false,
-      link: "/trade-and-earn",
-    },
-    {
-      imgDesktop:
-        "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105605300.png?updatedAt=1735272457272",
+        "https://ik.imagekit.io/9lcvptcyj/376333f4449af5c4ac8b.jpg?updatedAt=1741073515767",
       imgMobile: BannerMobile5,
       titleBanner: t("30%Extreme"),
       subTitleBanner: t("thehottestoffer"),

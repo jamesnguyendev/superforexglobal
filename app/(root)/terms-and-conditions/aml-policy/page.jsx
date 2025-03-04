@@ -5,7 +5,7 @@ import { Container } from "@mui/system";
 const Page = () => {
   return (
     <Container>
-      <div className="grid grid-cols-1 lg:grid-cols-3 my-16 text-default max-lg:px-7">
+      <div className="grid grid-cols-1 lg:grid-cols-3 pt-28 text-default max-lg:px-7">
         <div className="max-lg:order-2 lg:border-r lg:border-dashed pe-5 max-lg:pt-8">
           <SideBarPolicy />
         </div>

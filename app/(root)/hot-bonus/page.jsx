@@ -49,10 +49,10 @@ const Page = () => {
     },
   ];
   return (
-    <div>
+    <div className="pt-16">
       <Banner
         imgDesktop={
-          "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105605300.png?updatedAt=1735272457272"
+          "https://ik.imagekit.io/9lcvptcyj/376333f4449af5c4ac8b.jpg?updatedAt=1741073515767"
         }
         imgMobile={BannerMobile5}
         buttonName={t("bannerBtn")}

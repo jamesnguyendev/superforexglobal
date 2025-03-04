@@ -7,7 +7,7 @@ const Page = () => {
   const t = useTranslations("HotBonusAgreement");
   return (
     <Container>
-      <div className="grid grid-cols-1 lg:grid-cols-3 my-16 text-default max-lg:px-7">
+      <div className="grid grid-cols-1 lg:grid-cols-3 pt-28 text-default max-lg:px-7">
         <div className="max-lg:order-2 lg:border-r lg:border-dashed pe-5 max-lg:pt-8 ">
           <SideBarPolicy />
         </div>
@@ -23,10 +23,6 @@ const Page = () => {
               <span className="font-semibold text-md">{t("line3")}</span>{" "}
               <span className="text-red-600">{t("line4")}</span>
             </div>
-            <div>
-              <span className="font-semibold text-md">{t("line5")}</span>{" "}
-              {t("line6")}
-            </div>
             <div className="font-semibold text-md">{t("line7")}</div>
             <div>{t("line8")}</div>
             <div>{t("line9")}</div>
@@ -39,15 +35,15 @@ const Page = () => {
             <div>{t("line13")}</div>
             <div>{t("line14")}</div>
             <div>{t("line15")}</div>
-            <div>{t("line16")}</div>
-            <div>{t("line17")}</div>
-            <div>{t("line18")}</div>
-            <div>{t("line19")}</div>
+            <div>
+              {t("line16")} {t("line17")}, {t("line18")}, {t("line19")}
+            </div>
             <div>{t("line20")}</div>
             <div>{t("line21")}</div>
             <div>{t("line22")}</div>
             <div>{t("line23")}</div>
             <div>{t("line24")}</div>
+            <div>{t("line5")}</div>
             <div className="flex flex-col gap-4">
               <h1 className="font-semibold text-lg mt-4">{t("line25")}</h1>
               <div>

@@ -7,7 +7,10 @@ const Page = () => {
   const t = useTranslations("FreeSwapAgreement");
   return (
     <Container>
-      <div className="grid grid-cols-1 lg:grid-cols-3 pt-28 text-default max-lg:px-7">
+      <div
+        className="grid grid-cols-1 lg:grid-cols-3 pt-28
+       text-default max-lg:px-7"
+      >
         <div className="max-lg:order-2 lg:border-r lg:border-dashed pe-5 max-lg:pt-8 ">
           <SideBarPolicy />
         </div>
@@ -22,18 +25,14 @@ const Page = () => {
               <div className="flex flex-row gap-4">
                 <h1 className="font-semibold ">{t("line4")} </h1>
                 <span className="flex-1">{t("line5")}</span>
-              </div>
-              <div className="font-semibold flex gap-4">
-                {t("line6")}
-                <span className="font-normal">{t("line7")}</span>
-              </div>
+              </div>{" "}
               <div className="font-semibold flex gap-4">
                 {t("line8")}
                 <span className="font-normal">{t("line9")}</span>
               </div>
               <div className="font-semibold flex gap-4">
-                {t("line10")}
-                <span className="font-normal">{t("line11")}</span>
+                {t("line6")}
+                <span className="font-normal">{t("line7")}</span>
               </div>
               <div className="font-semibold">{t("line12")}</div>
             </div>
@@ -43,7 +42,7 @@ const Page = () => {
               <span className="text-blue-700 underline">{t("line15")}</span>
               {t("line16")}
             </div>
-            <div className="flex flex-col mt-7 gap-6">
+            <div className="flex flex-col mt-7 gap-3">
               <h1 className="font-semibold text-md">{t("line17")}</h1>
               <p>{t("line18")}</p>
               <p>{t("line19")}</p>
@@ -85,7 +84,7 @@ const Page = () => {
               <div>{t("line32")}</div> <div>{t("line33")}</div>{" "}
               <div>{t("line34")}</div> <div>{t("line35")}</div>{" "}
               <h1 className="font-semibold text-xl">{t("line36")}</h1>
-              <p className="italic">{t("line37")}</p>
+              <p className="italic mb-10">{t("line37")}</p>
             </div>
           </div>
         </div>

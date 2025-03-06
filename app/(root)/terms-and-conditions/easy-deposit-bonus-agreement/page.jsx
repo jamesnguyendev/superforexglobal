@@ -17,7 +17,7 @@ const Page = () => {
             <div className="flex flex-col gap-4">
               <div className="flex gap-4">
                 <h1 className="font-semibold">{t("line1")}</h1>
-                {t("line2")}
+                01/03/2024 - 31/05/2025 (GMT + 3)
               </div>
               <div className="font-semibold flex gap-4">
                 {t("line3")}
@@ -29,10 +29,13 @@ const Page = () => {
               </div>
             </div>{" "}
             <div className="font-semibold">{t("line6")}</div>
-            <div>
-              {t("line7")}
-              <span className="text-blue-600 underline"> {t("line8")}</span> từ
-              {t("line9")}
+            <div>{t("line7")}</div>
+            <div className="px-5">
+              <div>{t("line8")}</div>
+              <div>{t("line9")}</div>
+              <div>{t("line9s")}</div>
+              <div>{t("line9nd")}</div>
+              <div>{t("line9th")}</div>
             </div>
             <div>{t("line10")}</div>
             <div>{t("line11")}</div>
@@ -56,7 +59,7 @@ const Page = () => {
               <div className="">{t("line35")}</div>
               <div className="">{t("line36")}</div>
               <h1 className="font-semibold text-xl">{t("line37")}</h1>
-              <p className="italic">{t("line38")}</p>
+              <p className="italic mb-10">{t("line38")}</p>
             </div>
           </div>
         </div>

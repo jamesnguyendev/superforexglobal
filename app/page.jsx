@@ -122,7 +122,7 @@ const AutoImageSlider = () => {
     },
     {
       imgDesktop:
-        "https://ik.imagekit.io/3idyffxxb/New%20Folder/quality_restoration_20241227105900533.png?updatedAt=1735272453105",
+        "https://ik.imagekit.io/9lcvptcyj/d92fbf99919720c97986.jpg?updatedAt=1741253297367",
       imgMobile: BannerMobile6,
       titleBanner: t("getbonus"),
       subTitleBanner: t("Standardaccount"),

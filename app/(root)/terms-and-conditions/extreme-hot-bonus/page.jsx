@@ -23,6 +23,10 @@ const Page = () => {
               <span className="font-semibold text-md">{t("line3")}</span>{" "}
               <span className="text-red-600">{t("line4")}</span>
             </div>
+            <div>
+              <span className="font-semibold text-md">{t("line65")}</span>{" "}
+              {t("line66")}
+            </div>
             <div className="font-semibold text-md">{t("line7")}</div>
             <div>{t("line8")}</div>
             <div>{t("line9")}</div>

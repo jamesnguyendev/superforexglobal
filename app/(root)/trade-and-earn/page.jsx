@@ -120,7 +120,7 @@ const Page = () => {
       name: "Peugeot 3008",
       desc1: t("cardeposit"),
       desc2: t("cardeposit2"),
-      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/PEUGEOT-3008-XAM.png?updatedAt=1738727857796",
+      img: "https://ik.imagekit.io/9lcvptcyj/df.png?updatedAt=1741319258129",
     },
   ];
   return (

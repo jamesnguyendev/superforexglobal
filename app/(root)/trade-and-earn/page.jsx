@@ -107,12 +107,12 @@ const Page = () => {
       widthimg: 300,
     },
     {
-      widthimg: 250,
+      widthimg: 160,
       currency: 50000,
       name: t("sh"),
       desc1: t("sh1"),
       desc2: t("sh2"),
-      img: "https://ik.imagekit.io/kn40ppx9b/Superforex/84f0644937598a07d348-removebg-preview.png?updatedAt=1734684352956",
+      img: "https://ik.imagekit.io/9lcvptcyj/a98060538d5a3c04654b-removebg-preview.png?updatedAt=1741313233708",
     },
     {
       currency: 350000,

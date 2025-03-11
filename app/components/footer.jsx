@@ -54,6 +54,26 @@ export function StyleStack({ name, link = "" }) {
   );
 }
 
+export function StyleStackDownload({ name, link = "" }) {
+  const [hover, setHover] = useState();
+
+  return (
+    <Link href={link} target="_blank">
+      <Stack
+        direction="row"
+        alignItems="center"
+        className={`py-3 text-grey ${hover ? "opacity-[.6]" : "opacity-100"}`}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        <TextSnippetIcon />
+
+        <p className="text-grey ml-3 cursor-pointer">{name}</p>
+      </Stack>
+    </Link>
+  );
+}
+
 export function ImgStack({ name, img }) {
   return (
     <Stack direction="row" alignItems="center" className="py-3 text-grey">
@@ -136,17 +156,21 @@ export default function Footer() {
               name={t("termofuse")}
               link="/terms-and-conditions/terms-of-use"
             />
-            <StyleStack
+            <StyleStackDownload
+              name={t("clientagreement")}
+              link="https://ik.imagekit.io/3idyffxxb/New%20Folder/Client%20Agreement.pdf?updatedAt=1741666728345"
+            />
+            <StyleStackDownload
               name={t("privacypolicy")}
-              link="/terms-and-conditions/privacy-policy"
+              link="https://ik.imagekit.io/3idyffxxb/New%20Folder/Privacy%20Policy.pdf?updatedAt=1741666728546"
             />
             <StyleStack
               name={t("order")}
               link="/terms-and-conditions/order-execution-policy"
             />
-            <StyleStack
+            <StyleStackDownload
               name={t("riskdisclosure")}
-              link="/terms-and-conditions/risk-disclosure"
+              link="https://ik.imagekit.io/3idyffxxb/New%20Folder/Risk%20Disclosure%20Statement.pdf?updatedAt=1741666109424"
             />
             <StyleStack
               name={t("complaint")}

@@ -109,7 +109,7 @@ export const sfMoney = [
     value: "$3,000 - $4,000",
   },
   {
-    percent: "10%",
+    percent: "30%",
     value: "$4,000",
   },
 ];

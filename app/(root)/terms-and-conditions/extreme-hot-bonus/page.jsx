@@ -13,7 +13,12 @@ const Page = () => {
         </div>
         <div className="lg:col-span-2 lg:ps-7">
           <div className="flex flex-col text-default gap-4 mb-24">
-            <h1 className="font-semibold text-5xl pb-7">{t("line0")}</h1>
+            <iframe
+              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/SF%20bonus.pdf?updatedAt=1743068593446"
+              width="100%"
+              height="800px"
+            ></iframe>
+            {/* <h1 className="font-semibold text-5xl pb-7">{t("line0")}</h1>
             <h1 className="font-semibold text-md">{t("line1")}</h1>
             <div>
               <span className="font-semibold text-md">{t("line2")}</span>{" "}
@@ -124,7 +129,7 @@ const Page = () => {
               </div>{" "}
               <h1 className="font-semibold text-lg my-2">{t("line63")}</h1>{" "}
               <p className="italic">{t("line64")}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

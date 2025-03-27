@@ -52,7 +52,7 @@ const Page = () => {
     <div className="pt-16">
       <Banner
         imgDesktop={
-          "https://ik.imagekit.io/9lcvptcyj/376333f4449af5c4ac8b.jpg?updatedAt=1741073515767"
+          "https://ik.imagekit.io/3idyffxxb/New%20Folder/9a9f2f22-91b5-4586-a96c-a664d349fe16.jfif?updatedAt=1743061687927"
         }
         imgMobile={BannerMobile5}
         buttonName={t("bannerBtn")}
@@ -79,7 +79,7 @@ const Page = () => {
           time={1.1}
           valueDefault={"10,000"}
           sliderNameSecond={t("slider2")}
-          valueSecond={"10%"}
+          valueSecond={"30%"}
         />
       </Container>
       <HowDoesItWork
@@ -105,7 +105,7 @@ const Page = () => {
         thirdcontent={t("feature3Content")}
       />
       <section className={"bg-gray-50 py-16"}>
-        <TheBrokerOfChoice text={"10% hot bonus"} />
+        <TheBrokerOfChoice text={"30% hot bonus"} />
       </section>
       <Container className={"py-40"}>
         <AccountForm data={data} />

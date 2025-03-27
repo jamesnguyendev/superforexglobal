@@ -76,7 +76,7 @@ const DepositSlider = ({
             >
               {sliderNameSecond}
               <span className={"flex flex-row justify-center items-center"}>
-                {value >= 100 ? valueSecond : "10%"}
+                {value >= 100 ? valueSecond : "30%"}
               </span>
             </Typography>
           ) : null}

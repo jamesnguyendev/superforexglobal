@@ -62,7 +62,10 @@ export default function StyledTable() {
     createData("Minimum deposit", "50 USD"),
     createData("Maximum deposit", "Unlimited"),
     createData("Recommended deposit", "500 USD"),
-    createData("Compatible with bonuses", "Trade And Earn, 10% Bonus, Free Swap"),
+    createData(
+      "Compatible with bonuses",
+      "Trade And Earn, 30% Bonus, Free Swap",
+    ),
     createData("Lot size", "0.01 lot"),
     createData("Maximum leverage", "1:500"),
     createData("Swaps", "Yes"),
@@ -77,9 +80,7 @@ export default function StyledTable() {
           {rows.map((row, index) => (
             <StyledTableRow key={index}>
               <StyledTableCell component="th" scope="row">
-                <div className="font-bold">
-                  {row.name}
-                </div>
+                <div className="font-bold">{row.name}</div>
               </StyledTableCell>
               <StyledTableCell>{row.text}</StyledTableCell>
             </StyledTableRow>

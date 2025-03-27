@@ -112,7 +112,7 @@ const AutoImageSlider = () => {
 
     {
       imgDesktop:
-        "https://ik.imagekit.io/9lcvptcyj/376333f4449af5c4ac8b.jpg?updatedAt=1741073515767",
+        "https://ik.imagekit.io/3idyffxxb/New%20Folder/9a9f2f22-91b5-4586-a96c-a664d349fe16.jfif?updatedAt=1743061687927",
       imgMobile: BannerMobile5,
       titleBanner: t("30%Extreme"),
       subTitleBanner: t("thehottestoffer"),

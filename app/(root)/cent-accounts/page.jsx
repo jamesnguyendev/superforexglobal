@@ -355,7 +355,7 @@ const StyledTable = () => {
     createData("Recommended deposit", "50 USD"),
     createData(
       "Compatible with bonuses",
-      "Trade And Earn, 10% Bonus, Free Swap"
+      "Trade And Earn, 30% Bonus, Free Swap",
     ),
     createData("Lot size", "0.01 lot"),
     createData("Maximum leverage", "1:500"),

@@ -15,7 +15,12 @@ const Page = () => {
           <SideBarPolicy />
         </div>
         <div className="lg:col-span-2 lg:ps-7">
-          <h1 className="text-5xl font-semibold mb-10">{t("line1")} </h1>
+          <iframe
+            src="https://ik.imagekit.io/3idyffxxb/New%20Folder/SF%20Freeswap.pdf?updatedAt=1743068547365"
+            width="100%"
+            height="800px"
+          ></iframe>
+          {/* <h1 className="text-5xl font-semibold mb-10">{t("line1")} </h1>
           <div className="flex flex-col gap-6 font-normal">
             <div className="flex flex-col gap-4 mb-4">
               <div className="flex gap-4">
@@ -86,7 +91,7 @@ const Page = () => {
               <h1 className="font-semibold text-xl">{t("line36")}</h1>
               <p className="italic mb-10">{t("line37")}</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Container>

@@ -29,8 +29,8 @@ const DepositSlider = ({
       result = value * 2;
       return result.toLocaleString();
     }
-    if (times === 1.1) {
-      result = value * 1.1;
+    if (times === 1.3) {
+      result = value * 1.3;
       return result.toLocaleString();
     }
     if (times === 4) {
@@ -84,7 +84,7 @@ const DepositSlider = ({
             value={value}
             min={500}
             step={10}
-            max={50000}
+            max={20000}
             className={"text-primary"}
             getAriaValueText={valueLabelFormat}
             valueLabelFormat={valueLabelFormat}

@@ -13,16 +13,11 @@ const Page = () => {
         </div>
         <div className="lg:col-span-2 lg:ps-7">
           <div className="flex flex-col text-default gap-4 mb-24">
-            <iframe
-              src="https://ik.imagekit.io/3idyffxxb/New%20Folder/SF%20bonus.pdf?updatedAt=1743068593446"
-              width="100%"
-              height="800px"
-            ></iframe>
-            {/* <h1 className="font-semibold text-5xl pb-7">{t("line0")}</h1>
+            <h1 className="font-semibold text-5xl pb-7">{t("line0")}</h1>
             <h1 className="font-semibold text-md">{t("line1")}</h1>
             <div>
               <span className="font-semibold text-md">{t("line2")}</span>{" "}
-              01/01/2025 - 31/03/2025 (GMT + 3)
+              01/04/2025 - 30/06/2025 (GMT + 3)
             </div>
             <div>
               <span className="font-semibold text-md">{t("line3")}</span>{" "}
@@ -34,6 +29,39 @@ const Page = () => {
             </div>
             <div className="font-semibold text-md">{t("line7")}</div>
             <div>{t("line8")}</div>
+            <div className="flex justify-center ">
+              <table class="border-collapse border border-slate-500 text-center w-full max-w-lg">
+                <thead>
+                  <tr>
+                    <th class="border border-slate-600">{t("line67")}</th>
+                    <th class="border border-slate-600">{t("line68")}</th>
+                    <th class="border border-slate-600">{t("line69")}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border border-slate-700">$500 - $5,000</td>
+                    <td class="border border-slate-700">10%</td>
+                    <td class="border border-slate-700">STD, ECN</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-700">$1,000 - $5,000</td>
+                    <td class="border border-slate-700">10%</td>
+                    <td class="border border-slate-700">PRIME</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-700">$5,001 - $10,000</td>
+                    <td class="border border-slate-700">20%</td>
+                    <td class="border border-slate-700">STD, ECN, PRIME</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-700">$10,001</td>
+                    <td class="border border-slate-700">30%</td>
+                    <td class="border border-slate-700">STD, ECN, PRIME</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div>{t("line9")}</div>
             <div>
               {t("line10")}
@@ -129,7 +157,7 @@ const Page = () => {
               </div>{" "}
               <h1 className="font-semibold text-lg my-2">{t("line63")}</h1>{" "}
               <p className="italic">{t("line64")}</p>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

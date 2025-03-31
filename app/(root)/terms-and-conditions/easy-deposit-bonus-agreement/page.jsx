@@ -12,17 +12,17 @@ const Page = () => {
           <SideBarPolicy />
         </div>
         <div className="lg:col-span-2 lg:ps-7">
-          <iframe
+          {/* <iframe
             src="https://ik.imagekit.io/3idyffxxb/New%20Folder/SF%20Giveaway.pdf?updatedAt=1743068575093"
             width="100%"
             height="800px"
-          ></iframe>
-          {/* <h1 className="text-5xl font-semibold mb-10">{t("giveaway")}</h1>
+          ></iframe> */}
+          <h1 className="text-5xl font-semibold mb-10">{t("giveaway")}</h1>
           <div className="flex flex-col gap-6 font-normal">
             <div className="flex flex-col gap-4">
               <div className="flex gap-4">
                 <h1 className="font-semibold">{t("line1")}</h1>
-                01/03/2024 - 31/05/2025 (GMT + 3)
+                01/04/2025 - 30/06/2025 (GMT + 3)
               </div>
               <div className="font-semibold flex gap-4">
                 {t("line3")}
@@ -66,7 +66,7 @@ const Page = () => {
               <h1 className="font-semibold text-xl">{t("line37")}</h1>
               <p className="italic mb-10">{t("line38")}</p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </Container>

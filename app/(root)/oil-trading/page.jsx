@@ -71,7 +71,7 @@ const StyledDividerRight = styled.div`
 const StyledDiv = styled.div`
   overflow: hidden;
   position: relative;
-  background-image: url('https://ik.imagekit.io/3idyffxxb/New%20Folder/bg%20(1).svg?updatedAt=1735641427204');
+  background-image: url("https://ik.imagekit.io/3idyffxxb/New%20Folder/bg%20(1).svg?updatedAt=1735641427204");
 
   &::before {
     top: -67%;
@@ -198,7 +198,7 @@ const Banner = ({
       )}
     </section>
   );
-}
+};
 
 const StyledGradientCard = ({ gradient, icon, name, text }) => {
   return (
@@ -218,14 +218,12 @@ const StyledGradientCard = ({ gradient, icon, name, text }) => {
         className="my-5 self-center"
       />
       <Stack className="text-center p-5">
-        <p className="font-bold mb-5 text-[#6acafa] text-2xl">
-          {name}
-        </p>
+        <p className="font-bold mb-5 text-[#6acafa] text-2xl">{name}</p>
         <p>{text}</p>
       </Stack>
     </Grid>
   );
-}
+};
 
 const style = {
   position: "absolute",
@@ -358,20 +356,14 @@ export default function OilTrading() {
           <Grid container spacing={10} className="justify-center">
             <Grid item size={{ sm: 12, md: 6 }}>
               <StyledDividerLeft>
-                <p
-                  className="font-bold mb-5 text-[#6acafa] text-4xl"
-                >
+                <p className="font-bold mb-5 text-[#6acafa] text-4xl">
                   {t("aboutOilTrading")}
                 </p>
               </StyledDividerLeft>
               <br />
-              <p>
-                {t("aboutOilTradingDescription1")}
-              </p>
+              <p>{t("aboutOilTradingDescription1")}</p>
               <br />
-              <p>
-                {t("aboutOilTradingDescription2")}
-              </p>
+              <p>{t("aboutOilTradingDescription2")}</p>
             </Grid>
             <Grid
               item
@@ -383,7 +375,9 @@ export default function OilTrading() {
               }}
             >
               <img
-                src={"https://ik.imagekit.io/3idyffxxb/New%20Folder/phone.png?updatedAt=1735641541189"}
+                src={
+                  "https://ik.imagekit.io/3idyffxxb/New%20Folder/phone.png?updatedAt=1735641541189"
+                }
                 alt={"img"}
               />
             </Grid>
@@ -396,9 +390,7 @@ export default function OilTrading() {
           style={{ zIndex: 2 }}
         >
           <StyledDividerRight>
-            <p
-              className="font-bold text-right text-[#6acafa] text-4xl"
-            >
+            <p className="font-bold text-right text-[#6acafa] text-4xl">
               {t("whyIsOilTradingProfitable")}
             </p>
           </StyledDividerRight>
@@ -406,19 +398,25 @@ export default function OilTrading() {
           <Grid container spacing={5} className="py-10">
             <StyledGradientCard
               gradient
-              icon={"https://ik.imagekit.io/3idyffxxb/New%20Folder/high-liquidity.svg?updatedAt=1735641511543"}
+              icon={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/high-liquidity.svg?updatedAt=1735641511543"
+              }
               name={t("highLiquidity")}
               text={t("highLiquidityDescription")}
             />
             <StyledGradientCard
               gradient
-              icon={"https://ik.imagekit.io/3idyffxxb/New%20Folder/predictability.svg?updatedAt=1735641511501"}
+              icon={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/predictability.svg?updatedAt=1735641511501"
+              }
               name={t("predictability")}
               text={t("predictabilityDescription")}
             />
             <StyledGradientCard
               gradient
-              icon={"https://ik.imagekit.io/3idyffxxb/New%20Folder/high-yield.svg?updatedAt=1735641511209"}
+              icon={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/high-yield.svg?updatedAt=1735641511209"
+              }
               name={t("highYield")}
               text={t("highYieldDescription")}
             />
@@ -431,30 +429,32 @@ export default function OilTrading() {
           style={{ zIndex: 2 }}
         >
           <StyledDividerCenter>
-            <p
-              className="font-bold text-center text-[#6acafa] text-4xl"
-            >
+            <p className="font-bold text-center text-[#6acafa] text-4xl">
               {t("howToStart")}
             </p>
           </StyledDividerCenter>
           <br />
-          <p className="text-center m-5">
-            {t("howToStartDescription")}
-          </p>
+          <p className="text-center m-5">{t("howToStartDescription")}</p>
 
           <Grid container spacing={5} className="py-10">
             <StyledGradientCard
-              icon={"https://ik.imagekit.io/3idyffxxb/New%20Folder/step1.svg?updatedAt=1735640889287"}
+              icon={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/step1.svg?updatedAt=1735640889287"
+              }
               name={t("openRealTradingAccount")}
               text={t("openRealTradingAccountDescription")}
             />
             <StyledGradientCard
-              icon={"https://ik.imagekit.io/3idyffxxb/New%20Folder/step2.svg?updatedAt=1735640889256"}
+              icon={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/step2.svg?updatedAt=1735640889256"
+              }
               name={t("verifyYourAccount")}
               text={t("verifyYourAccountDescription")}
             />
             <StyledGradientCard
-              icon={"https://ik.imagekit.io/3idyffxxb/New%20Folder/step3.svg?updatedAt=1735640889556"}
+              icon={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/step3.svg?updatedAt=1735640889556"
+              }
               name={t("startTrading")}
               text={t("startTradingDescription")}
             />

@@ -306,9 +306,7 @@ const StyledSvgCard = ({ icon, name, text }) => {
         className="bg-[#6820fd] rounded-full m-10"
       />
       <div className="text-center px-10 pb-10 bg-white text-default flex-grow">
-        <p className="font-semi-bold mb-5 text-xl">
-          {name}
-        </p>
+        <p className="font-semi-bold mb-5 text-xl">{name}</p>
         <Typography>{text}</Typography>
       </div>
     </Grid>
@@ -371,7 +369,9 @@ const StyledBanner = () => {
   return (
     <div className="relative">
       <Banner
-        imgDesktop={"/Image/bg-stock.jpg"}
+        imgDesktop={
+          "https://ik.imagekit.io/9lcvptcyj/911937d9938123df7a90.jpg?updatedAt=1742527644013"
+        }
         imgMobile={"/Image/bg-stock.jpg"}
         titleBanner={t("stockTrading")}
         subTitleBanner={t("tradeSharesOfTopCompanies")}
@@ -382,36 +382,44 @@ const StyledBanner = () => {
           isMobile ? "inset-0" : "right-44 inset-y-0"
         }`}
       >
+        {/* <Grid container spacing={5} className="p-5">
+          <Grid item>
+            <img
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/facebook.svg?updatedAt=1735661741151"
+              }
+              width={88}
+              height={120}
+              alt="img"
+            ></img>
+          </Grid>
+          <Grid item>
+            <img
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/apple.svg?updatedAt=1735661741010"
+              }
+              width={88}
+              height={120}
+              alt="img"
+            ></img>
+          </Grid>
+          <Grid item>
+            <img
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/twitter.svg?updatedAt=1735661741266"
+              }
+              width={88}
+              height={120}
+              alt="img"
+            ></img>
+          </Grid>
+        </Grid> 
         <Grid container spacing={5} className="p-5">
           <Grid item>
             <img
-              src={"https://ik.imagekit.io/3idyffxxb/New%20Folder/facebook.svg?updatedAt=1735661741151"}
-              width={88}
-              height={120}
-              alt="img"
-            ></img>
-          </Grid>
-          <Grid item>
-            <img
-              src={"https://ik.imagekit.io/3idyffxxb/New%20Folder/apple.svg?updatedAt=1735661741010"}
-              width={88}
-              height={120}
-              alt="img"
-            ></img>
-          </Grid>
-          <Grid item>
-            <img
-              src={"https://ik.imagekit.io/3idyffxxb/New%20Folder/twitter.svg?updatedAt=1735661741266"}
-              width={88}
-              height={120}
-              alt="img"
-            ></img>
-          </Grid>
-        </Grid>
-        <Grid container spacing={5} className="p-5">
-          <Grid item>
-            <img
-              src={"https://ik.imagekit.io/3idyffxxb/New%20Folder/google.svg?updatedAt=1735661741135"}
+              src={
+                "https://ik.imagekit.io/3idyffxxb/New%20Folder/google.svg?updatedAt=1735661741135"
+              }
               width={88}
               height={120}
               alt="img"
@@ -427,7 +435,7 @@ const StyledBanner = () => {
               alt="img"
             ></img>
           </Grid>
-        </Grid>
+        </Grid>*/}
       </div>
     </div>
   );
@@ -515,15 +523,13 @@ export default function StockTrading() {
 
       <div className="relative md:py-28" style={{ backgroundColor: "#1a003d" }}>
         <Container maxWidth="lg" className="text-white py-16">
-          <Grid container spacing={5}> 
+          <Grid container spacing={5}>
             <Grid item size={{ md: 6, sm: 12 }}>
               <p className="font-bold text-4xl">
                 {t("stockTradingForEveryone")}
               </p>
               <br />
-              <p>
-                {t("stockTradingForEveryoneDescription")}
-              </p>
+              <p>{t("stockTradingForEveryoneDescription")}</p>
             </Grid>
 
             <Grid
@@ -593,17 +599,13 @@ export default function StockTrading() {
             {t("whyDoSharePricesChange")}
           </Typography>
           <br />
-          <Typography>
-            {t("sharePricesChangeDescription")}
-          </Typography>
+          <Typography>{t("sharePricesChangeDescription")}</Typography>
           <Container maxWidth="sm" className="mt-10">
             <Typography variant="h5" className="font-semi-bold">
               {t("mainGrowthFactors")}
             </Typography>
             <AutoCardSlider />
-            <Typography>
-              {t("noticeGrowthFactors")}
-            </Typography>
+            <Typography>{t("noticeGrowthFactors")}</Typography>
           </Container>
         </Container>
       </div>
